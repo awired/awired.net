@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Login</name>
+	<author>Joomla! Project</author>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Parameters for Login Component</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Image du menu" description="Une petite image à placer à gauche ou à doite de votre élément de menu. Elle doit être enregistrée dans le répertoire images/stories/" />
+		<param name="pageclass_sfx" type="text" default="" label="Suffixe CSS de Page" description="Un suffixe à appliquer à la classe CSS de la page. Cela permet une mise en page individualisée." />
+		<param name="back_button" type="list" default="" label="Bouton Retour" description="Afficher/Masquer un bouton Retour qui renvoie à la page précédente">
+			<option value="">Paramètres du site</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="page_title" type="radio" default="1" label="Titre de la Page" description="Afficher/Masquer le titre de la page">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="header_login" type="text" size="30" default="" label="Titre Page Connexion" description="Texte placé en haut de page de connexion. Si le champ reste vide le nom du menu sera utilisé à la place." />
+		<param name="login" type="text" size="30"  default="" label="URL de redirection" description="Adresse de la page à atteindre une fois connecté. Si se champ reste vide le renvoi sera vers la page d'accueil" />
+		<param name="login_message" type="radio" default="0" label="Message javascript de Connexion" description="Afficher/Masquer le Pop-up javascript indiquant le succès de la connexion">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="description_login" type="radio" default="0" label="Texte de Description" description="Afficher/Masquer le texte de description ci-dessous">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="description_login_text" type="textarea" cols="30" rows="5" default="" label="Texte de Description" description="Texte à afficher sur la page de connexion. Si ce champ reste vide la variable _LOGIN_DESCRIPTION sera utilisée" />
+		<param name="image_login" type="imagelist" directory="/images/stories" default="" label="Image Connexion" description="Image de la page de connexion" />
+		<param name="image_login_align" type="radio" default="right" label="Alignement Image" description="Alignement de l'image">
+			<option value="left">Gauche</option>
+			<option value="right">Droite</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="header_logout" type="text" size="30" default="" label="Titre Page Déconnexion" description="Texte placé en haut de page de déconnexion. Si le champ reste vide le nom du menu sera utilisé à la place." />
+		<param name="logout" type="text" size="30"  default="" label="URL de redirection" description="Adresse de la page à atteindre une fois déconnecté. Si se champ reste vide le renvoi sera vers la page d'accueil" />
+		<param name="logout_message" type="radio" default="1" label="Message javascript de Déconnexion" description="Afficher/Masquer le Pop-up javascript indiquant le succès de la déconnexion">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="description_logout" type="radio" default="1" label="Texte de Description" description="Afficher/Masquer le texte de description ci-dessous">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="description_logout_text" type="textarea" cols="30" rows="5" default="" label="Texte de Description" description="Texte à afficher sur la page de connexion. Si ce champ reste vide la variable _LOGOUT_DESCRIPTION sera utilisée" />
+		<param name="image_logout" type="imagelist" directory="/images/stories" default="" label="Image Déconnexion" description="Image de la page de déconnexion" />
+		<param name="image_logout_align" type="radio" default="1" label="Alignement Image" description="Alignement de l'image">
+			<option value="left">Gauche</option>
+			<option value="right">Droite</option>
+		</param>
+	</params>
+</mosinstall>

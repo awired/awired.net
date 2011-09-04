@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Newsfeeds</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>This component manages RSS/RDF newsfeeds</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Image du menu" description="Une petite image à placer à gauche ou à doite de votre élément de menu. Elle doit être enregistrée dans le répertoire images/stories/" />
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Suffixe CSS de Page" description="Un suffixe à appliquer à la classe CSS de la page. Cela permet une mise en page individualisée." />
+		<param name="back_button" type="list" default="" label="Bouton Retour" description="Afficher/Masquer un bouton Retour qui renvoie à la page précédente">
+			<option value="">Paramètres du site</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="page_title" type="radio" default="1" label="Titre de la Page" description="Afficher/Masquer le titre de la page">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="header" type="text" size="30" default="" label="Titre de la Page" description="Texte placé en haut de page. Si le champ reste vide le nom du menu sera utilisé à la place." />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="other_cat_section" type="radio" default="1" label="Catégories - Vue en Liste" description="Afficher/Masquer la liste des catégories dans la vue en Liste de la page">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="other_cat" type="radio" default="1" label="Catégories - Vue en Tableau" description="Afficher/Masquer la liste des catégories dans la vue en Tableau de la page">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="cat_description" type="radio" default="1" label="Description de la catégorie" description="Afficher/Masquer la description des catégories dans la liste des autres catégories">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="cat_items" type="radio" default="1" label="# Eléments dans la catégorie" description="Afficher/Masquer le nombre d'éléments dans la catégorie">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="description" type="radio" default="1" label="Description" description="Afficher/Masquer la description ci-dessous">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="description_text" type="textarea" default="" label="Texte de Description" rows="5" cols="30" description="Description for page"/>
+		<param name="image" type="imagelist" directory="/images/stories" hide_default="1" default="-1" label="Image" description="Image pour la page. Le fichier doit être placé dans le répertoire /images/stories. Ne pas utiliser signifie aucune image." />
+		<param name="image_align" type="radio" default="right" label="Alignement Image" description="Alignement de l'image">
+			<option value="left">Gauche</option>
+			<option value="right">Droite</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="headings" type="radio" default="1" label="En-têtes de tableau" description="Afficher/Masquer les en-têtes de tableau">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="name" type="radio" default="1" label="colonne Nom" description="Afficher/Masquer la colonne de nom du flux">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="articles" type="radio" default="1" label="colonne # Articles" description="Afficher/Masquer la colonne du nombre d'articles dans le flux">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="link" type="radio" default="0" label="colonne Liens" description="Afficher/Masquer la colonne Liens">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="feed_image" type="radio" default="1" label="Image du Flux" description="Afficher/Masquer l'image du flux">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="feed_descr" type="radio" default="1" label="Description du Flux" description="Afficher/Masquer le texte de description du flux">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="item_descr" type="radio" default="1" label="Description Elément" description="Afficher/Masquer la description ou le texte d'introduction de l'élément">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="word_count" type="text" size="6" default="0" label="Nombre de mots" description="Permet de limiter le nombre de mots visibles dans le texte de description de l'élément. 0 signifie afficher tout." />
+	</params>
+</mosinstall>

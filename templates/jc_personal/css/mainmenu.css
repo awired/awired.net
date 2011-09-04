@@ -1,0 +1,56 @@
+#navigationLeft div.moduletable a.mainlevel,
+#navigationLeft div.moduletable a.mainlevel:link,
+#navigationLeft div.moduletable a.mainlevel:visited,
+#navigationLeft div.moduletable a.mainlevel:active
+{
+	font-size 		: 10px;
+	font-weight 		: normal;
+	color 			: #fff;
+	margin 			: 0;
+	text-decoration 	: none;
+	height			: 18px;
+	padding-top		: 5px;
+	padding-left		: 30px;
+	width			: 118px;
+	display			: block;
+	background		: url(../images/h3-bg.jpg) no-repeat;
+	border			: 1px solid #000000;
+	margin-bottom		: 2px;
+}
+#navigationLeft div.moduletable a.mainlevel:hover {
+	background		: url(../images/h3-bg-hover.jpg) no-repeat;
+	text-decoration		: none;
+	border-bottom		: 1px solid #000000;
+	color			: #fff;
+  }
+#navigationLeft div.moduletable a.sublevel, 
+#navigationLeft div.moduletable a.sublevel:link, 
+#navigationLeft div.moduletable a.sublevel:active,
+#navigationLeft div.moduletable a.sublevel:visited  {
+	font-size : 10px;
+	font-weight : normal;
+	margin : 0;
+	color : #fff;
+	padding-right : 0;
+	padding-top : 0;
+	padding-bottom : 0;
+	padding-left	: 20px;
+	text-decoration	: none;
+  }
+
+#navigationLeft div.moduletable a.sublevel:hover 
+{
+	margin : 0;
+	text-decoration : none;
+}
+
+#navigationLeft div.moduletable a.mainlevel#active_menu
+{
+	color			: #fff;
+	background		: url(../images/h3-bg-hover.jpg) no-repeat;
+}
+
+#navigationLeft div.moduletable a.sublevel#active_menu
+{
+	text-decoration		: underline;
+}

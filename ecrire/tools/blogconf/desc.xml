@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<plugin name="blogconf" version="1.2" active="1">
-  <author>Olivier Meunier</author>
-  
-  <label>DotClear configuration</label>
-  <desc>Web interface to configure your blog.</desc>
-</plugin>

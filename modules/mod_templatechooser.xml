@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Changeur de Template</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Ce module permet au visiteur de changer à la volée le template de votre site par un menu déroulant.</description>
+	<files>
+	<filename module="mod_templatechooser">mod_templatechooser.php</filename>
+	</files>
+	<params>
+		<param name="title_length" type="text" default="20" label="Largeur Max. du Nom" description="Largeur maximum à afficher pour le nom du Template (Par défaut 20)" />
+		<param name="show_preview" type="radio" default="0" label="Afficher un Aperçu" description="Afficher un Aperçu du Template">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="preview_width" type="text" default="140" label="Largeur" description="Largeur de l'image d'aperçu (Par défaut 140)" />
+		<param name="preview_height" type="text" default="90" label="Hauteur" description="Hauteur de l'image d'aperçu (Par défaut 90)" />
+		<param name="moduleclass_sfx" type="text" default="" label="Suffixe CSS de module" description="Un suffixe à appliquer à la classe CSS du module (table.moduletable). Cela permet une mise en page individualisée." />
+	</params>
+</mosinstall>

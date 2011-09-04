@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="menu" version="1.0.0">
+	<name>Wrapper</name>
+	<group>Other</group>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Crée un IFrame pour encapsuler une page ou un site externe dans le site Joomla</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Image de Menu" description="Une petite image à placer à droite ou à gauche du lien, les images doivent se trouver dans images/stories/" />
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Suffixe CSS de Page" description="Un suffixe à appliquer aux classes CSS de la page, ceci permet d attribuer un style individuel aux pages" />
+		<param name="back_button" type="list" default="" label="Bouton Retour" description="Afficher/Masquer un bouton Retour, qui vous ramène à la page précédente">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="page_title" type="radio" default="1" label="Titre de la page" description="Afficher/Masquer le titre de la page">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="header" type="text" size="30" default="" label="Titre de la page" description="Texte à afficher en haut de la page. Si le champ est vierge, c'est le nom du lien qui sera utilisé" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="scrolling" type="radio" default="auto" label="Barres de défilement" description="Afficher/Masquer les barres de défillement horizontale & verticale.">
+			<option value="no">Non</option>
+			<option value="yes">Oui</option>
+			<option value="auto">Auto</option>
+		</param>
+		<param name="width" type="text" size="5" default="100%" label="Largeur" description="Largeur de l'Iframe, vous pouvez entre une valeur en pixels ou un pourcentage en utilisant le symbole %" />
+		<param name="height" type="text" size="5" default="500" label="Hauteur" description="Height of the IFrame Window" />
+		<param name="height_auto" type="radio" default="0" label="Hauteur automatique" description="La hauteur s'ajustera automatiquement à celle de la page externe. Fonctionnera seulement pour les pages externes de votre propore domaine. Si vous relevez une erreur javascript, assurez vous que ce paramètre est désactivé. La compatibilité XHTML pour cette page sera rompue.">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+		<param name="add" type="radio" default="1" label="Auto Add" description="Par défaut http:// sera ajouté à moins que ne soit détectée la présence de http:// ou https:// dans l'URL saisie, cela vous permet de désactiver cette fonctionnalité">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+	</params>
+</mosinstall>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="menu" version="1.0.0">
+	<name>Tableau - Catégories de liens web</name>
+	<group>Component</group>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Affiche une vue en tableau des liens web d\'une catégorie donnée</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Image de Menu" description="Une petite image à placer à droite ou à gauche du lien, les images doivent se trouver dans images/stories/" />
+		<param name="pageclass_sfx" type="text" default="" label="Suffixe CSS de Page" description="Un suffixe à appliquer aux classes CSS de la page, ceci permet d attribuer un style individuel aux pages" />
+		<param name="back_button" type="list" default="" label="Bouton Retour" description="Afficher/Masquer un bouton Retour, qui vous ramène à la page précédente">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="page_title" type="radio" default="1" label="Titre de la page" description="Afficher/Masquer le titre de la page">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="header" type="text" size="30" default="" label="Titre de la page" description="Texte à afficher en haut de la page. Si le champ est vierge, c'est le nom du lien qui sera utilisé" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="headings" type="radio" default="1" label="En-têtes du tableau" description="Afficher/Masquer les en-têtes du tableau">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="hits" type="list" default="" label="Colonne Clics" description="Afficher/Masquer la colonne Clics">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="item_description" type="radio" default="1" label="Descriptions des liens web" description="Afficher/Masquer la description des liens web">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="other_cat" type="radio" default="1" label="Autres catégories" description="A l'affichage d'une catégorie, Afficher/Masquer la liste des autres catégories">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="weblink_icons" type="imagelist" directory="/images/M_images" default="" label="Icône" description="Icône à afficher à gauche du lien web dans la vue en tableau" />
+	</params>
+</mosinstall>

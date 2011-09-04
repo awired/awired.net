@@ -1,0 +1,115 @@
+a
+{
+    color: #0000ff;
+    text-decoration: underline;
+}
+a:visited
+{
+    color: #660099;
+}
+a:focus, a:hover
+{
+    color: #ff0000;
+}
+
+body
+{
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Verdana, Lucida, Arial, Helvetica, sans-serif;
+    font-size: medium;
+    margin: 0;
+    padding: 0.5em;
+}
+
+h1
+{
+    font-size: x-large;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0 0.3em 0;
+}
+
+h2
+{
+    font-size: large;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0 0.3em 0;
+}
+
+hr
+{
+    background-color: #999999;
+    border-style: none;
+    color: #999999;
+    height: 1px;
+    margin: 1.5em 0;
+}
+
+ol
+{
+    margin: 0;
+    padding: 0 2.5em;
+}
+
+pre
+{
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+}
+
+table
+{
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+td
+{
+    background-color: #eee;
+    border-color: #999999;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Verdana, Lucida, Arial, Helvetica, sans-serif;
+    font-size: medium;
+    padding: 0.3em;
+    text-align: left;
+    vertical-align: top;
+}
+
+tr.odd td
+{
+    background-color: #ccc;
+}
+
+th
+{
+    background-color: #000000;
+    border-color: #999999;
+    border-style: solid;
+    border-width: 1px;
+    color: #ffffff;
+    font-family: Verdana, Lucida, Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding: 0.3em;
+    text-align: left;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 10em;
+}
+
+@media print
+{
+    th
+    {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}

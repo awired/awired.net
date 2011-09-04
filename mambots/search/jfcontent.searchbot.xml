@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="4.5.1" type="mambot" group="search">
+	<name>multi lingual content searchbot</name>
+	<license>Think Network, Open Source License</license>
+	<author>Think Network GmbH, Munich - Alex Kempkens</author>
+	<authorEmail>JoomFish@ThinkMatrix.net</authorEmail>
+	<authorUrl>http://www.joomfish.net</authorUrl>
+	<creationDate>2006-02-21</creationDate>
+	<copyright>2003 - 2006, Think Network GmbH, Munich</copyright>
+	<version>1.7</version>
+	<description>Allows Searching of all multi lingual Content items</description>
+	<files>
+		<filename mambot="jfcontent.searchbot">jfcontent.searchbot.php</filename>
+	</files>
+	<params>
+		<param name="search_limit" type="text" size="5" default="50" label="Search Limit" description="Nmber of Search items to return"/>		
+		<param name="nonmenu" type="radio" default="1" label="Static Content NonMenu" description="Search Static Content not linked to a menu item?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="active_language_only" type="radio" default="0" label="Active language only" description="Search only within acitve language?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</mosinstall>

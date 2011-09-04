@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="4.5.1" type="mambot" group="content">
+  <name>AkoCommentBot</name>
+  <author>Arthur Konze - Artistworks.net - Bernard Gilly</author>
+  <creationDate>11 Mar 2007</creationDate>
+  <copyright>Copyright 2004 by Arthur Konze - 2007 by Bernard Gilly</copyright>
+  <license>GNU/GPL</license>
+  <authorEmail>contact@visualclinic.fr</authorEmail>
+  <authorUrl>www.visualclinic.fr</authorUrl>
+  <version>1.4.6</version>
+  <description>Replaces {moscomment} tag in content with a user commenting feature. Tweaked version modified by Artistworks.net - Special Edition v 1.4 modified by visualclinic.fr</description>
+  <files>
+    <filename mambot="akocommentbot">akocommentbot.php</filename>
+  </files>
+  <params/>
+</mosinstall>

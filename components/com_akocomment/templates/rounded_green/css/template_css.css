@@ -1,0 +1,165 @@
+/* CSS for Comments rounded green */
+
+/* COMMENTS */
+.commenttop{
+color:#666666;
+font-family:Arial, Geneva, Helvetica, sans-serif;
+font-size:16px;
+font-weight:bold; 
+}
+
+.commenttop img{
+display: none;
+}
+
+.commentbottom{
+}
+
+.commentbottom img{
+display: none;
+}
+
+#commentbubble {
+margin-top:16px;
+font-family:Geneva, Arial, Helvetica, sans-serif;
+}
+
+#commentheader {
+width:100%;
+padding-left:0px;
+height: 11px;
+font-size:11px;
+font-weight:normal;
+color:#000000;
+line-height:11px;
+}
+
+#commentheader div{
+width:100%;
+height:10px;
+}
+
+.commentnumber {
+font-size:11px;
+font-weight:bold; 
+color:#000000;
+}
+
+#separate1{
+height:6px;
+border-bottom: 1px dashed #999999;
+background-color:#BDD2BD;
+line-height:6px;
+}
+
+#separate2{
+height:6px;
+border-bottom: 1px dashed #003300;
+background-color:#669966;
+line-height:6px;
+}
+
+#commentbody1{
+height:100%;
+padding-left:2px;
+padding-top:0px;
+font-size:11px;
+font-weight:normal; 
+color:#333333;
+background-color:#BDD2BD;
+}
+
+#commentbody2{
+height:100%;
+padding-left:2px;
+padding-top:0px;
+font-size:11px;
+font-weight:normal; 
+color:#000000;
+background-color:#669966;
+}
+
+#commenttitle {
+font-weight:bold; 
+color:#000000;
+}
+
+#comment{
+font-weight:normal; 
+color:#333333;
+}
+
+#commentweb{
+font-size:9px;
+text-align:right;
+padding-right:2px;
+color:#000066;
+line-height:12px;
+}
+
+#commentreport{
+font-size:9px;
+text-align:right;
+padding-right:2px;
+color:#000066;
+line-height:11px;
+}
+
+
+/* COMMENT FORM */
+#commentform{
+margin-top:10px;
+font-family:Geneva, Arial, Helvetica, sans-serif;
+font-size:11px;
+}
+
+#writecomment{
+color:#666666;
+font-family:Arial, Geneva, Helvetica, sans-serif;
+font-size:16px;
+font-weight:bold; 
+}
+
+#footerform{
+height: 12px;
+}
+
+#commentform table{
+background-color:#BDD2BD;
+}
+
+#commentform img{
+padding-left: 4px;
+}
+
+#commentform td, p{
+font-family:Geneva, Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:normal;
+text-indent:6px;
+}
+
+#commentform .sectiontableheader{
+font-family:Geneva, Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:normal;
+}
+
+#commentform .inputbox{
+border: 1px solid #666666;
+}
+
+#commentform .button{
+background-color:#000066;
+color:#FFFFFF;
+}
+
+#commentform li{
+font-size:10px;
+color:#333333;
+}
+
+#commentform .small{
+font-size:10px;
+color:#333333;
+}

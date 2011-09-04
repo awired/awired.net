@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- generator="FeedCreator 1.7.2" -->
+<rss version="2.0">
+	<channel>
+		<title>Awired</title>
+		<description>Awired news</description>
+		<link>http://awired.net</link>
+		<lastBuildDate>Tue, 03 Jun 2008 21:54:59 +0100</lastBuildDate>
+		<generator>FeedCreator 1.7.2</generator>
+		<item>
+			<title>Nouveau Deezer ?</title>
+			<link>http://awired.net/nouveau-deezer-7.html</link>
+			<description>Deezer.com a fait peau neuve. En apprenant cette nouvelle je me suis demand&amp;eacute; si mon mini article pr&amp;eacute;c&amp;eacute;dent est toujours...</description>
+			<category>News - Actualité</category>
+			<pubDate>Thu, 10 Jan 2008 21:16:21 +0100</pubDate>
+		</item>
+		<item>
+			<title>Deezer et les mots de passes en clair</title>
+			<link>http://awired.net/deezer-et-les-mots-de-passes-en-clair-11.html</link>
+			<description>Le fameux site Deezer.com fait la joie de tous les amoureux de la musique et cela sans avoir &amp;agrave; payer...</description>
+			<category>News - Actualité</category>
+			<pubDate>Sat, 05 Jan 2008 15:22:13 +0100</pubDate>
+		</item>
+		<item>
+			<title>Internet libre, ou minitel 2.0 MàJ</title>
+			<link>http://awired.net/internet-libre-ou-minitel-2.0-maj-11.html</link>
+			<description>Apr&amp;egrave;s une &amp;eacute;volution fulgurante des moyens de communications gr&amp;acirc;ce &amp;agrave; l&amp;rsquo;&amp;eacute;mergence d&amp;rsquo;internet, aujourd&amp;rsquo;hui nous somme en r&amp;eacute;gression &amp;agrave;...</description>
+			<category>News - Actualité</category>
+			<pubDate>Mon, 24 Dec 2007 22:22:38 +0100</pubDate>
+		</item>
+		<item>
+			<title>Nouveau mirror madchat</title>
+			<link>http://awired.net/nouveau-mirror-madchat-2.html</link>
+			<description>N&amp;rsquo;&amp;eacute;tant pas aller sur madchat.org pour chercher des trucs sur la s&amp;eacute;curit&amp;eacute; depuis pas mal de temps, j&amp;rsquo;ai eu la...</description>
+			<category>News - Actualité awired</category>
+			<pubDate>Thu, 29 Nov 2007 10:51:31 +0100</pubDate>
+		</item>
+		<item>
+			<title>Ouverture de n0rad.fr</title>
+			<link>http://awired.net/ouverture-de-n0rad.fr-2.html</link>
+			<description>Ouverture du site n0rad.fr (http://n0rad.fr) qui serait un mix d&amp;#39;un blog sur moi et mon serveur de fichier public anciennement...</description>
+			<category>News - Actualité awired</category>
+			<pubDate>Mon, 19 Nov 2007 20:18:41 +0100</pubDate>
+		</item>
+	</channel>
+</rss>

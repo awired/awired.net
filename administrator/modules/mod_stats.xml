@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Statistiques</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Ce module affiche des information sur votre serveur, vos visiteurs, le nombre d'articles, etc...</description>
+	<files>
+		<filename module="mod_stats">mod_stats.php</filename>
+	</files>
+	<params>
+		<param name="serverinfo" type="radio" default="0" label="Informations Serveur" description="Affiche les informations sur le serveur">
+			<option value="1">Oui</option>
+			<option value="0">Non</option>
+		</param>
+		<param name="siteinfo" type="radio" default="0" label="Informations Site" description="Affiche les informations sur le site">
+			<option value="1">Oui</option>
+			<option value="0">Non</option>
+		</param>
+		<param name="counter" type="radio" default="0" label="Compteur de Hits" description="Affiche un compteur de Hits">
+			<option value="1">Oui</option>
+			<option value="0">Non</option>
+		</param>
+		<param name="increase" type="text" default="0" label="Augmenter le Compteur" description="Augmenter le nombre de hits du compteur de" />
+		<param name="moduleclass_sfx" type="text" default="" label="Suffixe CSS de module" description="Un suffixe à appliquer à la classe CSS du module (table.moduletable). Cela permet une mise en page individualisée." />
+	</params>
+</mosinstall>

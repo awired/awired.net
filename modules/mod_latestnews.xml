@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Dernières Infos</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Ce module affiche une liste des articles publiés récemments qui sont encore actifs (certains peuvent avoir expirés même s'ils sont plus récents). Les éléments affichés en page d'accueil peuvent être inclus ou non dans la liste.</description>
+	<files>
+		<filename module="mod_latestnews">mod_latestnews.php</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Suffixe CSS de module" description="Un suffixe à appliquer à la classe CSS du module (table.moduletable). Cela permet une mise en page individualisée." />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="cache" type="radio" default="0" label="Activer le Cache" description="Choisir de placer le contenu du module en cache">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="type" type="list" default="0" label="Mode" description="Vous permet de choisir le type d'articles à afficher">
+			<option value="1">Articles seulement</option>
+			<option value="2">Articles statiques seulement</option>
+			<option value="3">Les deux</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="show_front" type="radio" default="1" label="Page d accueil" description="Afficher/Masquer les éléments affichés en page d'accueil - ne fonctionne qu'en mode Articles seulement.">
+			<option value="1">Afficher</option>
+			<option value="0">Masquer</option>
+		</param>
+		<param name="count" type="text" default="5" label="Nombre" description="Le nombre d'éléments à afficher (par défaut 5)" />
+		<param name="catid" type="text" default="" label="ID Catégorie" description="Sélectionner les articles d'une catégorie ou d'un groupe de catégories spécifique (Pour spécifier plus d'une catégorie, séparez les avec une virgule)." />
+		<param name="secid" type="text" default="" label="ID Section" description="Sélectionner les articles d'une section ou d'un groupe de sections spécifiques (Pour spécifier plus d'une section, séparez les avec une virgule)." />
+	</params>
+</mosinstall>

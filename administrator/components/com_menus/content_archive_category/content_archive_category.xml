@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="menu" version="1.0.0">
+	<name>Blog - Archive de catégorie</name>
+	<group>Content</group>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Affichage type blog d\'une liste d\'articles archivés pour une catégorie donnée</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Image du menu" description="Une petite image à placer à gauche ou à doite de votre élément de menu. Elle doit être enregistrée dans le répertoire images/stories/" />
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Suffixe CSS de Page" description="Un suffixe à appliquer à la classe CSS de la page. Cela permet une mise en page individualisée." />
+		<param name="back_button" type="list" default="" label="Bouton Retour" description="Afficher/Masquer un bouton Retour pour revenir à la page précédente">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="header" type="text" size="30" default="" label="Titre de la page" description="Texte à afficher en haut de la page" />
+		<param name="page_title" type="radio" default="1" label="Titre de la page" description="Afficher/Masquer le titre de la page">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="leading" type="text" size="3" default="1" label="# Principal" description="Nombre d articles à afficher en pleine largeur en haut de page. Si 0 est saisi, aucun article ne sera affiché en 'leading'." />
+		<param name="intro" type="text" size="3" default="4" label="# Intro" description="Nombre d articles à afficher avec le texte d introduction uniquement. Si un texte principal a été saisi pour l article, le lien Lire la suite sera affiché" />
+		<param name="columns" type="text" size="3" default="2" label="Colonnes" description="Nombre de colonnes pour l affichage des articles avec texte d introduction" />
+		<param name="link" type="text" size="3" default="4" label="# Liens" description="Nombre d articles à afficher sous forme de liens." />
+		<param name="orderby" type="list" default="" label="Trié par" description="Ce paramètre prendra le pas sur l ordre d affichage défini dans le gestionnaire d articles.">
+			<option value="">Défaut</option>
+			<option value="date">Plus ancien en tête</option>
+			<option value="rdate">Plus récent en tête</option>
+			<option value="alpha">Tri alphabétique (A-Z) sur le titre</option>
+			<option value="ralpha">Tri alphabétique inverse (Z-A) sur le titre</option>
+			<option value="author">Tri alphabétique (A-Z) par Auteur</option>
+			<option value="rauthor">Tri alphabétique inverse (Z-A) par Auteur</option>
+			<option value="hits">Le plus de clics</option>
+			<option value="rhits">Le moins de clics</option>
+			<option value="order">Tri</option>
+		</param>
+		<param name="pagination" type="list" default="2" label="Pagination" description="Afficher/Masquer la pagination">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+			<option value="2">Auto</option>
+		</param>
+		<param name="pagination_results" type="radio" default="1" label="Résultats de la pagination" description="Afficher/Masquer les résultats de la pagination (par ex. 1-4 sur 4 )">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="image" type="radio" default="1" label="MOSImages" description="Afficher {mosimages}.">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="section" type="radio" default="0" label="Nom de section" description="Afficher/Masquer la section à laquelle appartient l'article">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="section_link" type="list" default="0" label="Nom de section cliquable" description="Rendre le nom de la section cliquable">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+		<param name="item_title" type="radio" default="1" label="Titre Article" description="Afficher/Masquer le titre des articles">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="link_titles" type="list" default="" label="Titres cliquables" description="Rendre les titres des articles cliquables">
+			<option value="">Paramètre global</option>
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+		<param name="readmore" type="list" default="" label="Lire la suite" description="Afficher/Masquer le lien Lire la suite">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="rating" type="list" default="" label="Evaluation des articles" description="Afficher/Masquer le système d évaluation des articles - Le changement n'affecte que cette page">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="author" type="list" default="" label="Nom Auteur" description="Afficher/Masquer le nom de l'auteur - Le changement n'affecte que cette page">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="createdate" type="list" default="" label="Date/Heure de création" description="Afficher/Masquer la Date de Création - Le changement n'affecte que cette page">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="modifydate" type="list" default="" label="Date/Heure de modification" description="Afficher/Masquer la Date de Modification - Le changement n'affecte que cette page">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="pdf" type="list" default="" label="Icône PDF" description="Afficher/Masquer le bouton PDF - Le changement n'affecte que cette page">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="print" type="list" default="" label="Icône Imprimer" description="Afficher/Masquer le bouton Imprimer - Le changement n'affecte que cette page">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="email" type="list" default="" label="Icône Email" description="Afficher/Masquer le bouton Email - Le changement n'affecte que cette page">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+	</params>
+</mosinstall>

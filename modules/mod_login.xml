@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Formulaire de connexion</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Ce module affiche formulaire de connexion comportant les éléments : nom d'utilisateur, mot de passe, Perdu votre mot de passe, Enregistrez-vous (si l'enregistrement des visiteurs est activé).</description>
+	<files>
+		<filename module="mod_login">mod_login.php</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Suffixe CSS de module" description="Un suffixe à appliquer à la classe CSS du module (table.moduletable). Cela permet une mise en page individualisée." />
+		<param name="pretext" type="textarea" cols="20" rows="5" default="" label="Pré-texte" description="Le texte ou code HTML au dessus du formulaire de connexion" />
+		<param name="posttext" type="textarea" cols="20" rows="5" label="Post-texte" description="Le texte ou code HTML au dessus du formulaire de connexion" />
+		<param name="login" type="text" default="" label="Connexion URL" description="Adresse de la page à atteindre une fois connecté. Si se champ reste vide le renvoi sera vers la page d'accueil" />
+		<param name="logout" type="text" default="" label="Déconnexion URL" description="Adresse de la page à atteindre une fois déconnecté. Si se champ reste vide le renvoi sera vers la page d'accueil" />
+		<param name="login_message" type="radio" default="0" label="Message javascript de Connexion" description="Afficher/Masquer le Pop-up javascript indiquant le succès de la connexion">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="logout_message" type="radio" default="0" label="Message javascript de Déconnexion" description="Afficher/Masquer le Pop-up javascript indiquant le succès de la déconnexion">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="greeting" type="radio" default="1" label="Bonjour" description="Afficher/Masquer le texte bonjour">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+		<param name="name" type="list" default="0" label="Nom/Utilisateur" description="Afficher le nom ou le nom d'utilisateur dans le texte bonjour">
+			<option value="0">Nom d'utilisateur</option>
+			<option value="1">Nom</option>
+		</param>
+	</params>
+</mosinstall>

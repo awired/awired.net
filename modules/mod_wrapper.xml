@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Module Wrapper</name>
+	<author>Joomla! Project</author>
+	<creationDate>October 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Ce module positionne à un emplacement choisi une IFrame qui permet d'inclure une page/site externe.</description>
+	<files>
+		<filename module="mod_wrapper">mod_wrapper.php</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Suffixe CSS de module" description="Un suffixe à appliquer à la classe CSS du module (table.moduletable). Cela permet une mise en page individualisée." />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="url" type="text" size="30" default="" label="Url" description="URL de la page/site que vous souhaitez inclure dans l'IFrame" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="scrolling" type="radio" default="auto" label="Défilement" description="Afficher/Masquer les barres de défilement Horizontales & Verticales.">
+			<option value="no">Non</option>
+			<option value="yes">Oui</option>
+			<option value="auto">Auto</option>
+		</param>
+		<param name="width" type="text" size="5" default="100%" label="Largeur" description="Largeur de l'IFrame en pixels ou pourcentage" />
+		<param name="height" type="text" size="5" default="200" label="Hauteur" description="Hauteur de l'IFrame en pixels ou pourcentage" />
+		<param name="height_auto" type="radio" default="1" label="Hauteur Automatique" description="La hauteur sera automatiquement ajustée à la hauteur de la page externe. Cela ne fonctionne que sur des pages appartenant à votre domaine.">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="add" type="radio" default="1" label="Ajout http:// automatique" description="Par défaut http:// sera ajouté à moins qu'il ne détecte http:// ou https:// dans l'URL que vous inscrivez. Ce paramètre vous permet de désactiver cette fonction.">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+	</params>
+</mosinstall>

@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>Contents</name>
+  <author>A. Kempkens</author>
+  <version>1.7</version>
+  <description>Definition for the core content component</description>
+  <reference type="content">
+  	<table name="content">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="title" translate="1">Title</field>
+  		<field type="text" name="title_alias" translate="0">Title Alias</field>
+  		<field type="htmltext" name="introtext" translate="1">Introtext</field>
+  		<field type="htmltext" name="fulltext" translate="1">Fulltext</field>
+  		<field type="textarea" name="images" translate="1">Images</field>
+  		<field type="text" name="metakey" translate="1">Metakey</field>
+  		<field type="text" name="metadesc" translate="1">Metadesc</field>
+  		<field type="created_date" name="created" translate="0">Created</field>
+  		<field type="modified_date" name="modified" translate="0">Modified</field>
+  		<field type="checked_out_by" name="checked_out" translate="0">Check out by</field>
+  		<field type="checked_out_date" name="checked_out_time" translate="0">Check out date</field>
+  		<filter>c.state >= 0</filter>
+  	</table> 	
+  </reference>
+  <translationfilters>
+  	  <category>catid</category>
+  	  <author>created_by</author>
+  	  <keyword>title</keyword>
+  	  <published>published</published>
+  </translationfilters>
+</joomfish>

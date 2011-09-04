@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="menu" version="1.0.0">
+	<name>Lien - Flux RSS</name>
+	<group>Component|Link</group>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Crée un lien vers un flux RSS individuel publié</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Image de Menu" description="Une petite image à placer à droite ou à gauche du lien, les images doivent se trouver dans images/stories/" />
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Suffixe CSS de Page" description="Un suffixe à appliquer aux classes CSS de la page, ceci permet d attribuer un style individuel aux pages" />
+		<param name="back_button" type="list" default="" label="Bouton Retour" description="Afficher/Masquer un bouton Retour, qui vous ramène à la page précédente">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="header" type="text" size="30" default="" label="Titre de la page" description="Texte à afficher en haut de la page. Si le champ est vierge, c'est le nom du lien qui sera utilisé" />
+		<param name="page_title" type="radio" default="1" label="Titre de la page" description="Afficher/Masquer le titre de la page">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="feed_image" type="radio" default="1" label="Image du flux RSS" description="Afficher/Masquer l'image du flux RSS">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="feed_descr" type="radio" default="1" label="Description du flux RSS" description="Afficher/Masquer la description du flux RSS">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="item_descr" type="radio" default="1" label="Description de l\'article" description="Afficher/Masquer la description ou le texte d'introduction de l'article">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="word_count" type="text" size="6" default="0" label="Nombre de mots" description="Permet de limiter en nombre de mots l'affichage du texte de description d'un article. Si la valeur est 0, l'intégralité de la description sera affichée" />
+	</params>
+</mosinstall>

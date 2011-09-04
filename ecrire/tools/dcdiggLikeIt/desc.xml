@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<plugin name="dcdiggLikeIt" version="1.2" active="1">
-  <author>Tibo - www.c1blog.com</author>
-  <label>dcDiggLikeIt</label>
-  <desc>Un plugin pour ajouter un lien de soumission aux digg-likes</desc>
-</plugin>

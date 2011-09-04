@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Typed Content Page</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>This shows a single content page</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Image du menu" description="Une petite image à placer à gauche ou à doite de votre élément de menu. Elle doit être enregistrée dans le répertoire images/stories/" />
+		<param name="item_title" type="radio" default="1" label="Titre Article" description="Afficher/Masquer le titre des articles">
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Suffixe CSS de Page" description="Un suffixe à appliquer à la classe CSS de la page. Cela permet une mise en page individualisée." />
+		<param name="back_button" type="list" default="" label="Bouton Retour" description="Afficher/Masquer un bouton Retour qui renvoie à la page précédente">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="rating" type="list" default="" label="Evaluation des articles" description="Afficher/Masquer la Notation des éléments - Le changement n'affecte que cette page">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="author" type="list" default="" label="Nom Auteur" description="Afficher/Masquer le nom de l'auteur - Le changement n'affecte que cette page">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="createdate" type="list" default="" label="Date/Heure de création" description="Afficher/Masquer la Date de Création - Le changement n'affecte que cette page">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="modifydate" type="list" default="" label="Date/Heure de modification" description="Afficher/Masquer la Date de Modification - Le changement n'affecte que cette page">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="pdf" type="list" default="" label="Icône PDF" description="Afficher/Masquer le bouton PDF - Le changement n'affecte que cette page">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="print" type="list" default="" label="Icône Imprimer" description="Afficher/Masquer le bouton Imprimer - Le changement n'affecte que cette page">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+		<param name="email" type="list" default="" label="Icône Email" description="Afficher/Masquer le bouton Email - Le changement n'affecte que cette page">
+			<option value="">Paramètre global</option>
+			<option value="0">Masquer</option>
+			<option value="1">Afficher</option>
+		</param>
+	</params>
+</mosinstall>

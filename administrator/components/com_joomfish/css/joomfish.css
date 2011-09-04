@@ -1,0 +1,39 @@
+#joomfish table.adminheading th {
+	background: url(../images/fish.png) no-repeat left;
+}
+
+#joomfish table.adminheading th.cpanel {
+	background: url(../images/joomfish.png) no-repeat left;
+	width: 200px;
+	height: 58px;
+	padding: 0px 0px 0px 200px;
+}
+#joomfish table.adminheading th.config {
+	background: url(../../../images/config.png) no-repeat left;
+}
+#joomfish table.adminheading th.credits {
+	background: url(../../../images/credits.png) no-repeat left;
+}
+#joomfish table.adminheading th.edit {
+	background: url(../../../images/addedit.png) no-repeat left;
+}
+#joomfish table.adminheading th.support {
+	background: url(../../../images/support.png) no-repeat left;
+}
+#joomfish table.adminheading th.langmanager {
+	background: url(../../../images/langmanager.png) no-repeat left;
+}
+#joomfish table.adminheading th.upgrade {
+	background: url(../../../images/dbrestore.png) no-repeat left;
+}#joomfish table.adminheading th.joomfish {	
+	background: url(../images/joomfish.png) no-repeat left;
+	height: 58px;
+	padding: 0px 0px 0px 200px;
+}
+
+#joomfish ul {
+	margin: 0px 0px 0px 0px;
+	padding: 1px 0px 1px 20px;
+	list-style: url(../images/dot.png);
+	border: none;
+}

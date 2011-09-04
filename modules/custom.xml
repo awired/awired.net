@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Module Personnalisé</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Module Personnalisé</description>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Suffixe CSS de module" description="Un suffixe à appliquer à la classe CSS du module (table.moduletable). Cela permet une mise en page individualisée." />
+		<param name="cache" type="radio" default="0" label="Activer le Cache" description="Choisir de placer le contenu du module en cache">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />		
+		<param name="firebots" type="radio" default="1" label="Mambots" description="Autoriser des Mambots à agir sur ce module">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="rssurl" type="text" size="50" default="" label="RSS URL" description="Entrer l'URL du flux RSS/RDF" />
+		<param name="rsstitle" type="radio" default="1" label="Titre du Flux" description="Affiche de le titre du Flux">
+			<option value="1">Oui</option>
+			<option value="0">Non</option>
+		</param>
+		<param name="rssdesc" type="radio" default="1" label="Description du Flux" description="Affiche le texte de description de la totalité du flux">
+			<option value="1">Oui</option>
+			<option value="0">Non</option>
+		</param>
+		<param name="rssimage" type="radio" default="1" label="Image du Flux" description="Affiche l'image associée au flux">
+			<option value="1">Oui</option>
+			<option value="0">Non</option>
+		</param>
+		<param name="rssitems" type="text" default="3" label="# Eléments" description="Entrer le nombre d'éléments à afficher" />
+		<param name="rssitemdesc" type="radio" default="1" label="Description Elément" description="Afficher la description ou le texte d'introduction de l'élément">
+			<option value="1">Oui</option>
+			<option value="0">Non</option>
+		</param>
+		<param name="word_count" type="text" size="6" default="0" label="Nombre de Mots" description="Vous permet de limiter de limiter le texte de decription visible. 0 affiche tout le texte." />
+		<param name="rsscache" type="text" size="6" default="3600" label="Durée de vie du cache RSS" description="Durée de vie du cache pour ce flux RSS" />
+	</params>
+</mosinstall>

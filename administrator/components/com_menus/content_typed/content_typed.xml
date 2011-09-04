@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="menu" version="1.0.0">
+	<name>Lien - Article statique</name>
+	<group>Content|Link</group>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Crée un lien vers un article statique</description>
+	<params>
+		<param name="menu_image" type="imagelist" directory="/images/stories" hide_default="1" default="" label="Image du menu" description="Une petite image à placer à droite ou à gauche du lien, les images doivent se trouver dans images/stories/" />
+        <param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="unique_itemid" type="radio" default="0" label="Itemid unique" description="Utiliser un itemid unique pour le lien">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+	</params>
+</mosinstall>

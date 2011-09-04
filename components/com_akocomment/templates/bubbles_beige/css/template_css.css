@@ -1,0 +1,183 @@
+/* CSS for Comments bubbles gray */
+
+/* COMMENTS */
+.commenttop{
+color:#666666;
+font-family:Arial, Geneva, Helvetica, sans-serif;
+font-size:16px;
+font-weight:bold; 
+}
+
+.commenttop img{
+display: none;
+}
+
+.commentbottom{
+}
+
+.commentbottom img{
+display: none;
+}
+
+#commentbubble {
+margin-top:18px;
+font-family:Geneva, Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+
+#commentheader {
+width:100%;
+padding-left:2px;
+padding-top:2px;
+height: 26px;
+color:#333333;
+font-size:11px;
+font-weight:normal;
+}
+
+#commentheader div{
+width:100%;
+height:90%;
+border-bottom: 1px dashed #999966;
+}
+
+.commentnumber {
+font-size:14px;
+font-weight:bold; 
+color:#000000;
+}
+
+#commentbody1{
+height:100%;
+padding-left:2px;
+padding-top:0px;
+font-weight:normal; 
+color:#000000;
+background-color:#CCCCB3;
+}
+
+#commentbody2{
+height:100%;
+padding-left:2px;
+padding-top:0px;
+font-weight:normal; 
+color:#000000;
+background-color:#E0E0D1;
+}
+
+#commenttitle {
+font-weight:bold; 
+}
+
+#comment{
+font-weight:normal; 
+}
+
+#commentweb{
+font-size:9px;
+text-align:right;
+padding-right:2px;
+color:#666666;
+line-height:12px;
+}
+
+#commentip{
+font-size:9px;
+text-align:right;
+padding-right:2px;
+color:#666666;
+line-height:12px;
+}
+
+#commentusertype{
+font-size:9px;
+text-align:right;
+padding-right:2px;
+color:#666666;
+line-height:12px;
+}
+
+#commentreport{
+font-size:9px;
+text-align:right;
+padding-right:2px;
+color:#666666;
+line-height:12px;
+}
+
+
+#commentfooter1{
+height:25px;
+font-size:12px;
+text-align:right;
+font-style:italic;
+padding:25px 0px 0px 0px;
+color:#666666;
+font-weight:bold;
+}
+
+#commentfooter2{
+height:25px;
+font-size:12px;
+text-align:left;
+font-style:italic;
+padding:25px 0px 0px 0px;
+color:#666666;
+font-weight:bold;
+}
+
+/* COMMENT FORM */
+#commentform{
+margin-top:10px;
+font-family:Geneva, Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+
+#writecomment{
+color:#666666;
+font-family:Arial, Geneva, Helvetica, sans-serif;
+font-size:16px;
+font-weight:bold; 
+}
+
+#footerform{
+height: 30px;
+}
+
+#commentform table{
+}
+
+#commentform img{
+padding-left: 4px;
+}
+
+#commentform td, p{
+font-family:Geneva, Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:normal;
+text-indent:6px;
+}
+
+#commentform .sectiontableheader{
+font-family:Geneva, Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:normal;
+}
+
+#commentform .inputbox{
+border: 1px solid #666666;
+}
+
+#commentform .button{
+background-color:#999999;
+}
+
+#commentform li{
+font-size:10px;
+color:#333333;
+}
+
+#commentform .small{
+font-size:10px;
+color:#333333;
+}

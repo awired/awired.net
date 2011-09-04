@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Articles connexes</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Ce module affiche les articles en relation avec le sujet de l'article affiché. Cela fonctionne avec les mots clés des métadonnées. Le module va rechercher les mots clés communs avec l'article en cours de consultation, dans les autres articles et afficher une liste des résultats. For example, you may have an Item on 'Breeding Parrots' and you may have another on 'Hand Raising Black Cockatoos'. If you include the keyword 'parrot' in both Items, then the Related Items module will list the 'Breeding Parrots' Item when viewing 'Hand Raising Black Cockatoos' and vice-versa.</description>
+	<files>
+	<filename module="mod_related_items">mod_related_items.php</filename>
+	</files>
+	<params>
+		<param name="cache" type="radio" default="0" label="Activer le Cache" description="Choisir de placer le contenu du module en cache">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Suffixe CSS de module" description="Un suffixe à appliquer à la classe CSS du module (table.moduletable). Cela permet une mise en page individualisée." />
+	</params>
+</mosinstall>

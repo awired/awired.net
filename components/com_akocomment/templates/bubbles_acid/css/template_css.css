@@ -1,0 +1,191 @@
+/* CSS for Comments bubbles gray */
+
+/* GENERAL */
+.commenttop{
+color:#999999;
+font-family:Geneva, Arial, Helvetica, sans-serif;
+font-size:18px;
+font-weight:bold; 
+}
+
+.commenttop img{
+display: none;
+}
+
+.commentbottom{
+
+}
+
+.commentbottom img{
+display: none;
+}
+
+
+/* COMMENTS */
+#commentbubble {
+margin-top:10px;
+width:500px; 
+font-family:Geneva, Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+
+#commentheader {
+padding-left:14px;
+padding-top:2px;
+height: 28px;
+color:#333333;
+font-size:11px;
+font-weight:normal;
+background: url(../images/header.gif) no-repeat;
+}
+
+.commentnumber {
+font-size:14px;
+font-weight:bold; 
+color:#333333;
+}
+
+#commentbody1{
+padding-left:14px;
+padding-top:4px;
+font-weight:normal; 
+color:#333333;
+background-color:#CCCCDD;
+}
+
+#commentbody2{
+padding-left:14px;
+padding-top:4px;
+font-weight:normal; 
+color:#333333;
+background-color:#C6ECC6;
+}
+
+#commenttitle {
+font-weight:bold; 
+}
+
+#comment{
+}
+
+#commentweb{
+font-size:9px;
+text-align:right;
+padding-right:10px;
+color:#999999;
+line-height:12px;
+}
+
+#commentip{
+font-size:9px;
+text-align:right;
+padding-right:10px;
+color:#999999;
+line-height:12px;
+}
+
+#commentusertype{
+font-size:9px;
+text-align:right;
+padding-right:10px;
+color:#999999;
+line-height:12px;
+}
+
+#commentreport{
+font-size:9px;
+text-align:right;
+padding-right:10px;
+color:#999999;
+line-height:12px;
+}
+
+#commentfooter1{
+height:34px;
+font-size:12px;
+text-align:right;
+font-style:italic;
+padding:35px 74px 0px 0px;
+background: url(../images/footer1.gif) no-repeat;
+color:#666666;
+font-weight:bold;
+}
+
+#commentfooter2{
+height:34px;
+font-size:12px;
+text-align:left;
+font-style:italic;
+padding:35px 0px 0px 74px;
+background: url(../images/footer2.gif) no-repeat;
+color:#666666;
+font-weight:bold;
+}
+
+
+/* COMMENT FORM */
+#commentform{
+margin-top:10px;
+width:500px; 
+font-family:Geneva, Arial, Helvetica, sans-serif;
+font-size:12px;
+}
+
+#writecomment{
+background: url(../images/header.gif) no-repeat;
+padding-left:14px;
+padding-top:4px;
+height: 26px;
+font-weight:bold;
+}
+
+#footerform{
+width:500px; 
+height: 30px;
+background: url(../images/footerform.gif) no-repeat;
+}
+
+#commentform table{
+background-color:#CCCCCC;
+}
+
+#commentform img{
+padding-left: 4px;
+}
+
+#commentform td, p{
+font-family:Geneva, Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:normal;
+text-indent:6px;
+}
+
+#commentform .sectiontableheader{
+font-family:Geneva, Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:normal;
+}
+
+#commentform .sectiontableentry1{
+background-color:#CCCCCC;
+}
+
+#commentform .inputbox{
+border: 1px solid #666666;
+
+}
+
+#commentform .button{
+background-color:#999999;
+
+}
+
+#commentform li{
+font-size:10px;
+color:#333333;
+}
+
+#commentform .small{
+font-size:10px;
+color:#333333;
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="4.5.1">
+	<name>js_empire</name>
+	<creationDate></creationDate>
+	<author>JoomlaShack</author>
+	<copyright>GPL</copyright>
+	<authorEmail>joomlashack@gmail.com</authorEmail>
+	<authorUrl>http://www.joomlashack.com/</authorUrl>
+	<version>1.0</version>
+	<description>JS Empire is a free template from JoomlaShack with a dark glossy theme. This template is  fixed width 800 px optimized and supports the user1, user2, and left module positions.</description>
+<files>
+	<filename>index.html</filename>
+	<filename>index.php</filename>
+	<filename>templateDetails.xml</filename>
+	<filename>template_thumbnail.png</filename>
+	<filename>js/template.css.php</filename>
+</files>
+<images>
+	<filename>images/BLANK_HEADER_IMAGE.png</filename>
+	<filename>images/botleftshadow.png</filename>
+	<filename>images/botrightshadow.png</filename>
+	<filename>images/bot_shadow.png</filename>
+	<filename>images/con_address.png</filename>
+	<filename>images/con_tel.png</filename>
+	<filename>images/emailButton.png</filename>
+	<filename>images/indent1.png</filename>
+	<filename>images/indent2.png</filename>
+	<filename>images/indent3.png</filename>
+	<filename>images/js_emphdrl.png</filename>
+	<filename>images/logo.png</filename>
+	<filename>images/main_bg.png</filename>
+	<filename>images/menubg.png</filename>
+	<filename>images/menubgb.png</filename>
+	<filename>images/modhdrbg.png</filename>
+	<filename>images/pdf_button.png</filename>
+	<filename>images/printButton.png</filename>
+	<filename>images/search.png</filename>
+	<filename>images/spacer.png</filename>
+	<filename>images/weblink.png</filename>
+</images>
+<css>
+	<filename>css/editor_content.css</filename>
+	<filename>css/template_css.css</filename>
+</css>
+</mosinstall>

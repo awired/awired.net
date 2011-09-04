@@ -1,0 +1,84 @@
+#navigationRight div.moduletable h3,
+#navigationLeft div.moduletable h3
+{
+	font-family 		: Arial;
+	font-size		: .9em;
+	margin 			: 0;
+	padding			: 0;
+	color			: #fff;
+	height			: 15px;
+	text-align		: left;
+	margin-bottom		: 9px;
+	padding-top		: 3px;
+	padding-left		: 25px;
+}
+
+#navigationRight  div.moduletable,
+#navigationLeft  div.moduletable
+{
+	background		: url(../images/h3-bg.jpg) no-repeat;
+	padding-bottom 		: 9px;
+	color 			: #fff;
+	border			: 1px solid #000000;
+	font-size 		: 12px;
+	width			: 151px;
+	padding-left		: 5px;
+	padding-right		: 5px;
+	margin-bottom		: 3px;
+	margin-top		: 2px;
+}
+
+
+
+#navigationRight div.moduletable a:link,
+#navigationRight div.moduletable a:visited,
+#navigationLeft div.moduletable a:link,
+#navigationLeft div.moduletable a:visited
+{
+	color 			: #fff;
+	text-decoration 	: none;
+	font-size 		: 12px;
+}
+
+#navigationRight div.moduletable a:hover,
+#navigationLeft div.moduletable a:hover
+{
+	text-decoration 	: underline;
+}
+
+
+#navigationRight a:link,
+#bottomMenu a:visited , #navigationLeft a:link
+{
+	color : #fff;
+	text-decoration : none;
+	font-size : 12px;
+  }
+
+#bottomMenu a:hover {
+	text-decoration : underline;
+}
+
+
+
+
+
+#navigationRight  div.moduletable table.pollstableborder td {
+
+  }
+#navigationRight  div.moduletable table.pollstableborder .sectiontableentry1, #navigationRight  div.moduletable table.pollstableborder .sectiontableentry2 {
+	text-align 	: left;
+	vertical-align : top;
+	padding : 0;
+	background-color		: transparent;
+	line-height				: 20px;
+  }
+#navigationRight  a:link,
+#navigationRight  a:visited {
+	color : #fff;
+	text-decoration : underline;
+	font-size : 12px;
+  }
+#navigationRight  a:hover {
+	text-decoration : underline;
+  }

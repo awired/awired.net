@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component" version="1.0.0">
+	<name>Syndicate</name>
+	<author>Joomla! Project</author>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>This component controls the Syndication settings</description>
+	<params>
+		<param name="check" type="radio" default="1" label="Contrôle de la sécurité" description="Si Oui, la syndication ne fonctionnera que si le module mod_rssfeed est publié">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="cache" type="radio" default="1" label="Cache" description="Mise en cache des fichiers de syndication">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+		<param name="cache_time" type="text" size="8" default="3600" label="Durée de vie du cache" description="Les fichiers en cache seront rafraîchis toutes les nn secondes" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="count" type="text" size="4" default="5" label="# Eléments" description="Nombre d'éléments à syndiquer" />
+		<param name="title" type="text" size="40" default="Powered by Joomla! 1.0" label="Titre" description="Titre de la syndication" />
+		<param name="description" type="textarea" rows="5" cols="30" default="Joomla! site syndication" label="Description" description="Description de la syndication" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="image_file" type="imagelist" directory="/images/M_images" default="" label="Image" description="Image à inclure dans la syndication" />
+		<param name="image_alt" type="text" size="30" default="Powered by Joomla! 1.0" label="Image Alt" description="Texte alternatif pour l'image" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="limit_text" type="radio" default="1" label="Limite de texte" description="Limiter le texte de l'article à la valeur indiquée ci-dessous">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+		<param name="text_length" type="text" size="4" default="20" label="Longueur du texte" description="Nombre de mots - 0 pour ne rien afficher du tout" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="rss091" type="radio" default="1" label="RSS 0.91" description="Activer/Désactiver la syndication RSS 0.91">
+			<option value="0">Désactiver</option>
+			<option value="1">Activer</option>
+		</param>
+		<param name="rss10" type="radio" default="1" label="RSS 1.0" description="Activer/Désactiver la syndication RSS 1.0">
+			<option value="0">Désactiver</option>
+			<option value="1">Activer</option>
+		</param>
+		<param name="rss20" type="radio" default="1" label="RSS 2.0" description="Activer/Désactiver la syndication RSS 2.0">
+			<option value="0">Désactiver</option>
+			<option value="1">Activer</option>
+		</param>
+		<param name="atom03" type="radio" default="1" label="ATOM 0.3" description="Activer/Désactiver la syndication ATOM 0.3">
+			<option value="0">Désactiver</option>
+			<option value="1">Activer</option>
+		</param>
+		<param name="opml" type="radio" default="1" label="OPML" description="Activer/Désactiver la syndication OPML">
+			<option value="0">Désactiver</option>
+			<option value="1">Activer</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="orderby" type="list" default="front" label="Tri" description="Tri pour l'affichage des éléments">
+			<option value="front">Par défaut</option>
+			<option value="front">Tri de la page d'accueil</option>
+			<option value="date">Plus ancien d'abord</option>
+			<option value="rdate">Plus récent d'abord</option>
+			<option value="alpha">Tri alphabétique A-Z sur le titre</option>
+			<option value="ralpha">Tri alphabétique Z-A sur le titre</option>
+			<option value="author">Tri alphabétique A-Z par auteur</option>
+			<option value="rauthor">Tri alphabétique Z-A par auteur</option>
+			<option value="hits">Le plus de clics</option>
+			<option value="rhits">Le moins de clics</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="live_bookmark" type="list" default="0" label="Live Bookmarks" description="Activer la prise en charge des Live Bookmarks pour Firefox">
+			<option value="0">Off</option>
+			<option value="RSS0.91">RSS 0.91</option>
+			<option value="RSS1.0">RSS 1.0</option>
+			<option value="RSS2.0">RSS 2.0</option>
+			<option value="ATOM0.3">ATOM 0.3</option>
+		</param>
+	</params>
+</mosinstall>

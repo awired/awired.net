@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="1.0.0" type="mambot" group="system">
+	<name>Multi lingual abstraction layer bot</name>
+	<license>Think Network, Open Source License</license>
+	<author>Think Network</author>
+	<authorEmail>JoomFish@ThinkMatrix.net</authorEmail>
+	<authorUrl>http://www.joomfish.net</authorUrl>
+	<creationDate>2006-02-21</creationDate>
+	<copyright>2003 - 2006, Think Network GmbH, Munich</copyright>
+	<version>1.7</version>
+	<description>When activated this bot ensures that your system is automatically translating all database queries.</description>
+	<files>
+		<filename mambot="jfdatabase.systembot">jfdatabase.systembot.php</filename>
+	</files>	
+	<params>
+		<param name="determitLanguage" type="radio" default="1" label="Enable Language determination" description="If an unkown user comes to your site - try to determinate the language based on the browser settings.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+        <param name="newVisitorAction" type="list" default="browser" label="Language selection for new visitors?"
+       description="Determine language selection for new visitors (only Enable Language determination is 'Yes')" >
+        <option value="joomfish">Ordering of Languages in Joomfish Component</option>
+        <option value="browser">Browser Settings</option>
+        <option value="site">Site Default Language</option>
+      </param>
+
+	</params>
+</mosinstall>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<plugin name="gsitemap" version="0.1.2" active="1">
-  <author>Pep and contributors.</author>
-  <label>Gsitemap</label>
-  <desc>Generate a Google XML Sitemap for your blog.</desc>
-</plugin>

@@ -1,0 +1,517 @@
+/* @override http://localhost:8888/workspace/rokwebify/templates/rt_rokwebify/css/template_css.css */
+
+/* @group Main */
+
+html {
+  /* this is a hack to force scrollbars on at 
+     all times so that the page does not jump
+     when going from short to long pages */
+  height: 100%;
+  margin-bottom: 1px;
+  background: #fff;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+  /* setup some more readable paragraph spacing */
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+h1, h2, h3, h4, h4 {
+	/* setup some more readable header spacing */
+	padding-bottom: 5px;
+	margin: 15px 0;
+}
+
+/* @group Fonts */
+
+/* @group Sizes */
+
+
+body {
+	font-size: 13px;
+}
+
+h1 {
+	font-size: 200%;
+}
+
+h2 {
+	font-size: 180%;
+}
+
+h3 { 
+   font-size: 150%;
+}
+
+h4 {
+	font-size:  120%;
+}
+
+.small,
+.modifydate,
+.createdate,
+div.mosimage_caption {
+	font-size: 100%;
+}
+
+div.moduletable h3,
+.componentheading {
+	font-size: 130%;
+}
+
+.contentheading {
+	font-size: 200%;
+}
+
+.componentheading {
+ margin-bottom: 15px;
+}
+
+td.componentheading {
+	padding-bottom: 15px;
+}
+
+/* @end */
+
+/* @group Family */
+
+body {
+		line-height: 135%;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #1D2D45;
+}
+
+div#top {
+	color: #666;
+}
+
+.contentheading,
+.componentheading {
+	font-weight: bold;
+}
+
+div.moduletable h3,
+div.moduletable-hilite1 h3,
+div.mdouletable-hilite2 h3,
+.contentheading {
+	/* see style css */
+}
+
+table.headlines div.moduletable h3,
+.componentheading {
+	/* see style css */
+}
+
+a:link,
+a:visited {
+	/* color: see style css */
+	color: #819D26;
+	text-decoration: none;
+}
+
+div#bottom a:link,
+div#bottom a:visited {
+	color: #99CC00;
+}
+
+a:hover {
+
+	text-decoration: underline;
+}
+
+/* @end */
+
+/* @end */
+
+/* @end */
+
+/* @group Structure */
+
+html {
+	background: #5670A1 url(../images/bg.png) 0 0 repeat-x;
+}
+
+div#wrapper {
+	margin: 0 auto;
+	width: 868px;
+	padding-top: 18px;
+}
+
+div#header {
+	background: url(../images/header-bg.png) 0 0 repeat-x;
+}
+
+div#header .rk-1 {
+	background:  url(../images/header-r.png) 100% 0 no-repeat;
+}
+
+div#header .rk-2 {
+	background:  url(../images/header-l.png) 0 0 no-repeat;
+	height: 153px;
+	overflow: hidden;
+}
+
+img#logo {
+	float:  left;
+	margin-left: 38px;
+	width: 469px;
+	height: 138px;
+	background: url(../images/logo.png) 0 0 no-repeat;
+}
+
+div#top {
+	margin-left:  520px;
+	height: 138px;
+	font-style: italic;
+}
+
+div#top .padding {
+	padding:  15px;
+}
+
+div#horiz-menu {
+	background: url(../images/menu-bg.png) 0 0 repeat-x;
+	height: 36px;
+}
+
+table.mainbody,
+table.usermodules {
+	width: 100%;
+	padding: 0;
+}
+
+td.mainbody {
+	background: #fff;
+}
+
+td.usermodules {
+	padding: 0 10px;
+}
+
+td.mainbody .padding,
+td.right .padding {
+	padding: 15px;
+}
+
+td.mainbody .padding {
+	padding: 15px 25px;
+}
+
+td.right {
+	background: #FFFFFF url(../images/col-divider.png) 0 0 repeat-y;
+	width: 255px;
+}
+
+div#bottom {
+	background: #121A28 url(../images/bottom-bg.png) 0 0 repeat-x;
+}
+
+div#footer {
+	background: url(../images/footer-bg.png) 0 0 repeat-x;
+}
+
+div#footer .rk-1 {
+	background: url(../images/footer-r.png) 100% 0 no-repeat;
+}
+
+div#footer .rk-2 {
+	background: url(../images/footer-l.png) 0 0 no-repeat;
+	height: 105px;
+	overflow: hidden;
+}
+
+div#the-footer {
+	background: url(../images/footer-rocket.png) 50% 0 no-repeat;
+	text-align: center;
+}
+
+img#rocket {
+	width: 150px;
+	height: 50px;
+}
+
+
+/* My Comment */
+
+
+
+/* @group menus */
+
+div#horiz-menu ul {
+	margin: 0;
+	padding: 6px 0 0 0;
+}
+
+div#horiz-menu li {
+	margin: 0;
+	padding: 0;
+	padding-right: 2px;
+	float: left;
+	list-style: none;
+	background: url(../images/menu-divider.png) 100% 0 repeat-y;
+}
+
+div#horiz-menu a:link,
+div#horiz-menu a:visited {
+	display: block;
+	float: left;
+	padding: 0 25px;
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+
+div#horiz-menu a:hover {
+	background: #4F6FA7;
+}
+
+/* My Comment */
+
+/* My Comment */
+
+/* @end */
+
+/* @group content */
+
+.hide {
+	display: none;
+}
+
+form {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+table.blog span.article_seperator {
+	display: block;
+	height: 20px;
+}
+
+.highlight {
+  background-color: #ffc;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Joomla Core */
+
+/* @group modules */
+
+div.moduletable h3 {
+	color: #121A28;
+	border-bottom: 3px solid #e7e7e7;
+	padding: 3px 0;
+}
+
+td.right div.moduletable {
+	color: #121A28;
+}
+
+td.right div.moduletable h3 {
+	border-bottom: 3px solid #D2E0F2;
+}
+
+div#bottom div.moduletable {
+	color: #ccc;
+}
+
+div#bottom div.moduletable h3 {
+	border-bottom: 3px solid #243959;
+	color: #fff;
+}
+
+/* @end */
+
+/* @group content */
+
+.contentheading {
+	padding: 10px 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	line-height:100%;
+	color: #99CC00;
+}
+
+td.buttonheading {
+ 	vertical-align: middle;
+}
+
+td.buttonheading img {
+	margin-right: 5px;
+}
+
+table.contentpaneopen, table.contentpane {
+  border-collapse: collapse;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+div.contentpane, div.contentpaneopen {
+  width: 100%;
+}
+
+.clr {
+	clear: both;
+}
+
+div.mosimage {
+  margin: 5px;
+}
+
+a.readon {
+	display: block;
+	float: left;
+	padding-left: 20px;
+	margin-top: 10px;
+	line-height: 14px;
+	height: 16px;
+	/* background: see style css */
+}
+
+.small {
+	color: #666;
+}
+
+.modifydate {
+	height: 20px;
+	vertical-align: bottom;
+	color: #666;
+}
+
+.createdate {
+	height: 20px;
+	vertical-align: top;
+	vertical-align: top;
+	padding-bottom: 5px;
+	padding-top: 0px;
+	color: #666;
+}
+
+table.contenttoc {
+  margin: 5px;
+  padding: 5px;
+}
+
+table.contenttoc td {
+  padding: 0 5px;
+}
+
+/* @end */
+
+/* @group pathway */
+
+span.pathway {
+	display: block;
+	height: 16px;
+	line-height: 16px;
+	vertical-align: middle;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+span.pathway img {
+	margin: 0px 10px;
+	vertical-align: middle;
+}
+
+div#pathway {
+	margin-bottom: 10px;
+	padding-left: 8px;
+}
+
+/* @end */
+
+/* @group sections */
+
+table.mainbody td.mainbody td.sectiontableheader {
+  font-weight: bold;
+  padding: 4px;
+  line-height: 20px;
+  background: #f6f6f6;
+  border-bottom: 1px solid #ddd;
+}
+
+tr.sectiontableentry1 td,
+tr.sectiontableentry2 td,
+td.sectiontableentry1,
+td.sectiontableentry2 {
+  padding: 5px;
+  border-top: 1px #fff;
+  border-bottom: 1px solid #efefef;	
+}
+
+tr.sectiontableentry2 td,
+td.sectiontableentry1 {
+	background: #fcfcfc;
+}
+
+/* @group My Group */
+
+/* @end */
+
+.pollstableborder .sectiontableentry1,
+.pollstableborder .sectiontableentry2 {
+	background: none;
+	border:  0;
+}
+
+
+/* @end */
+
+/* @group mainmenu */
+
+a.mainlevel:link,
+a.mainlevel:visited {
+	text-decoration: none;
+}
+
+a.mainlevel {
+	display: block;
+	padding: 4px 0 2px 28px;
+	margin-bottom: 3px;
+	background: url(../images/menu-bullet.png) 0 0 no-repeat;
+}
+
+a.sublevel:link,
+a.sublevel:visited {
+	text-decoration: none;
+}
+
+a.mainlevel:hover {
+	text-decoration: underline;
+}
+
+a.sublevel:hover {
+	text-decoration: none;
+}
+
+
+a#active_menu:link,
+a#active_menu:visited {
+	color: #333;
+}
+
+
+li.active_menu a:link,
+li.active_menu a:visited {
+  color: #333;
+}
+
+
+
+/* @end */
+
+/* @end */

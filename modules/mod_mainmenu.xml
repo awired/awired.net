@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Menu Principal</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Affiche un menu.</description>
+	<files>
+		<filename module="mod_mainmenu">mod_mainmenu.php</filename>
+	</files>
+		<params>
+		<param name="class_sfx" type="text" default="" label="Suffixe CSS de menu" description="Un suffixe à appliquer à la classe CSS des éléments de menu." />
+		<param name="moduleclass_sfx" type="text" default="" label="Suffixe CSS de module" description="Un suffixe à appliquer à la classe CSS du module (table.moduletable). Cela permet une mise en page individualisée." />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="menutype" type="mos_menu" default="" label="Nom du Menu" description="Le nom du menu (par défaut `mainmenu`)" />
+		<param name="menu_style" type="list" default="vert_indent" label="Style de Menu" description="Le style du menu">
+			<option value="vert_indent">Vertical</option>
+			<option value="horiz_flat">Horizontal</option>
+			<option value="list_flat">Liste</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="full_active_id" type="radio" default="0" label="Full Active highlighting" description="Activer la surbrillance des menus actifs, pour les liens de type `Composant` ou les liens de type `Url`, qui peuvent entraîner des écarts de conformité XHTML, si plus d'un élément est actif">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>		
+		<param name="@spacer" type="spacer" default="" label="" description="" />		
+		<param name="cache" type="radio" default="0" label="Activer le Cache" description="Choisir de placer le contenu du module en cache">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+		<param name="menu_images" type="radio" default="0" label="Afficher Icone" description="Afficher les icones des éléments de menu">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+		<param name="menu_images_align" type="radio" default="0" label="Alignement Icones" description="Alignement des icones de menu">
+			<option value="0">Gauche</option>
+			<option value="1">Droite</option>
+		</param>
+		<param name="expand_menu" type="radio" default="0" label="Dérouler le Menu" description="Dérouler le menu et rendre les sous-menus toujour visibles">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+		<param name="activate_parent" type="radio" default="0" label="Activer Parents" description="Set's the activation id also for all parent menus in the tree">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="indent_image" type="list" default="0" label="Image Indentation" description="Choisir l'image d'indentation à utiliser">
+			<option value="0">Template</option>
+			<option value="1">Image par défault de Joomla!</option>
+			<option value="2">Utiliser le paramètre ci-dessous</option>
+			<option value="3">None</option>
+		</param>
+		<param name="indent_image1" type="imagelist" directory="/images/M_images" default="" label="Image 1" description="Image pour le premier sous-niveau" />
+		<param name="indent_image2" type="imagelist" directory="/images/M_images" default="" label="Image 2" description="Image pour le deuxième sous-niveau" />
+		<param name="indent_image3" type="imagelist" directory="/images/M_images" default="" label="Image 3" description="Image pour le troisième sous-niveau" />
+		<param name="indent_image4" type="imagelist" directory="/images/M_images" default="" label="Image 4" description="Image pour le quatrième sous-niveau" />
+		<param name="indent_image5" type="imagelist" directory="/images/M_images" default="" label="Image 5" description="Image pour le cinquième sous-niveau" />
+		<param name="indent_image6" type="imagelist" directory="/images/M_images" default="" label="Image 6" description="Image pour le sixième sous-niveau" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="spacer" type="text" default="" size="5" label="Séparateur" description="Séparateur pour les menus horizontaux" />
+		<param name="end_spacer" type="text" default="" size="5" label="Fin de Séparateur" description="Fin de séparateur pour les menus horizontaux" />
+	</params>
+</mosinstall>

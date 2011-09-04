@@ -1,6 +1,0 @@
-<?xml version="1.1" encoding="ISO-8859-1"?>
-<plugin name="bbclone" version="0.7" active="1">
-  <author>The BBClone Team</author>
-  <label>BBClone - Stats</label>
-  <desc>A PHP based Web Counter on Steroids. v0.4.4</desc>
-</plugin>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Recherche</name>
+	<author>Joomla! Project</author>
+	<creationDate>July 2004</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.0</version>
+	<description>Ce module affiche un champ de recherche</description>
+	<files>
+		<filename module="mod_search">mod_search.php</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Suffixe CSS de module" description="Un suffixe à appliquer à la classe CSS du module (table.moduletable). Cela permet une mise en page individualisée." />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="cache" type="radio" default="0" label="Activer le Cache" description="Choisir de placer le contenu du module en cache">
+			<option value="0">Non</option>
+			<option value="1">Oui</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="set_itemid" type="text" default="" label="Set Itemid" description="Allow setting of the Itemid for the refencing Search link" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="width" type="text" default="20" label="Largeur du champ" description="Largeur du champ de recherche" />
+		<param name="text" type="text" default="" label="Text" description="Un texte à afficher dans le champ de recherche. Si ce champ est vide la variable _SEARCH_BOX de votre fichier de langue sera utilisée." />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="button" type="radio" default="" label="Bouton Recherche" description="Affiche un bouton de recherche">
+			<option value="">Non</option>
+			<option value="1">Oui</option>
+		</param>
+		<param name="button_pos" type="list" default="right" label="Position du Bouton" description="Position du bouton par rapport au champ de recherche">
+			<option value="right">Droite</option>
+			<option value="left">Gauche</option>
+			<option value="top">Haut</option>
+			<option value="bottom">Bas</option>
+		</param>
+		<param name="button_text" type="text" default="" label="Texte du Bouton" description="Un texte à afficher sur le bouton de recherche. Si ce champ reste vide la variable _SEARCH_TITLE de votre fichier de langue sera utilisée." />
+	</params>
+</mosinstall>

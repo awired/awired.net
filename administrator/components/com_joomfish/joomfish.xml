@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mosinstall type="component" version="1.0.0">
+	<name>JoomFish</name>
+	<license>Think Network, Open Source License</license>
+	<author>Think Network</author>
+	<authorEmail>JoomFish@ThinkMatrix.net</authorEmail>
+	<authorUrl>http://www.joomfish.net</authorUrl>
+	<creationDate>2006-05-01</creationDate>
+	<copyright>2003 - 2006, Think Network GmbH, Munich</copyright>
+	<version>1.7</version>
+	<description>
+		Multi Lingual extention and translation manager for Joomla!
+	</description>
+  <files>
+    <filename>joomfish.html.php</filename>
+    <filename>joomfish.php</filename>
+    <filename>includes/joomfish.class.php</filename>
+    <filename>language/brazilian.php</filename>
+    <filename>language/bulgarian.php</filename>
+    <filename>language/english.php</filename>
+    <filename>language/french.php</filename>
+    <filename>language/german.php</filename>
+    <filename>language/hrvatski.php</filename>
+    <filename>language/norwegian.php</filename>
+    <filename>language/spanish.php</filename>
+  </files>
+  <images>
+    <filename>images/joomfish.png</filename>
+    <filename>images/joomfish_icon.png</filename>
+    <filename>images/joomfish_slogan.png</filename>
+    <filename>images/flags/ba.gif</filename>
+    <filename>images/flags/be.gif</filename>
+    <filename>images/flags/bg.gif</filename>
+    <filename>images/flags/cr.gif</filename>
+    <filename>images/flags/cs.gif</filename>
+    <filename>images/flags/cy.gif</filename>
+    <filename>images/flags/cz.gif</filename>
+    <filename>images/flags/da.gif</filename>
+    <filename>images/flags/de.gif</filename>
+    <filename>images/flags/eeu.gif</filename>
+    <filename>images/flags/el.gif</filename>
+    <filename>images/flags/en.gif</filename>
+    <filename>images/flags/es.gif</filename>
+    <filename>images/flags/et.gif</filename>
+    <filename>images/flags/fi.gif</filename>
+    <filename>images/flags/fr.gif</filename>
+    <filename>images/flags/gr.gif</filename>
+    <filename>images/flags/gv.gif</filename>
+    <filename>images/flags/hr.gif</filename>
+    <filename>images/flags/hu.gif</filename>
+    <filename>images/flags/is.gif</filename>
+    <filename>images/flags/it.gif</filename>
+    <filename>images/flags/iw.gif</filename>
+    <filename>images/flags/ja.gif</filename>
+    <filename>images/flags/ka.gif</filename>
+    <filename>images/flags/lt.gif</filename>
+    <filename>images/flags/lv.gif</filename>
+    <filename>images/flags/md.gif</filename>
+    <filename>images/flags/mk.gif</filename>
+    <filename>images/flags/mt.gif</filename>
+    <filename>images/flags/nl.gif</filename>
+    <filename>images/flags/no.gif</filename>
+    <filename>images/flags/pl.gif</filename>
+    <filename>images/flags/pt.gif</filename>
+    <filename>images/flags/ro.gif</filename>
+    <filename>images/flags/ru.gif</filename>
+    <filename>images/flags/se.gif</filename>
+    <filename>images/flags/sh.gif</filename>
+    <filename>images/flags/si.gif</filename>
+    <filename>images/flags/sk.gif</filename>
+    <filename>images/flags/sq.gif</filename>
+    <filename>images/flags/tr.gif</filename>
+    <filename>images/flags/uk.gif</filename>
+    <filename>images/flags/us.gif</filename>
+    <filename>images/flags/zh.gif</filename>
+  </images>
+  <administration>
+    <menu>Joom!Fish</menu>
+    <submenu>
+      <menu act="translate">Translation</menu>
+      <menu act="config_component&hidemainmenu=1">Configuration</menu>
+      <menu act="config_language&hidemainmenu=1">Languages</menu>
+      <menu act="config_elements">Content elements</menu>
+      <menu act="credits">About</menu>
+    </submenu>
+
+    <files>
+      <filename>admin.joomfish.html.php</filename>
+      <filename>admin.joomfish.php</filename>
+      <filename>config.joomfish.php</filename>
+      <filename>joomfish.class.php</filename>
+      <filename>mldatabase.class.php</filename>
+      <filename>joomfish.help.inc.php</filename>
+      <filename>joomfish.help.inc_bulgarian.php</filename>
+      <filename>joomfish.help.inc_norwegian.php</filename>
+      <filename>toolbar.joomfish.html.php</filename>
+      <filename>toolbar.joomfish.php</filename>
+
+      <filename>contentelements/category.xml</filename>
+      <filename>contentelements/contact.xml</filename>
+      <filename>contentelements/content.xml</filename>
+      <filename>contentelements/menu.xml</filename>
+      <filename>contentelements/module.xml</filename>
+      <filename>contentelements/newsfeeds.xml</filename>
+      <filename>contentelements/polls.xml</filename>
+      <filename>contentelements/pollsoptions.xml</filename>
+      <filename>contentelements/section.xml</filename>
+      <filename>contentelements/weblinks.xml</filename>
+      
+      <filename>contentelements/translationPollnameFilter.php</filename>
+      <filename>contentelements/translationPolloptions_emptyFilter.php</filename>
+            
+      <filename>css/joomfish.css</filename>
+
+      <filename>documentation/CHANGELOG.php</filename>
+      <filename>documentation/COPYRIGHT.php</filename>
+      <filename>documentation/LICENSE.php</filename>
+      <filename>documentation/ReadMe.php</filename>
+      
+            
+      <filename>sql/joomfish.sql</filename>
+      <filename>sql/sample_data.sql</filename>
+
+    
+	  <filename>mambots/search/jfcontent.searchbot.php</filename>
+	  <filename>mambots/search/jfcontent.searchbot.xml</filename>
+	  <filename>mambots/system/jfdatabase.systembot.php</filename>
+	  <filename>mambots/system/jfdatabase.systembot.xml</filename>
+		
+	  <filename>modules/mod_jflanguageselection.css</filename>
+	  <filename>modules/mod_jflanguageselection.php</filename>
+	  <filename>modules/mod_jflanguageselection.xml</filename>
+	  
+	  <filename>editors/fckeditor.php</filename>
+	  <filename>editors/jce.php</filename>
+	  <filename>editors/tinymce.php</filename>
+	  <filename>editors/tmedit.php</filename>
+	  <filename>editors/htmlarea3_xtd.php</filename>
+	  <filename>editors/jeditor.php</filename>
+	  <filename>editors/wysiwygpro.php</filename>
+	  <filename>editors/xinha.php</filename>
+	  <filename>editors/xstandard.php</filename>
+	  
+    </files>
+
+    <images>
+      <filename>images/dot.png</filename>
+      <filename>images/fish.png</filename>
+      <filename>images/fishl.png</filename>
+      <filename>images/joomfish.png</filename>
+      <filename>images/joomfish_slogan.png</filename>
+      <filename>images/status_g.png</filename>
+      <filename>images/status_r.png</filename>
+      <filename>images/status_y.png</filename>
+    </images>
+  </administration>
+  <install>
+    <queries>
+      <query> CREATE TABLE IF NOT EXISTS `#__languages` (
+		  `id` int(11) NOT NULL auto_increment,
+		  `name` varchar(100) NOT NULL default '',
+		  `active` tinyint(1) NOT NULL default '0',
+		  `iso` varchar(10) default NULL,
+		  `code` varchar(20) NOT NULL default '',
+		  `image` varchar(100) default NULL,
+		  `ordering` int(11) NOT NULL default '0',
+		  PRIMARY KEY  (`id`)
+		) TYPE=MyISAM AUTO_INCREMENT=2</query>
+
+      <query> CREATE TABLE IF NOT EXISTS `#__jf_content` (
+		  `id` int(10) unsigned NOT NULL auto_increment,
+		  `language_id` int(11) NOT NULL default '0',
+		  `reference_id` int(11) NOT NULL default '0',
+		  `reference_table` varchar(100) NOT NULL default '',
+		  `reference_field` varchar(100) NOT NULL default '',
+		  `value` mediumtext NOT NULL default '',
+		  `original_value` varchar(255) default NULL,
+		  `modified` datetime NOT NULL default '0000-00-00 00:00:00',
+		  `modified_by` int(11) unsigned NOT NULL default '0',
+		  `published` tinyint(1) unsigned NOT NULL default '0',
+		  PRIMARY KEY  (`id`)
+		) TYPE=MyISAM AUTO_INCREMENT=1</query>
+      
+	  <query>CREATE TABLE IF NOT EXISTS `#__jf_tableinfo` (
+	  	  `id` int(11) NOT NULL auto_increment, 
+	  	  `joomlatablename` varchar(100) NOT NULL default '',
+	  	  `tablepkID`  varchar(100) NOT NULL default '',
+	  	   PRIMARY KEY (`id`)
+	  	   ) TYPE=MyISAM AUTO_INCREMENT=1</query>
+    </queries>
+  </install>
+  
+  <installfile>install.joomfish.php</installfile>
+  <uninstallfile>uninstall.joomfish.php</uninstallfile>
+  
+  <uninstall>
+  </uninstall>
+  
+  <params />
+  
+</mosinstall>

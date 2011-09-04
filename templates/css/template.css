@@ -1,0 +1,76 @@
+@charset "windows-1251";
+/* auteur: lenny */
+/* Date de cr$0000E9ation: 19/03/2004 */
+
+body{
+	font-family: Tahoma;
+	font-size: 10px;
+	color: #999999;
+	text-decoration: none;
+	border: none;
+	scrollbar-face-color: #F0F0F0;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-shadow-color: #EEF1F4;
+	scrollbar-3dlight-color: #D5D5D5;
+	scrollbar-arrow-color:  #E88300;
+	scrollbar-track-color: #6C6C6C;
+	scrollbar-darkshadow-color: #A5A5A5;
+}
+
+td {
+	font-family: Tahoma;
+	font-size: 10px;
+	text-decoration: none;
+	border: none;
+}
+
+A {
+	FONT-SIZE: 10px; 
+	COLOR: #E88300; 
+	font-family: Tahoma;
+	text-decoration: none;
+	font-weight: bold;
+}
+A:hover {
+	FONT-SIZE: 10px; 
+	COLOR: #FFBA00; 
+	font-family: Tahoma;
+	text-decoration: none;
+	font-weight: bold;
+}
+A:active {
+	FONT-SIZE: 10px; 
+	COLOR: #FF0000; 
+	Ffont-family: Tahoma;
+	text-decoration: none;
+	font-weight: bold;
+}	
+
+
+.img {
+	BORDER-RIGHT: #727073 2px solid; BORDER-TOP: #727073 2px solid; BORDER-LEFT: #727073 2px solid; BORDER-BOTTOM: #727073 2px solid;
+}
+
+.type_txt1 {
+	FONT-SIZE: 11px; 
+	COLOR: #E88300; 
+	Ffont-family: Tahoma;
+	text-decoration: none;
+	font-weight: bold;
+}	
+
+.type_txt2 {
+	FONT-SIZE: 12px; 
+	COLOR: #FFBA00; 
+	Ffont-family: Arial;
+	text-decoration: none;
+	font-weight: bold;
+}	
+
+.type_txt2 {
+	FONT-SIZE: 12px; 
+	COLOR: #FFFFFF; 
+	Ffont-family: Arial;
+	text-decoration: none;
+	font-weight: bold;
+}	

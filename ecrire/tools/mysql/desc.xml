@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin name="mysql" version="1.2.5" active="true">
+  <author>Olivier Meunier and contributors</author>
+  <label>MySQL database operations</label>
+  <desc>Various database operations related to DotClear.</desc>
+</plugin>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin name="UTF-8 conversion" version="1.0" active="1">
+  <author>Olivier Meunier</author>
+  
+  <label>UTF-8 conversion</label>
+  <desc>Convert your blog to UTF-8.</desc>
+</plugin>

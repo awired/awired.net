@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin name="fortune" version="0.4" active="true">
+	<author>Alexandre Passant</author>
+	<label>Fortune</label>
+  <desc>Affichage d'une fortune aléatoire</desc>
+</plugin>

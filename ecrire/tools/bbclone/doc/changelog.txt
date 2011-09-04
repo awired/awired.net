@@ -1,0 +1,329 @@
+0.4.4
+-----
+* Fixed broken referrers by Google's image search
+* Fixed ignored ip slips through if acting as/pretending to be a proxy server
+* Fixed recode function ignoring $BBC_CUSTOM_CHARSET
+* Fixed error in show_global.php and show_detailed.php when trying to print an
+  error message about inaccessible files
+* Don't count characters over and over again in charconv.php
+* Don't execute bbc_filter_ref() when there's no referrer
+* $BBC_IGNORE_REFER fine tuning: if keyword starts with a slash, it will be
+  compared with the referrers uri, else with its hostname
+* Try to use recode for keyword conversion if mbstring functions aren't available
+* Prefer iconv for keyword conversion if applicable
+* Merged with BBClone old and implemented a PHP version check
+* Display the exact amount of visits in bubbles (alternative text for images) in
+  timestats
+* Updated French translation (François Pradignac)
+* Updated Lithuanian translation (Vilius Simonaitis)
+* Updated Hungarian translation (Sándor Dibuz)
+* Rules and ip2ext fixes and updates
+
+0.4.4-RC5
+---------
+* Fixed broken legacy extension detection, which always returned "unknown"
+* Fixed broken removal of non alphanumeric chararacters
+* Fixed malformed referrer hosts being counted
+* Fixed a few bots which changed their user agent recently
+* Don't look up extensions unless there's a new connection
+* Merged with BBClone-sem and BBClone-dio and created $BBC_USE_LOCK for
+  specifying the favorite locking mode
+* Wrote an ftok() emulation so SysV Semaphores can be used as flock() substitute
+  on php < 4.2.0 as well
+* Replaced $BBC_NO_STRING with a really talkative debug mode ($BBC_DEBUG)
+* ip2ext fixes and update (as usual)
+
+0.4.4-RC4
+---------
+* Fixed broken special characters and umlauts in search engine keywords
+* Fixed detection rules unnecessarily included twice
+* Fixed server added as external referrer under certain circumstances
+* Fixed broken paths in page ranking with ORIG_* headers
+* Fixed missing check for the presence of referrer.php
+* Fixed cache results listed as keyword if the cache id contains a dash
+* Don't look up hostnames unless there's actually a new unique visitor
+* Added support for Japanese and Cyrillic charset detection and keywords
+  conversion
+* Don't take the client address of a transparent proxy if it doesn't match up
+  against a country
+* Look up each address in our ip2ext database unless we don't have an entry
+* Moved bbc_clean() of the marker class to io.php
+* Added lib/charconv.php which converts the keywords into appropriate encodings
+* Added charset switch for customised translations (ie. UTF-8 versions)
+* Extended $BBC_PURGE_SINGLE to clean up single keyword entries as well
+* Added Slovenian translation (Rok Potoènik)
+* Treat Java and libwww as robot
+* Ip2ext database updates and fixes
+* Browser, OS and robots updates
+
+0.4.4-RC3
+---------
+* Fixed unescaped characters in urlencoded strings messing up the stats
+* Fixed stylesheets printed as text in ancient browsers (Anybrowser check)
+* Remove referrers from robots because of its excessive abuse
+* Updated ip2ext database and fixed some inconsistencies
+
+0.4.4-RC2
+---------
+* Reverted UTF-8 conversion due to compatibility issues
+* Removed keyword conversion code due to compatibility issues
+* Fixed some detection rules
+* Fixed some ranges in ip2ext database
+
+0.4.4-RC1
+---------
+* Fixed broken paths in page ranking on some servers
+* Fixed keywords not found in image searches
+* Leave BBClone's comments turned off by default
+* Regard User Agent changes as new visit by default
+* Strip non alpha numeric characters at the beginning or end of a keyword
+* Convert keywords to UTF-8 if an encoding charset was given
+* Extended the scope of $BBC_IGNORE_REFER to the whole path instead the
+  hostname only
+* Added a lot of missing country flags (Luke Woodward)
+* Use UTF-8 for all translations
+* Removed Traditional Chinese because it's broken beyond repair
+* Updated Japanese translation (Katsunori Shiota)
+* Updated Bulgarian translation (Martin Halachev)
+* Huge detection rules update (mostly Japanese bots)
+* Updated ip2ext database
+
+0.4.3
+-----
+* Fixed some invalid ip2ext database entries and added new ranges
+* Fixed occurence of unwanted slashes with some php configurations
+* Fixed Digital and Tru64 version number detection
+* Fixed PalmOs detection
+* Don't list search engine cache indicator as keyword
+* Limit keyword length to 50 chars
+* Make keywords work with Mat'Kurja, too
+* Updated the reserved ip ranges published by IANA in lib/marker.php
+* Removed "not_specified" stuff for top hosts listing
+* Emphasize hits and unique visits on bottom of the global stats
+* More robot additions
+
+0.4.3 RC2
+---------
+* Fixed empty keywords being added to the ranking
+* Fixed WWWC being considered a browser though it's a robot
+* Don't add a new keyword unless it has at least 3 characters
+* Added handling for HTTP_PC_REMOTE_ADDR to make MacOs servers happy
+* Added handling for non existing entries in our rules
+
+0.4.3 RC1
+---------
+* Fixed wrong score of unknown referrers
+* Fixed wrong file name of Swedish translation
+* Fixed notices on a fresh install due to a missing check
+* Fixed MacOsX being identified as Windows
+* Fixed a lot of wrong entries in ip2ext database
+* New Feature: Top keywords from search engines
+* Added quite a few new detection rules
+* Added some missing flags (Luke Woodward)
+* Referrer related processing as separate file (lib/referrer.php)
+* Modified global stats output
+* Updated ip2ext database
+* Updated Italian translation (Daniele Raffo)
+* Updated Catalan translation (Oriol Torra Sellares)
+
+0.4.2
+-----
+* Fixed missing error message if var/ isn't writable on Win32
+* Fixed some detection rules
+* Fixed spelling errors in Dutch and German translation
+* Limit maximum accepted input to 512 bytes
+* Read counter files and ip2ext data line by line
+* Cleaned up a lot of code ugliness
+* Don't forcefully implode data in lib/marker.php
+* Removed useless code fragment in lib/marker.php
+* Removed "Verdana" as font in html.php
+* Updated Hungarian translation (Sándor Dibuz)
+* Updated Japanese translation (Katsunori Shiota)
+* Updated ip2ext database
+
+0.4.2 RC4
+---------
+* Fixed random phantom connections appearing in detailed stats
+* Fixed randomly b0rked visits in detailed stats
+* A couple of new detection patterns
+
+0.4.2 RC3
+---------
+* Don't turn integers to strings in access.php and last.php
+* Empty last stats if $BBC_MAXVISIBLE is <= 0
+* Print error message if var/ directory is read-only on Windows systems
+* Cleaned up some messy code
+* Updated Norwegian (Bokmål) translation (Hans Fredrik Nordhaug)
+* Updated French translation (François Pradignac)
+* Updated Bulgarian translation (Martin Halachev)
+* Updated the ip2ext database
+* Updated documentation
+
+0.4.2 RC2
+---------
+* Fixed broken unique counting in global stats
+* Fixed broken extension counting
+* Fixed missing sanity check for $last['traffic'] in show_views.php
+* Fixed "headers sent by" warning if stats are reset with $BBC_NO_STRING
+  activated
+* Separated detection by rules from updating global stats
+* Leave out the complete robots <td> if no robots are desired
+* Updated the ip2ext database
+* More code cleanups in mark_page.php
+
+0.4.2 RC1
+---------
+* Fixed several wrong entries in ip2ext database and added new
+  ranges
+* Fixed wrong value for $BBC_LANGUAGE in show_config.php
+* Fixed lockfile being indicated as directory on error
+* Fixed rare bug with multiple ip addresses
+* Don't use foreach for huge arrays (it wastes a lot of memory)
+* Don't include detection rules in global namespace
+* Define true fontsize in config instead of setting arbitrarily defined
+  integers
+* Added option to completely ignore robots
+* Added "last reset" display
+* Html lib as class in order to reduce global variables pollution
+* Page stats as own function in log_processor.php
+* Cleaned up messy code in mark_page.php
+* New ip2ext database format with up to 30% smaller files
+* Added 198.18/15 to the exclusion list (RFC 2544)
+* Re-introduction of IP swapping (based on the proxy type in use)
+* Added Norwegian (Bokmål) translation (Hans Fredrik Nordhaug)
+* Updated Dutch translation
+* Updated Japanese translation (Katsunori Shiota)
+* Updated Hungarian translation (Sándor Dibuz)
+* Removed the "v" in all BBClone version strings
+
+0.4.1
+-----
+* Fixed inconsistency in database and added new ranges
+* Fixed updating of time in after changing timezone in detailed stats
+* Fixed some broken detection patterns
+* Fixed wrong calculation of hours in visit stats
+* Fixed exclusion pattern for test nets (192.0.2/24)
+* Fixed variable name conflict with TikiWiki
+* Fixed function name conflict with a phpBB extension
+* Truncate page titles if > 60 characters
+* Take the first address in proxy chains instead of the last one
+* Don't swap the ip because it's unreliable
+* Added switch to clean up one time hosts and referrers on demand
+* Added missing explanation for referrer column in detailed stats
+* Added Hungarian translation (Sándor Dibuz)
+* Updated French translation (François Pradignac)
+* Updated German translation
+* Updated Italian translation (Daniele Raffo)
+* Updated Russian translation (Vladislav Korotkov)
+* Added more common bots and browsers
+* Shortened the GPL license header
+* Documentation update
+
+0.4.0
+-----
+* Fixed incorrect visit length in visit stats
+* Fixed reverse proxy address being displayed as visitor (regression)
+* Fixed a couple of detection rules which have been broken for ages
+* Display the connection age just like in detailed stats
+* If there's a proxy chain take the last address from the list
+* Moved bbc_plot() to show_time.php because it's only used in the time stats
+* Upgraded to XHTML 1.0 transitional compliance
+* Make html output look consistant on each page
+* Row generation of detailed stats as own function
+* Major update of our ip2ext database
+* Removed $BBC_VIEW_LIM because it has become obsolete with the usage of
+  $BBC_MAXVISIBLE
+* Code cleanups
+* Documentation updates
+* Updated bots and browsers
+* Updated Dutch translation
+* Updated Japanese translation (Katsunori Shiota)
+* Updated Russian translation (Vladislav Korotkov)
+
+0.4.0 RC2
+---------
+* Fixed visits stats getting out of sync
+* Fixed missing uri in page stats if $PATH_TRANSLATED isn't available
+* Fixed time_offset() unnecessarily being called when there's nothing to do
+* Fixed annoying notices if $BBC_MAXVISIBLE < 1
+* Fixed counting of reloads in visits stats
+* Fixed a couple of errors in the German translation
+* Don't show more than $BBC_MAXVISIBLE pages in visits stats
+* Summarise successive calls of the same page in visits stats
+* Added stricter checks for the correct data type
+* Added Greek translation (Clopy)
+* Added more bots and browsers
+* Removed lib/codelang.php and lib/extension.php
+* Updated Bulgarian translation (Martin Halachev)
+
+0.4.0 RC1
+---------
+* Fixed braindead usage of $BBCLONE_DIR for setting the rootdir in constants.php
+* Fixed fatal error when transforming and merging old access.php entries
+* Fixed defunct $BBC_COUNTER_FILES switch in constants.php
+* Fixed wrong variable name in FAQs
+* Fixed large numbers in time stats don't keep the first figure after the dot
+* Fixed wrong paths in page stats if PHP is running as cgi
+* Fixed require_once woes with log_processor.php and access.php
+* Fixed hardcoded fontsize in top hosts listing and time stats
+* Fixed path disclosure of bbclone directory and counter files
+* Fixed messy timezone code
+* Fixed missing extensions in translation files
+* Added top ten stats for hosts and updated both translation and show_config.php
+  accordingly
+* Added switch to turn off name resolving if necessary
+* Added switch to modify the counting mode if desired (hits or unique visits)
+* Added switch to select whether a different user agent of the same address
+  should be treated as new (unique) visit
+* Added switch for resetting the stats if desired
+* Added visit stats with page history, visit time and more details about the
+  selected visitor
+* Added resolving of countries by means of looking up our own database
+* Added more extensions which shouldn't be treated as hostname
+* Added switch for filtering robots in the top ten hosts stats
+* Added a switch for adjusting the time in case the server time mismatches the
+  local time
+* Bumped minimum requirement to 4.1.0
+* Use superglobals instead of legacy stuff to solve PHP 5 issues
+* Write to .htalock and check whether it's still empty before updating the stats
+  to improve reliability on hosts where flock() can't control all processes
+* Changed write mode and truncating of access.php to increase speed and decrease
+  CPU usage
+* Changed status report of counter files to yield more useful information
+* Improve security by unsetting variables we want to use in global space first
+* replaced htmlentities() with htmlspecialchars() to enable page titles in non
+  Latin based charsets as well (Russian, Bulgarian, Japanese, Chinese...)
+* Make sure "var" is actually a directory before doing anything
+* Added error message in case flock() doesn't work so people have an idea about
+  what's going on
+* Separated detailed stats from static data in global and time stats
+* Rewrote show_config stuff and turned it into a reference for available options
+* Use 16 counter files instead of 10
+* Have timestats spread over 3 rows to avoid horizontal scrollbar madness on
+  heavily visited hosts
+* Changed proxy detection to look through all relevant headers and notice
+  hexadecimal client addresses
+* Removed reverse DNS check, as its sufficient to resolve the IP address to a
+  hostname to get the same result
+* Moved referrer stuff from io.php to marker.php to make the code look cleaner
+* Removed display of blacklisted IPs because it's sufficient not to count them
+* Removed braindead update code for page stats which hosed our previous releases
+* Removed braindead repetition of title variables in show_config.php
+* Removed counting of new and new unique visits in both show_global.php and
+  log_processor.php because it doesn't yield any useful information anyway
+* Removed $BBC_AUTO_UPDATE in constants.php because we will immediately update
+  our stats
+* Moved navbar stuff in global space into the appropriate function in html.php
+* Moved time manipulation stuff from log_processor.php into a separate file
+* Moved extension handling from log_processor.php into a separate file
+* Moved marker class from mark_page.php into a separate file
+* Replaced ereg_* with preg* to improve performance
+* Replaced 96 icons to make IE users happy again (broken *png support)
+* HTML output adjustments to make things look nicer
+* Make "Last Page" no longer appear as hardcoded string
+* Bulgarian and Italian translation updates (Martin Halachev, Daniele Raffo)
+* Documentation updates
+* Update of Dutch install.txt
+* Changed default settings in config.php
+* Use one timestamp defined in constants.php for the stat
+* A couple of robots and browsers additions

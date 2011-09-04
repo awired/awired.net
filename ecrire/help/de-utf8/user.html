@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - This file is part of DotClear.
+   - Copyright (c) 2004 Olivier Meunier and contributors. All rights
+   - reserved.
+   -
+   - DotClear is free software; you can redistribute it and/or modify
+   - it under the terms of the GNU General Public License as published by
+   - the Free Software Foundation; either version 2 of the License, or
+   - (at your option) any later version.
+   - 
+   - DotClear is distributed in the hope that it will be useful,
+   - but WITHOUT ANY WARRANTY; without even the implied warranty of
+   - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   - GNU General Public License for more details.
+   - 
+   - You should have received a copy of the GNU General Public License
+   - along with DotClear; if not, write to the Free Software
+   - Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+   -
+   - ***** END LICENSE BLOCK ***** -->
+<html>
+<head>
+  <title>Einstellungen und Benutzermanagement</title>
+</head>
+<body>
+<h1>Einstellungen und Benutzermanagement<br>
+</h1>
+<p>Um die Systemeinstellungen zu &auml;ndern muss das Register
+"Einstellungen" angew&auml;lt werden. Sollen Benutzer (<em>Redakture</em>)
+erstellt oder ge&auml;ndert werden, so ist das Register "Redakteure"
+anzuw&auml;hlen. F&uuml;r letzteres m&uuml;ssen mindenstens
+Administratorrechte vorhanden sein.</p>
+<h2>Felder</h2>
+<dl>
+  <dt id="user_prenom">Vorname</dt>
+  <dd>Der Vorname des Redakteurs (optional)<br>
+  </dd>
+  <dt id="user_nom">Name</dt>
+  <dd>Der Nachname des Redakteurs (optional)<br>
+  </dd>
+  <dt id="user_pseudo">Pseudonym</dt>
+  <dd>Das Pseudonym des Redakteurs (optional)<br>
+  </dd>
+</dl>
+<p>Beachte: <em>Falls der Benutzer kein Pseudonym verwendet, wird der
+Vorname und Name im Weblog verwendet. Wird ein Pseudonym
+angegeben, so erscheint dieses im Weblog.</em></p>
+<dl>
+  <dt id="user_email">Email</dt>
+  <dd>Die Emailadresse des Redakteurs. Will der Redakteur &uuml;ber
+Kommentare auf seine Eintr&auml;ge benachrichtigt werden, so muss eine
+g&uuml;ltige Emailadresse erfasst sein.</dd>
+  <dt id="user_pwd">Passwort</dt>
+  <dd>Das Passwort, um im Backend einzuloggen. Das Passwort sollte
+kryptisch gehalten werden, damit es sicher ist. Soll das Passwort nicht
+ge&auml;ndert werden, so muss dieses Feld leergelassen werden.<br>
+  </dd>
+  <dt id="user_lang">Sprache</dt>
+  <dd>Falls DotClear auf diese Sprache &uuml;bersetzt worden ist, so
+wird die Administrationsoberfl&auml;che in der gew&auml;hlten Sprache
+angezeigt. Daneben werden alle neuen Eintr&auml;ge mit diesem
+Sprachcode versehen.</dd>
+  <dt id="user_post_format">Bevorzugtes Format<br>
+  </dt>
+  <dd>Definiert, welches Standardformat f&uuml;r die Erfassung der
+Eintr&auml;ge benutzt werden soll. Dies kann pro Eintrag
+&uuml;berschrieben werden.<br>
+  </dd>
+  <dt id="user_post_pub">Bevorzugte Ver&ouml;ffentlichung<br>
+  </dt>
+  <dd>Diese Option erlaubt das Setzen eines Standardstatus f&uuml;r
+neue Eintr&auml;ge.<br>
+  </dd>
+  <dt id="user_pref_cat">Bevorzugte Kategorie<br>
+  </dt>
+  <dd>Die f&uuml;r neue Eintr&auml;ge bevorzugte Kategorie.<br>
+  </dd>
+  <dt id="user_edit_size">H&ouml;he des Textfelds f&uuml;r Beitr&auml;ge<br>
+  </dt>
+  <dd>H&ouml;he des Textfelds f&uuml;r Beitr&auml;ge.</dd>
+  <dt id="user_delta">Differenz in Stunden zwischen Lokalzeit
+des Nutzers und Serverzeit</dt>
+  <dd>Diese Option erlaubt das Festlegen der Differenz zwischen der
+Lokalzeit und der Zeit auf dem Server.</dd>
+</dl>
+<h2>Administration</h2>
+<p>Diese Felder sind nur sichtbar, falls der Benutzer
+Administratorenrechte besitzt.<br>
+</p>
+<dl>
+  <dt id="user_id">Login-Name</dt>
+  <dd>Der Benutzername. Er darf nur aus Buchstaben und Ziffern
+bestehen. Das Feld ist obligatorisch.<br>
+  </dd>
+  <dt id="user_level">Redaktionsrechte</dt>
+  <dd>Das Redaktionsrecht definiert die Privilegien f&uuml;r den
+entsprechenden Benutzer. Es gibt drei Typen von Rechten:
+    <ul>
+      <li><strong>Administrator</strong>: Enth&auml;lt alle Privilegien.</li>
+      <li><strong>Redakteur mit besonderen Rechten</strong>: Das Recht
+erlaubt einem, seine eigenen Eintr&auml;ge zu administrieren,
+Eintr&auml;ge anderer Redakteure zu lesen und Kategorien zu erfassen.<br>
+      </li>
+      <li><strong>Redakteur</strong>: Das Recht erlaubt einem, seine
+eigenen Eintr&auml;ge zu administrieren, jedoch keine anderen
+Beitr&auml;ge zu lesen.<br>
+      </li>
+    </ul>
+  </dd>
+</dl>
+</body>
+</html>

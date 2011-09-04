@@ -1,0 +1,130 @@
+;No such user ID or invalid user ID
+Pas d'identifiant ou identifiant invalide
+
+;Invalid user level
+Niveau d'utilisateur invalide
+
+;User password missing
+Pas de mot de passe
+
+;User name missing
+Pas de nom d'utilisateur
+
+;Invalid email address
+Adresse email invalide
+
+;Invalid publication format
+Format de publication invalide
+
+;Invalid edit size
+Taille d'édition invalide
+
+;Category does not exist
+Catégorie inexistante
+
+;This user has entries
+L'utilisateur a des billets
+
+;Empty category title
+Le libellé de la catégorie est vide
+
+;No category ID
+Pas d'identifiant de catégorie
+
+;This category is not empty
+La catégorie n'est pas vide
+
+;Empty or invalid URLed title
+Le titre URL de la catégorie est vide ou invalide
+
+;Empty entry title
+Titre du billet vide
+
+;Empty entry content
+Contenu du billet vide
+
+;No entry ID
+Pas d'identifiant de billet
+
+;Empty comment author
+Auteur du commentaire vide
+
+;Empty comment content
+Contenu du commentaire vide
+
+;Entry does not exists
+Billet inexistant
+
+;Source is not a ping URL
+La source n'est pas une URL de ping
+
+;Trackback error
+Erreur de trackback
+
+
+;No entry.
+Aucun billet.
+
+;Comment for entry %s
+Commentaire pour le billet %s
+
+;By: %s
+Par : %s
+
+;Website: %s
+Site Web : %s
+
+;Search of %s doesn't give any result.
+La recherche de %s ne donne aucun résultat.
+
+;Your comment has been sent successfully. It will be online soon.
+Votre commentaire a été envoyé. Il sera en ligne bientôt.
+
+
+;Strong emphasis
+Forte emphase
+
+;Emphasis
+Emphase
+
+;Inserted
+Inséré
+
+;Deleted
+Supprimé
+
+;Inline quote
+Citation en ligne
+
+;Code
+Code
+
+;Line break
+Saut de ligne
+
+;Blockquote
+Bloc de citation
+
+;Preformated text
+Texte préformaté
+
+;Unordered list
+Liste non ordonnée
+
+;Ordered list
+Liste ordonnée
+
+;URL?
+URL ?
+
+;Language?
+Langue ?
+
+;Link
+Lien
+
+;External image
+Image externe
+
+;Internal image
+Image interne

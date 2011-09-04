@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - This file is part of Gsitemap, a plugin for DotClear.
+   - Copyright (c) 2005 Pep and contributors. All rights
+   - reserved.
+   -
+   - DotClear.
+   - Copyright (c) 2004-2005 Olivier Meunier and contributors. All rights
+   - reserved.
+   -
+   - DotClear is free software; you can redistribute it and/or modify
+   - it under the terms of the GNU General Public License as published by
+   - the Free Software Foundation; either version 2 of the License, or
+   - (at your option) any later version.
+   -
+   - DotClear is distributed in the hope that it will be useful,
+   - but WITHOUT ANY WARRANTY; without even the implied warranty of
+   - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   - GNU General Public License for more details.
+   -
+   - You should have received a copy of the GNU General Public License
+   - along with DotClear; if not, write to the Free Software
+   - Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+   -
+   - ***** END LICENSE BLOCK ***** -->
+<html>
+  <head>
+    <title>Gsitemap</title>
+  </head>
+
+  <body>
+    <h1>Gsitemap</h1>
+
+    <h2>Présentation</h2>
+    <p>Le plugin Gsitemap permet de créer un fichier XML Google Sitemaps afin de guider les robots d'indexation de Google sur votre site.</p>
+    <p>Ce plugin ne nécessite aucune modification du code principal de DotClear
+    et peut être activé ou désactivé à volonté depuis son interface d'administration.</p>
+    <p>Les différentes options du plugin sont présentées ci-dessous.</p>
+
+    <h2 id="configuration">Configuration</h2>
+    <h3 id="activation">Activation du plugin</h3>
+	<p>Vous pouvez librement choisir d'activer ou non la création du sitemap. Il suffit d'une case à cocher, la prise en compte est imméediate.</p>
+	<p>Lors de la désactivation, les autres paramètres de configuration restent en l'état et seront de nouveau appliqués à la ré-activation.</p>
+
+	<h2 id="advanced">Configuration avancée</h2>
+    <h3 id="elements">Elément(s) à intégrer</h3>
+    <p>Vous pouvez choisir de faire figurer dans le fichiers sitemaps différents contenus issus de DotClear.</p>
+    <p>Ces éléments sont les suivants :</p>
+
+    <dl>
+      <dt id="home">Page d'accueil</dt>
+      <dd>Indique si vous souhaitez faire figurer l'URI de la page d'accueil de votre blog.</dd>
+      <dt id="feeds">Fils principaux</dt>
+      <dd>Indique si vous souhaitez faire figurer les URIs des fils de syndication principaux (fils RSS 1.0 et Atom 0.3 des billets).</dd>
+      <dt id="posts">Billets</dt>
+      <dd>Indique si vous souhaitez faire figurer les URIs de l'ensemble des billets du blog.</dd>
+      <dt id="cats">Catégories</dt>
+      <dd>Indique si vous souhaitez faire figurer les URIs des pages d'accueil des catégories.</dd>
+      <dt id="related">Pages connexes</dt>
+      <dd>Indique si vous souhaitez faire figurer les URIs des différentes pages connexes. Vous devez disposer du plugin <em>Pages connexes (Related)</em> pour cela.</dd>
+    </dl>
+
+	<h3 id="params">Réglages d'indexation</h3>
+    <dl>
+      <dt id="priority">Priorité</dt>
+      <dd>Coefficient de pondération.<br/>Il indique l'importance du contenu d'une page par rapport aux autres. Cette information n'est utilisée par Google que pour définir une priorité au moment de l'indexation.<br />
+      Vous pouvez préciser une valeur numérique comprise entre 0.0 et 1.0.</dd>
+      <dt id="periodicity">Fréquence</dt>
+      <dd>Indique la fréquence à laquelle une page est susceptible de changer. Google prend en compte cette information pour plannifier l'indexation des pages, mais cela ne signifie pas qu'il "collera" à la fréquence.<br />
+      Les valeurs possibles sont :
+    <dl>
+    	<dt>Non définie</dt>
+    	<dd>Aucune fréquence n'est précisée.</dd>
+    	<dt>Systématique</dt>
+    	<dd>Signale que le contenu est susceptible de changer à chaque consultation.</dd>
+    	<dt>Horaire</dt>
+    	<dd>Le contenu peut changer d'heure en heure.</dd>
+    	<dt>Journalière</dt>
+    	<dd>Le contenu peut changer d'un jour à l'autre.</dd>
+    	<dt>Hebdomadaire</dt>
+    	<dd>Le contenu ne change que d'une semaine à l'autre.</dd>
+    	<dt>Mensuelle</dt>
+    	<dd>Le contenu ne change que d'un mois à l'autre.</dd>
+    	<dt>Jamais</dt>
+    	<dd>Le contenu est considéré comme simple archive, donc non sujet à modification.</dd>
+    </dl>
+</dd>
+    </dl>
+    <h2 id="ping">Bouton "Pinguer Google"</h2>
+	<p>En cas de modification importante dans la configuration de votre fichier sitemap, ce bouton vous permet de déclencher une requête HTTP pour re-soumettre automatiquement votre sitemap auprès de Google.</p>
+
+    <h2 id="moreinfos">Informations complémentaires.</h2>
+	<p>Pour plus d'informations concernant le service Google Sitemaps, veuillez consulter les ressources suivantes :</p>
+	<ul>
+		<li><a href="http://www.google.com/webmasters/sitemaps/docs/en/faq.html" hreflang="en">La FAQ Google Sitemaps</a></li>
+		<li><a href="http://www.google.com/webmasters/sitemaps/docs/en/protocol.html" hreflang="en">La description du protocole Google Sitemaps</a></li>
+	</ul>
+  </body>
+</html>

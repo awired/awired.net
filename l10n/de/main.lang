@@ -1,0 +1,602 @@
+;Login
+Login-Name
+
+;Password
+Passwort
+
+;Remember me
+Daten merken
+
+;You must accept cookies in order to use the private area.
+Sie müssen Cookies akzeptieren, um die Verwaltung nutzen zu können.
+
+;Login failed. Please try again.
+Identifizierung fehlgeschlagen. Bitte noch einmal versuchen.
+
+;ok
+ok
+
+;yes
+ja
+
+;no
+nein
+
+;help
+Hilfe
+
+;Error(s)
+Fehler
+
+;Entries
+Einträge
+
+;Entry
+Eintrag
+
+;Comment
+Kommentar
+
+;Comments
+Kommentare
+
+;Categories
+Kategorien
+
+;Editor
+Redakteur
+
+;Editors
+Redakteure
+
+;Preferences
+Einstellungen
+
+;Tools
+Tools
+
+;logout
+abmelden
+
+;Close this window
+Fenster schließen
+
+;New entry
+Neuer Eintrag
+
+;Manage images
+Bilder verwalten
+
+;View blog
+Blog ansehen
+
+;List of entries
+Liste der Einträge
+
+;%1$d entries match your search of %2$s.
+%1$d Einträge entsprechen Ihrer Suche nach %2$s.
+
+;%1$d entrie matches your search of %2$s.
+%1$d Eintrag entspricht Ihrer Suche nach %2$s.
+
+;Last %d entries.
+Letzte %d Einträge.
+
+;Offline entries.
+Offline-Einträge.
+
+;Selected entries.
+Gewählte Einträge.
+
+;Month
+Monat
+
+;Category
+Kategorie
+
+;No entry
+Kein Eintrag
+
+;show all
+alle anzeigen
+
+;hide all
+alle verbergen
+
+;show/hide
+anzeigen/verbergen
+
+;edit
+bearbeiten
+
+;read
+lesen
+
+;This entry is online
+Dieser Eintrag ist online
+
+;This entry is offline
+Dieser Eintrag ist offline
+
+;This entry is selected
+Dieser Eintrag ist ausgewählt
+
+;Online
+Online
+
+;Offline
+Offline
+
+;%d comment
+%d Kommentar
+
+;%d comments
+%d Kommentare
+
+;%d trackback
+%d trackback
+
+;%d trackbacks
+%d trackbacks
+
+;set online
+online setzen
+
+;set offline
+offline setzen
+
+;by %s - in %s
+von %s - in %s
+
+;Search
+Suchen
+
+;View all offline entries
+Alle Offline-Einträge ansehen
+
+;View all selected entries
+Alle Spezial-Einträge ansehen
+
+;Bookmarklet
+Bookmarklet
+
+;You can drag the following link to your links bar or add it to your bookmarks and when you "Blog this!" it will open up a popup window with information and a link to the site you're currently browsing so you can make a quick post about it.
+Ziehen Sie diesen Link in Ihre Linkleiste oder fügen ihn Ihren Favoriten hinzu. Wenn Sie dann "Blog this!" anklicken, öffnet sich ein neues Browserfenster mit Informationen und einem Verweis zu der von Ihnen gerade besuchten Seite. So können Sie schnell einen neuen Eintrag zu dieser Seite für Ihr Blog herstellen.
+
+;Back
+Zurück
+
+;Back to entry
+Zurück zum Eintrag
+
+;Back to list of entries
+Zurück zur Liste der Einträge
+
+;XHTML validation
+Prüfung auf gültiges XHTML
+
+;Trackback
+Trackback
+
+;Trackbacks
+Trackbacks
+
+;View entry
+Eintrag ansehen
+
+;You have unsaved changes.
+Nicht alle Änderungen wurden gespeichert.
+
+;Format
+Format
+
+;Status
+Status
+
+;Closed
+Geschlossen
+
+;Open
+Offen
+
+;Selection
+Spezialeintrag
+
+;Add an image
+Bild einfügen
+
+;Wiki formatting rules
+Wiki Formatregeln
+
+;You can use the following shortcuts to refine your layout.
+Diese Buttons können Sie für das Layout Ihres Eintrags verwenden.
+
+;You are not allowed to edit a comment
+Sie sind nicht berechtigt, Kommentare zu verändern
+
+;Entry successfully removed
+Eintrag erfolgreich entfernt
+
+;Permanent link
+Permanenter Link
+
+;Title
+Titel
+
+;URLed title
+URL Titel
+
+;Use
+übernehmen
+
+;Abstract
+Zusammenfassung / Einleitung
+
+;optional
+optional
+
+;More options
+Mehr Optionen
+
+;Notepad
+Notizen (keine Veröffentlichung)
+
+;Date
+Datum
+
+;Hour
+Stunde
+
+;now
+jetzt
+
+;preview
+Vorschau
+
+;save
+speichern
+
+;convert into XHTML
+in XHTML umwandeln
+
+;delete
+löschen
+
+;Are you sure you want to delete this entry?
+Sind Sie sicher, dass Sie diesen Eintrag löschen möchten ?
+
+;Trackbacks list
+Liste der trackbacks
+
+;No trackback
+Kein trackback
+
+;Comments list
+Liste der Kommentare
+
+;No comment
+Kein Kommentar
+
+;Are you sure you want to delete this comment?
+Sind Sie sicher, dass Sie diesen Kommentar löschen möchten ?
+
+;From
+Von
+
+;On %A %e %B %Y, %I:%M %p
+Am %A %e %B %Y um %H:%M
+
+;Email
+Email
+
+;Site
+Website
+
+;Post a comment
+Kommentar schreiben
+
+;Name
+Name
+
+;Notice
+Bitte beachten
+
+;This comment has to be in HTML format
+Kommentar muss im HTML-Format sein
+
+;Comments listed from most recent to oldest
+Liste der Kommentare, geordnet von neu nach alt
+
+;This comment is online
+Kommentar ist online
+
+;This comment is offline
+Kommentar ist offline
+
+;Page(s)
+Seite(n)
+
+;No comment yet
+Zur Zeit keine Kommentare
+
+;Edit a comment
+Kommentar ändern
+
+;next page
+nächste Seite
+
+;prev. page
+vorherige Seite
+
+;Categories list
+Liste der Kategorien
+
+;New category
+Neue Kategorie
+
+;No category yet
+Zur Zeit keine Kategorie
+
+;Move %s up
+%s nach oben verschieben
+
+;Move %s down
+%s nach unten verschieben
+
+;%d entry
+%d Eintrag
+
+;%d entries
+%d Einträge
+
+;Drag items to change their positions.
+Verschieben Sie die Punkte mit der Maus, um ihre Reihenfolge zu ändern.
+
+;Are you sure you want to delete this category?
+Sind Sie sicher, dass Sie diese Kategorie löschen möchten ?
+
+;Position
+Reihenfolge
+
+;save order
+Reihenfolge speichern
+
+;Reorder categories
+Kategorien sortieren
+
+;Description
+Beschreibung
+
+;Category has been created
+Kategorie ist erstellt
+
+;Category has been updated
+Kategorie ist geändert
+
+;Category has been deleted
+Kategorie ist gelöscht
+
+;Cannot delete category
+Kategorie kann nicht gelöscht werden
+
+;List of editors
+Liste der Redakteure
+
+;New editor
+Neuer Redakteur
+
+;administrator
+Administrator
+
+;advanced editor
+Redakteur mit besonderen Rechten
+
+;editor
+Redakteur
+
+;inactive
+inaktiv
+
+;Are you sure you want to delete this editor?
+Sind Sie sicher, dass Sie diesen Redakteur löschen möchten ?
+
+;Editor creation
+Neuen Redakteur anmelden
+
+;Update of editor %s
+Redakteur %s ändern
+
+;Note: Login must be letters or numbers.
+Bitte beachten: Login-Name darf nur aus Ziffern oder Buchstaben bestehen.
+
+;Firstname
+Vorname
+
+;Leave empty to keep password intact
+Leer lassen, wenn das Passwort nicht verändert werden soll
+
+;Level
+Redaktionsrechte
+
+;You are about to update you own profile. You will be disconnected after changes.
+Sie bearbeiten gerade Ihr eigenes Profil und werden nach den Änderungen abgemeldet.
+
+;Editor created
+Redakteur ist erstellt
+
+;Editor updated
+Redakteur ist geändert
+
+;Editor deleted
+Redakteur ist gelöscht
+
+;User preferences
+Nutzereinstellungen
+
+;Nickname
+Pseudonym
+
+;Prefered edit format
+Bevorzugtes Format
+
+;Default publication status
+Bevorzugte Veröffentlichung
+
+;Prefered category
+Bevorzugte Kategorie
+
+;Language
+Sprache
+
+;Entry edit field height
+Höhe des Textfelds für Beiträge
+
+;Number of hours between user's local time and the server time
+Differenz in Stunden zwischen Lokalzeit des Nutzers und Serverzeit
+
+;Server time is %s
+Serverzeit: %s
+
+;Entry validation
+Prüfung des Eintrags
+
+;Comment validation
+Prüfung der Kommentar
+
+;Cannot connect to server.
+Keine Verbindung zum Server möglich.
+
+;Valid entry
+Eintrag gültig
+
+;Valid comment
+Kommentar gültig
+
+;Invalid entry
+Eintrag ungültig
+
+;Invalid comment
+Kommentar ungültig
+
+;Errors list
+Liste der Fehler
+
+;Validation done with %s
+Prüfung durchgeführt mit %s
+
+;Directory %s is not writable. Check permissions.
+Das Verzeichnis %s kann nicht beschrieben werden. Bitte Rechte prüfen.
+
+;Directory %s does not exist.
+Das Verzeichnis %s existiert nicht.
+
+;Upload an image
+Bild übertragen
+
+;Choose a file (max size %s)
+Datei auswählen (max. Größe: %s)
+
+;send
+senden
+
+;New directory
+Neues Verzeichnis
+
+;Your images
+Ihre Bilder
+
+;Image does not exist
+Bild exisiert nicht
+
+;Unable to delete image
+Bild kann nicht gelöscht werden
+
+;Image deleted
+Bild ist gelöscht
+
+;Image uploaded
+Bild ist übertragen (Upload)
+
+;File size exceeds the authorized limit
+Dateigröße ist über erlaubtem Limit
+
+;File was only partially uploaded
+Bild wurde nur teilweise übertragen
+
+;No file
+Keine Datei
+
+;The file %s is not an image
+Die Datei ist kein Bild
+
+;An error occured while uploading the image
+Fehler beim Übertragen der Datei (Upload)
+
+;Wrong image type
+Falscher Bildtyp
+
+;Image is too large
+Die Bildabmessungen sind zu groß
+
+;No file yet
+Noch keine Datei
+
+;No thumbnail
+Kein Miniaturbild
+
+;Try to create thumbnail
+Es wird versucht, ein Miniaturbild zu erzeugen
+
+;Are you sure you want to delete this %s?
+Sind Sie sicher, dass Sie %s löschen möchten ?
+
+;directory
+Verzeichnis
+
+;file
+Datei
+
+;link
+Link
+
+;Pings
+Pings
+
+;Auto discovery of ping URLs
+Automatische Erkennung von Ping URLs
+
+;Insert here URLs to ping
+Hier URLs zum Pingen einfügen
+
+;Summary to send
+Zu sendende Zusammenfassung
+
+;Ping URLs
+URLs anpingen
+
+;Previous pings sent
+Bisherige Pings
+
+;No ping yet
+Zur Zeit noch kein Ping
+
+;Result
+Ergebnis
+
+;Back to tools
+Zurück zu den Tools
+
+;Cannot open file
+Datei kann nicht geöffnet werden
+
+;Plugin not valid
+Plugin nicht gültig
+
+;This plugin still exists. Delete it before.
+Das Plugin gibt es schon. Bitte löschen Sie es zuerst.
+
+;An error occured while downloading the file.
+Fehler beim Übertragen der Datei (Download)
+
+;An error occured while writing the file.
+Fehler beim Erzeugen der Datei.

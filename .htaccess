@@ -1,0 +1,8 @@
+RewriteEngine on
+Options -MultiViews
+
+#simple .php -> .html
+RewriteRule  ^Blog/(.*)$ /index.php/$1
+
+RewriteCond %{HTTP_HOST} www.awired.net
+RewriteRule (.*) http://awired.net/$1 [L,R=301]

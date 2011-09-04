@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - This file is part of DotClear.
+   - Copyright (c) 2004 Olivier Meunier and contributors. All rights
+   - reserved.
+   -
+   - DotClear is free software; you can redistribute it and/or modify
+   - it under the terms of the GNU General Public License as published by
+   - the Free Software Foundation; either version 2 of the License, or
+   - (at your option) any later version.
+   - 
+   - DotClear is distributed in the hope that it will be useful,
+   - but WITHOUT ANY WARRANTY; without even the implied warranty of
+   - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   - GNU General Public License for more details.
+   - 
+   - You should have received a copy of the GNU General Public License
+   - along with DotClear; if not, write to the Free Software
+   - Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+   -
+   - ***** END LICENSE BLOCK ***** -->
+<html>
+<head>
+  <title>Wiki Syntax</title>
+</head>
+<body>
+<h1>Wiki Syntax</h1>
+<p>Wiki Formatzeichen k&ouml;nnen mit Hilfe eines Backslash "\"
+als Text im Eintrag verwendet werden..</p>
+<h2>Absatz</h2>
+<ul>
+  <li>Eine Leerzeile zwischen den Abs&auml;tzen lassen. ;</li>
+  <li><strong>Paragraph</strong> : Text und eine Leerzeile ;</li>
+  <li><strong>Titel</strong> : <code>!!!</code>, <code>!!</code>, <code>!</code>
+je nach Ausf&uuml;hrungsart (Wichtigkeit) ;</li>
+  <li><strong>Horizontale Linie</strong>: <code>----</code>&nbsp;;</li>
+  <li><strong>Liste</strong> : Zeile mit einem <code>*</code> der <code>#</code>
+beginnen.
+Es ist m&ouml;glich, die Listenelemente zu kombinieren. ;</li>
+  <li><strong>Formatierter Text</strong>: Leerschlag vor jeder
+Textzeile ;</li>
+  <li><strong>Blockquote/Absatz f&uuml;r Zitate</strong> : <code>&gt;</code>
+oder <code>;:</code> vor jeder Zeile mit Text. ;<br>
+  </li>
+</ul>
+<h2>Zeichen/Formatierungen</h2>
+<ul>
+  <li>Die Satzzeichenkorrektur ist aktiviert. Alle Zeichen, welche
+keinen "zeilenumbrechenden" Charakter haben, werden durch Leerschlage
+ersetzt, sofern die Sprache = fr (Franz&ouml;sisch) ist. Jedoch nur,
+falls diese Zeichen vorausgegangen sind:&nbsp; ";","?",":"
+und
+"!".&nbsp;;</li>
+  <li><strong>Kursiv</strong>: zwei einfache Anf&uuml;hrungszeichen <code>''Text''</code>&nbsp;;</li>
+  <li><strong>Fett und Kursiv</strong>: zwei Underscores&nbsp; <code>__Text__</code>&nbsp;;</li>
+  <li><strong>Neue Zeile</strong>: <code>%%%</code>&nbsp;;</li>
+  <li><strong>Einf&uuml;gen</strong>: zwei Plus <code>++Text++ </code>;</li>
+  <li><strong>Unterdr&uuml;ckung</strong>: zwei Minus <code>--Text--</code>
+;</li>
+  <li><strong>Link</strong>: <code>[URL]</code>, <code>[Name|URL]</code>,
+    <code>[Name|URL|Sprache]</code> oder <code>[Name|URL|Sprache|Titel]</code>.
+    <br>
+    <em>Wenn man einen Link hinzuf&uuml;gen m&ouml;chte, welcher auf
+einen Anker auf der gleichen Seite verweist, so muss dei URL mit dem
+#Ankername ersetzt werden. </em>;</li>
+  <li><strong>Bild</strong>: <code>((URL|ALT Text))</code>, <code>((URL|ALT
+Text|Position))</code> oder <code>((URL|ALT
+Text|Position|Beschreibung))</code>. <br>
+Der Parameter Position kann folgende Werte annehmen: L oder G
+(Links), R oder D (Rechts) oder C
+(Zentriert). ;</li>
+  <li><strong>Anker</strong>: <code>~Anker~</code> ;</li>
+  <li><strong>Akronym</strong>: <code>??Akronym??</code> oder <code>??Akronym|Titel??</code>&nbsp;;</li>
+  <li><strong>Zitate</strong>: <code>{{Zitat}}</code>, <code>{{Zitat|Sprache}}</code>
+oder <code>{{Zitat|Sprache|URL}}</code>&nbsp;;</li>
+  <li><strong>Code</strong>: <code>@@Code@@</code>&nbsp;;</li>
+  <li><strong>Fussnote</strong>: <code>$$Fussnote$$</code>.</li>
+</ul>
+</body>
+</html>

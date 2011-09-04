@@ -1,0 +1,329 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * This file is part of DotClear.
+ * Copyright (c) 2004 Olivier Meunier and contributors. All rights
+ * reserved.
+ *
+ * DotClear is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ * 
+ * DotClear is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with DotClear; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+body {
+	margin : 0;
+	padding : 0;
+	font-family : Verdana,Arial,Geneva,Helvetica,sans-serif;
+	font-size : 0.8em;
+}
+
+p { margin : 1em 0; }
+img { border : none; }
+form { display : block; margin : 0; padding : 0; }
+
+h1 { font-size : 2em; margin : 0.67em 0; }
+h2 { font-size : 1.5em; margin : 0.83em 0; }
+h3 { font-size : 1.17em; margin : 1em 0; }
+h4 { font-size : 1em; margin : 1.33em 0; }
+h5 { font-size : 0.83em; margin : 1.67em 0; }
+h6 { font-size : 0.67em; margin : 2.33em 0; }
+
+code,pre { font-family : "Courier New",monospace; font-size : 1em; }
+
+q { font-style : italic; }
+
+a {
+	color : #036;
+}
+
+a:hover {
+	text-decoration : none;
+}
+
+a[hreflang]:after {
+	content: "\0000a0(" attr(hreflang) ")";
+	color : #666;
+	background : transparent;
+}
+
+h2, h3 {
+	font-family : Georgia,"Times New Roman",serif;
+}
+
+/* Prelude
+-------------------------------------------------------- */
+#prelude {
+	position : absolute;
+	top : 0;
+	margin : 0;
+	padding : 0;
+	font-size : 0.85em;
+}
+
+/* Titre
+-------------------------------------------------------- */
+#top {
+	background : #eee;
+	border-bottom : 1px solid #999;
+	font-family : Georgia,"Times New Roman",serif;
+	text-align : center;
+}
+#top h1 {
+	margin : 0;
+	padding : 1em 0 0.6em 0;
+}
+#top a {
+	color : #000;
+	background : transparent;
+	text-decoration : none;
+}
+
+/* Page
+-------------------------------------------------------- */
+#page {
+	
+}
+
+/* Main
+-------------------------------------------------------- */
+#main {
+	width : 76%;
+	float : right;
+	border-left : 1px solid #999;
+	/*border-bottom : 1px solid #999;*/
+}
+
+#main h3 {
+	color : #333;
+	margin-top : 2em;
+}
+
+.day-date {
+	font-size : 1em;
+	font-weight : bold;
+	margin-top : 2em;
+	text-align : right;
+	border-bottom : 1px solid #ccc;
+	color : #666;
+	background : transparent;
+}
+
+#main p {
+	line-height : 1.6em;
+}
+
+.post-title {
+	margin : 1.5em 0 0 0;
+	color : #036;
+}
+.post-title a {
+	text-decoration : none;
+}
+
+.chapo {
+	margin-bottom : 2em;
+}
+.chapo p:first-letter {
+	/*font-weight : bold;
+	font-size : 2.5em;
+	font-family : serif;
+	float : left;
+	margin-right : 0.2em;*/
+}
+
+.post-info, .post-info-co {
+	font-size : 0.85em;
+	/*text-align : right;*/
+}
+.post-info {
+	margin : 0;
+}
+.post-info-co {
+	clear : both;
+	margin-top : 0;
+}
+
+
+/* Content
+-------------------------------------------------------- */
+#content {
+	margin : 0 1em 0 0;
+	padding : 1em;
+}
+
+/* Liste commentaires + formulaire
+-------------------------------------------------------- */
+#comments, #trackbacks {
+	margin : 0 2em;
+}
+
+#comments blockquote, #trackbacks blockquote {
+	display : block;
+	margin : 0;
+	padding : 1px 1em;
+	font-style : normal;
+	border : 1px solid #999;
+	color : #666;
+	background : transparent;
+}
+
+.comment-info {
+	margin-bottom : 0;
+	font-size : 0.85em;
+}
+
+.erreur {
+	border : 1px solid;
+	padding : 0.5em;
+}
+
+/* Menu
+-------------------------------------------------------- */
+#sidebar {
+	margin : 0 76% 0 0;
+	padding : 2em 0;
+	border-right : 1px solid #999;
+}
+
+#sidebar h2 {
+	font-weight : normal;
+	color : #993;
+}
+
+#sidebar ul {
+	padding-left : 1.5em;
+	margin-left : 0;
+}
+
+#sidebar li {
+	list-style : square;
+	margin-top : 0.15em;
+	color : #999;
+	background : transparent;
+}
+
+#sidebar li:hover {
+	color : #333;
+	background : transparent;
+}
+
+#sidebar div {
+	padding : 0 1em 0 1em;
+}
+
+/* Footer
+-------------------------------------------------------- */
+#footer {
+	clear : right;
+	border-top : 1px solid #999;
+	margin : 0 0 2em 0;
+	padding : 1em 1em 1em 1em;
+	background : #fff;
+	text-align : right;
+	font-size : 0.8em;
+}
+
+
+/* Calendrier
+-------------------------------------------------------- */
+#calendar {
+}
+
+#calendar table {
+	border-collapse : collapse;
+	font-size : 0.8em;
+	margin : 0 auto;
+}
+
+#calendar caption {
+	margin : 0 auto;
+	padding : 0 0 0.3em 0;
+	font-size : 1.2em;
+}
+
+#calendar abbr {
+	border : none;
+}
+
+#calendar th, .cal td {
+	border : none;
+	padding : 1px;
+}
+#calendar td {
+	text-align : center;
+}
+
+#calendar td.active a {
+	font-weight : bold;
+}
+
+#calendar a {
+}
+
+/* Error messages
+-------------------------------------------------------- */
+.error {
+	border : 1px solid #c00;
+	background : #fee;
+	padding : 0.5em;
+}
+.error ul {
+	padding-left : 20px;
+}
+.error li {
+	list-style : square;
+}
+
+
+/* Formulaires
+-------------------------------------------------------- */
+fieldset {
+	display : block;
+	border : none;
+	margin : 0;
+	padding : 0;
+}
+
+input, textarea {
+	font-family : Verdana,Arial,Geneva,Helvetica,sans-serif;
+	font-size : 1em;
+	border-width : 1px;
+	border-color : #ccc;
+}
+
+input[type], textarea[name] {
+	background : #eee;
+}
+
+input[type=submit], input[type=reset] {
+	background : #ccc;
+	color : #000;
+}
+
+input[type=submit]:hover {
+	background : #036;
+	color : #fff;
+}
+
+textarea {
+	width : 100%;
+}
+
+p.field {
+	margin : 0.5em 0 0 0;
+}
+
+p.field label {
+	display : block;
+	font-weight : bold;
+	font-size : 0.85em;
+}

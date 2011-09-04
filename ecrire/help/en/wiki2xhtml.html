@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - This file is part of DotClear.
+   - Copyright (c) 2004 Olivier Meunier and contributors. All rights
+   - reserved.
+   -
+   - DotClear is free software; you can redistribute it and/or modify
+   - it under the terms of the GNU General Public License as published by
+   - the Free Software Foundation; either version 2 of the License, or
+   - (at your option) any later version.
+   - 
+   - DotClear is distributed in the hope that it will be useful,
+   - but WITHOUT ANY WARRANTY; without even the implied warranty of
+   - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   - GNU General Public License for more details.
+   - 
+   - You should have received a copy of the GNU General Public License
+   - along with DotClear; if not, write to the Free Software
+   - Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+   -
+   - ***** END LICENSE BLOCK ***** -->
+<html>
+<head>
+  <title>Wiki Syntax</title>
+</head>
+
+<body>
+
+<h1>Wiki Syntax</h1>
+
+<p>Wiki formatting marks can be inserted in text by
+protecting them with "<code>\</code>".</p>
+
+<h2>Blocks</h2>
+<ul>
+  <li>Leave an empty line between each block <em>of same disposition</em>&nbsp;;</li>
+  <li><strong>Paragraph</strong> : text and an empty line&nbsp;;</li>
+  <li><strong>Title</strong> : <code>!!!</code>, <code>!!</code>, <code>!</code>
+  for titles more or less important&nbsp;;</li>
+  <li><strong>Horizontal rule</strong> : <code>----</code>&nbsp;;</li>
+  <li><strong>List</strong> : line beginning by <code>*</code> or
+  <code>#</code>. It is possible to mix lists (<code>*#*</code>) in order to
+  make nested lists. The style of each level must be respected&nbsp;;</li>
+  <li><strong>Preformated text</strong> : space before each line of
+  text&nbsp;;</li>
+  <li><strong>Blockquote</strong> : <code>&gt;</code> or <code>;:</code>
+  before each line of text.</li>
+</ul>
+
+<h2>Inline elements</h2>
+<ul>
+  <li>Punctuation correction is active. A non-breaking space
+  will replace automatically each space preceding the marks :
+  ";","?",":" and "!".&nbsp;;</li>
+  <li><strong>Emphasis</strong> : two simple quotes
+  <code>''text''</code>&nbsp;;</li>
+  <li><strong>Strong emphasis</strong> : two underscores
+  <code>__text__</code>&nbsp;;</li>
+  <li><strong>Forced line break</strong> :
+  <code>%%%</code>&nbsp;;</li>
+  <li><strong>Insertion</strong> : two plus
+  <code>++text++</code>&nbsp;;</li>
+  <li><strong>Suppression</strong> : two minus
+  <code>--text--</code>&nbsp;;</li>
+  <li><strong>Link</strong> : <code>[url]</code>, <code>[name|url]</code>,
+  <code>[name|url|language]</code> or
+  <code>[name|url|language|title]</code>.
+  <br /><em>If you want to insert a link to an anchor in the same page,
+  replace url by #name-of-anchor</em>&nbsp;;</li>
+  <li><strong>Image</strong> :
+  <code>((url|alternate text))</code>,
+  <code>((url|alternate text|position))</code> or
+  <code>((url|alternate text|position|long description))</code>.
+  <br />The position can take these values : L or G (left), R or D (right)
+  or C (center).&nbsp;;</li>
+  <li><strong>Anchor</strong> : <code>~anchor~</code>&nbsp;;</li>
+  <li><strong>Acronym</strong> : <code>??acronym??</code> or
+  <code>??acronym|title??</code>&nbsp;;</li>
+  <li><strong>Citation</strong> : <code>{{citation}}</code>,
+  <code>{{citation|language}}</code> or
+  <code>{{citation|language|url}}</code>&nbsp;;</li>
+  <li><strong>Code</strong> : <code>@@code here@@</code>&nbsp;;</li>
+  <li><strong>Footnote</strong> : <code>$$footnote's body$$</code>.</li>
+</ul>
+
+</body>
+</html>

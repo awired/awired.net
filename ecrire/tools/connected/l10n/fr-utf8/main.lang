@@ -1,0 +1,56 @@
+;Test
+Test
+
+;Show number of users connected.
+Affiche le nombre d'utilisateurs connectés.
+
+;SQL table has been installed!
+La table SQL a été installée !
+
+;SQL table is already installed.
+La table SQL est déjà installée.
+
+;SQL table is not installed.
+La table SQL n'est pas installée.
+
+;SQL table has been updated.
+La table SQL a été mise à jour.
+
+;Nothing here for the moment.
+Rien pour l'instant ici.
+
+;One functions is available.
+Une fonction est disponible.
+
+;How to use this plugin?
+Comment utiliser ce plugin ?
+
+;Example
+Exemple
+
+;show the counter. String is the message for one user connected, string1 for more, integer is the timetolive of one IP and boolean activate or not the detailed mode.
+affiche le compteur. String est le message pour une personne connectée, string1 est pour plusieurs personnes connectées, integer est le temps avant que l'ip d'un visiteur soit effacée et boolean active ou non le mode détaillé.
+
+;Host
+Hôte
+
+;Current page
+Page en cours de visite
+
+;Client
+Visiteur
+
+;Ip address
+Adresse IP
+
+;Ticket
+Billet
+
+;Category
+Catégorie
+
+;Home page
+Page d'accueil
+
+;Nick
+Pseudo

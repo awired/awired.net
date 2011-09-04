@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin name="Plugins Manager" version="1.1" active="1">
+  <author>Olivier Meunier</author>
+  
+  <label>Plugins manager</label>
+  <desc>Install new tools for DotClear.</desc>
+</plugin>

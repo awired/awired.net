@@ -1,0 +1,120 @@
+;DotClear configuration
+Configurazione di DotClear
+
+;Web interface to configure your blog.
+Interfaccia web per la configurazione del tuo blog.
+
+;Config file %s, is not writable.
+Il file %s non è accessibile in scrittura.
+
+;An error occured while writing the file.
+Si è verificato un errore nella scrittura del file.
+
+;Configuration file successfully updated.
+File di configuazione è stato scritto correttamente.
+
+
+;You must give a blog name
+Devi specificare il nome del blog
+
+;You must give a blog URL
+Devi specificare l'URL del blog
+
+;You must give an application location
+Devi specificare l'indirizzo del programma
+
+;You must give an images location
+Devi specificare una cartella per le immagini
+
+;You must give a valid number of entries per page
+Devi indicare un numero valido di post per pagina
+
+;You must give a RSS location
+Devi indicare un indirizzo per il feed RSS
+
+;You must give an Atom location
+Devi indicare un indirizzo per il feed Atom
+
+;Base configuration
+Configurazione di base
+
+;Advanced configuration
+Configurazione avanzata
+
+;Blog name
+Nome del blog
+
+;Blog description
+Descrizione del blog
+
+;Blog URL
+URL del blog
+
+;From %s
+Da %s
+
+;Application location
+Indirizzo dell'applicazione
+
+;Images location
+Indirizzo delle immagini
+
+;RSS feed location
+Indirizzo del feed RSS
+
+;Atom feed location
+Indirizzo del feed Atom
+
+;Trackback URL
+URL per il trackback
+
+;URL type
+Tipo di URL
+
+;Number of entries per page
+Numero di post per pagina
+
+;Preview entries in backend
+Anteprima dei post nell'interfaccia di amministrazione
+
+;Date format
+Formato della data
+
+;Time format
+Formato dell'ora
+
+;Default language
+Lingua di default
+
+;Blog theme
+Tema del blog
+
+;first page and categories
+prima pagina e categorie
+
+;Allow comments
+Permetti i commenti
+
+;Allow trackbacks
+Permetti i trackbacks
+
+;Publish comments immediately
+Pubblicazione immediata dei commenti
+
+;Time to live of comments and trackbacks
+Tempo di vita dei commenti e dei trackbacks
+
+;Use wiki format for comments
+Usa il formato wiki per i commenti
+
+;Show smileys in blog entries and comments
+Mostra gli smileys nei commenti e nei post
+
+;Notify each new comment by email
+Notifica via email ogni nuovo commento
+
+;Short RSS and Atom feeds
+Feed RSS e Atom in versione ridotta
+
+;Activate HTTP cache
+Attivare cache HTTP

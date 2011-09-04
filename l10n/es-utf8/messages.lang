@@ -1,0 +1,129 @@
+;No such user ID or invalid user ID
+Usuario o contraseña no válidos
+
+;Invalid user level
+Nivel de usuario no válido 
+
+;User password missing
+Escribe la contraseña
+
+;User name missing
+Escribe el nombre de usuario
+
+;Invalid email address
+Dirección de correo no válida
+
+;Invalid publication format
+Formato de publicación no válido
+
+;Invalid edit size
+Tamaño de edición no válido
+
+;Category does not exist
+La categoría no existe
+
+;This user has entries
+Este usuario ha escrito artículos
+
+;Empty category title
+Título de la categoría vacío
+
+;No category ID
+Sin identificación de la categoría
+
+;This category is not empty
+La categoría no está vacía
+
+;Empty or invalid URLed title
+El título de la URL de la categoría no es válido
+
+;Empty entry title
+Escribe el título del artículo
+
+;Empty entry content
+Escribe el contenido del artículo
+
+;No entry ID
+Sin identificación del artículo
+
+;Empty comment author
+Escribe un nombre 
+
+;Empty comment content
+Escribe un comentario
+
+;Entry does not exists
+El artículo no existe
+
+;Source is not a ping URL
+Esa dirección no es una URL de ping válida
+
+;Trackback error
+Error de trackback
+
+;No entry.
+Sin artículos.
+
+;Comment for entry %s
+Comentario al artículo %s
+
+;By: %s
+Por: %s
+
+;Website: %s
+Web: %s
+
+;Search of %s doesn't give any result.
+La búsqueda %s no ha producido ningún resultado.
+
+;Your comment has been sent successfully. It will be online soon.
+Tu comentario ha sido enviado. Será publicado en breve.
+
+
+;Strong emphasis
+Negrita
+
+;Emphasis
+Destacado
+
+;Inserted
+Insertado
+
+;Deleted
+Tachado
+
+;Inline quote
+Cita en línea
+
+;Code
+Código
+
+;Line break
+Salto de línea
+
+;Blockquote
+Bloque de cita
+
+;Preformated text
+Texto preformateado
+
+;Unordered list
+Lista desordenada
+
+;Ordered list
+Lista ordenada
+
+;URL?
+¿URL?
+
+;Language?
+¿Idioma?
+
+;Link
+Enlace
+
+;External image
+Imagen externa
+
+;Internal image
+Imagen interna

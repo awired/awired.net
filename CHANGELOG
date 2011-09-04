@@ -1,0 +1,48 @@
+== 1.2.4 ==================================================
+- fixes with images path handling.
+- atom 1.0 feed.
+- test $news before standard proces.
+- fixed encoding detection.
+- sanitized $_SERVER['HTTP_HOST'].
+- sanitized $_SERVER['REQUEST_URI'].
+- replaced "http://'.$_SERVER['HTTP_HOST'].(...) by util::getHost().(...).
+- added tests to check SQL results.
+- sanitized admin interface params.
+- sanitized generated URLs in class.multipage.php.
+- fixed feeds mimetypes in template and feeds.
+
+Many thanks to Christophe Grenier for patches.
+
+== 1.2.2 ==================================================
+- Fixed a security issue with trackbacks
+
+== 1.2.1 ==================================================
+4 new languages :
+- Chinese (by Tsing)
+- German (by Hans and Frederik)
+- Italian (by Federico)
+- Spanish (by Gromka)
+
+- Translation of help files (by Tehu)
+
+- New default theme (by Maurice.)
+- New $PLUGIN_HEAD variable in which a plugin can specify
+  optional HTML headers.
+- Indexes in MySQL tables.
+- Improved MySQL plugin with backup and restore (by Pep.)
+- Javascript event which alert when leaving an unsaved entry.
+- Drag and drop sorting on categories and links.
+- Javascript fixes.
+- New wiki2xhtml with macro support.
+- Added help files in all languages but Chinese.
+- New dcCustomTitle() template function which display
+  $dc_custom_title global variable (useful for plugins.)
+- Added a template function to display an admin link if user
+  is logged in.
+- Fixed bug #15 about $_GET (yeah!)
+- Added "short feeds" option.
+- Fixes in Atom and RSS feeds.
+- New global variable $dc_args which returns URL arguments.
+- Moved sessions to a database table.
+- Added feature to prevent comment spam.
+- Removed SQL cache.

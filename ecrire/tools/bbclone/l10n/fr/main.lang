@@ -1,0 +1,36 @@
+;BBClone - Stats
+BBClone - Statistiques
+;A PHP based Web Counter on Steroids. v0.4.3a
+
+;Global stats
+Statistiques globales
+;Detailed stats
+Statistiques détaillées
+;Time stats
+Statistiques temporelles
+;Visitor stats
+Statistiques visiteur
+;Utilisation
+Utilisation
+;Add the fowolling code at the end of your main template file
+Ajoutez le code suivant à la fin de votre fichier template principal
+;Step by step
+Pas à pas
+;Copy the PHP code above
+Copiez le code PHP ci-dessus
+;Edit your main template file
+Editez votre fichier template principal
+;Paste the code at the end
+Collez le code à la fin
+;Advanced configuration
+Configuration avancée
+;Edit BBClone main config file
+Editez le fichier de configuration principal de BBClone
+;Files informations
+Informations fichiers
+;Directory %s is writable.
+Le répertoire %s est accessible en écriture
+;Directory %s is not writable.
+Le répertoire %s n'est pas accessible en écriture
+;That's all :-)
+C'est tout :-)

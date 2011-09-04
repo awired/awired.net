@@ -1,0 +1,55 @@
+Connected for Dotclear (c) 2005
+Auteur : Antoine Libert aka AeN0
+Contact : aen0rphe@gmail.com
+Status  - 6/02/2005 - Première version
+				- 12/07/2005 - 0.1a
+				- 14/07/2005 - 0.2
+				- 16/07/2005 - 0.2a
+				- 13/11/2005 - 0.3
+				- 17/11/2005 - 0.3a
+--------------------------------------------
+Remerciements :
+
+Ludovic Toinel
+Tarlak
+zehunter
+--------------------------------------------
+Notation :
+
+ #  Modification d'une fonction
+ -  Suppression d'une fonction
+ +  Ajout nouvelle fonction
+[ ] Bug découvert mais pas corrigé [!] critique
+[x] Bug découvert antérieurement et corrigé
+(!) Nouvelle fonction à venir
+(x) Fonction à venir annulée
+
+--------------------------------------------
+Changelog :
+
+- 17 Novembre 2005 - 0.3a
+  
+ #  Quelques modifications typographiques
+
+- 12 Novembre 2005 - 0.3
+
+ +  Affichage des pseudos des personnes connectées si possible (idée originale de zehunter)
+
+- 16 Juillet 2005 - 0.2a
+
+[x] Syntaxe de la requête MySQL INSERT erronée
+[x] Syntaxe de la requête MySQL CREATE erronée (merci à Tarlak)
+
+- 14 Juillet 2005 - 0.2
+
+ +  L'administration affiche maintenant les visiteurs connectés sur votre blog avec l'adresse ip et la page en cours (Grand merci à Ludovic Toinel !).
+ #  La table SQL a été modifié suite à l'ajout de l'enregistrement de la page en cours.
+ #  Par conséquent, une procédure de mise à jour de la table SQL a été réalisée dans l'administration.
+
+- 12 Juillet 2005 - 0.1a
+
+[x] Connected ne fonctionnait bizarrement pas chez certaines personnes maintenant ça devrait être résolu...
+
+- 6 Février 2005 - 0.1
+
+ + Première version !

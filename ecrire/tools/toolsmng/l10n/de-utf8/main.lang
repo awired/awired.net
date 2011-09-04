@@ -1,0 +1,41 @@
+;Plugins manager
+Plugin Manager
+
+;Install new tools for DotClear.
+Installieren Sie neue Tools für DotClear.
+
+;URL is not valid.
+Die URL ist ungültig.
+
+;Install a plugin
+Ein Plugin installieren
+
+;The folder %s is not writable, please check its permissions.
+Das Verzeichnis %s ist nicht beschreibbar. Bitte prüfen Sie die Rechte für das Verzeichnis.
+
+;Please give the URL (http or ftp) of the plugin's file
+Bitte geben Sie die URL (http or ftp) für die Plugin-Datei an.
+
+;install
+installieren
+
+;Install new plugins
+Neue Plugins installieren
+
+;List of installed plugins
+Liste der installierten Plugins
+
+;version
+Version
+
+;Are you sure you want to delete this plugin ?
+Sind Sie sicher, dass Sie dieses Plugin löschen wollen ?
+
+;enable
+aktivieren
+
+;disable
+deaktivieren
+
+;cannot enable/disable
+aktivieren/deaktivieren nicht möglich

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin name="Theme Manager" version="1.1" active="1">
+  <author>Olivier Meunier</author>
+  
+  <label>Themes manager</label>
+  <desc>Install new themes.</desc>
+</plugin>

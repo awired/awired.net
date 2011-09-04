@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<plugin name="Connected" version="0.3a" active="1">
+  <author>Antoine Libert</author>
+  <label>Connected</label>
+  <desc>Show number of users connected.</desc>
+</plugin>

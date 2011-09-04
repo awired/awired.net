@@ -1,0 +1,21 @@
+# Plug-in Fortune pour Dotclear
+# Copyright (C) 2004 Alexandre PASSANT <alex@passant.org>
+# Realeased under GPL version 2 or later, see LICENSE file
+# or <http://www.gnu.org/copyleft/gpl.html>
+
+2005-10-08 [alex]:
+- Support direct des fichiers fortunes sans passer par le packager
+- v 0.4
+
+2005-08-13 [alex]:
+- Correction d'un bug pour l'ajout des fichiers .tgz
+- Lien vers le Fortune-packager
+- v0.3
+
+2004-11-06 [alex]:
+- Utilisation de la lib PEAR Tar.php pour le untar des packages
+- v0.2
+
+2004-11-04 [alex]:
+- v0.1
+

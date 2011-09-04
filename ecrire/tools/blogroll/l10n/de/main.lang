@@ -1,0 +1,110 @@
+;Links manager
+Link Manager
+
+;Web interface to configure your links (blogroll).
+Web Interface zur Verwaltung Ihrer Links (blogroll).
+
+;You must provide at least a label and an URL
+Sie müssen mindestens einen Linktitel und eine URL angeben
+
+;New link
+Neuer Link
+
+;Label
+Linktitel
+
+;Description
+Beschreibung
+
+;New rubric
+Neue Rubrik
+
+;Edit link
+Link ändern
+
+;Edit rubric
+Rubrik ändern
+
+;Usage
+Gebrauchsanweisung
+
+;To replace your static blogroll by this one, just put the following code in your template:
+Um Ihren statischen blogroll durch diesen hier zu ersetzen, fügen Sie einfach diese Anweisung in Ihre Vorlage (template) ein
+
+;Me
+Ich
+
+;Another link for myself
+Ein weiterer Link zu mir selbst
+
+;Friendship
+Freundschaft
+
+;Contact
+Kontakt
+
+;Acquaintance
+Bekanntschaft
+
+;Friend
+Freund(in)
+
+;None
+Kein(e)
+
+;Physical
+Physisch
+
+;Met
+Begegnet
+
+;Professional
+Beruflich
+
+;Co-worker
+Mitarbeiter(in)
+
+;Colleague
+Kollege(in)
+
+;Geographical
+Örtlich
+
+;Co-resident
+Mitbewohner(in)
+
+;Neighbor
+Nachbar(in)
+
+;Family
+Familie
+
+;Child
+Kind
+
+;Parent
+Eltern
+
+;Sibling
+Schwester/Bruder
+
+;Spouse
+Ehefrau/Ehemann
+
+;Kin
+Verwandschaft
+
+;Romantic
+Romantik
+
+;Muse
+verträumt
+
+;Crush
+verliebt
+
+;Date
+befreundet
+
+;Sweetheart
+Beliebt

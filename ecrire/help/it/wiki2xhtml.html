@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - This file is part of DotClear.
+   - Copyright (c) 2004 Olivier Meunier and contributors. All rights
+   - reserved.
+   -
+   - DotClear is free software; you can redistribute it and/or modify
+   - it under the terms of the GNU General Public License as published by
+   - the Free Software Foundation; either version 2 of the License, or
+   - (at your option) any later version.
+   - 
+   - DotClear is distributed in the hope that it will be useful,
+   - but WITHOUT ANY WARRANTY; without even the implied warranty of
+   - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   - GNU General Public License for more details.
+   - 
+   - You should have received a copy of the GNU General Public License
+   - along with DotClear; if not, write to the Free Software
+   - Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+   -
+   - ***** END LICENSE BLOCK ***** -->
+<html>
+<head>
+  <title>Sintassi Wiki</title>
+</head>
+
+<body>
+
+<h1>Sintassi Wiki</h1>
+
+<p>Se vuoi far s&igrave; che alcuni tag Wiki che hai inserito nel testo siano 
+  mostrati nel testo finale devi proteggerli con il tag "<code>\</code>".</p>
+
+<h2>Blocchi</h2>
+<ul>
+  <li>Lascia una riga vuota tra ogni blocco <em>dello stesso tipo</em>&nbsp;;</li>
+  <li><strong>Paragrafo</strong> : per un nuovo paragrafo inserire una riga vuota&nbsp;;</li>
+  <li><strong>Titolo</strong> : <code>!!!</code>, <code>!!</code>, <code>!</code> 
+    per titoli, ordinati per importanza descrescente&nbsp;;</li>
+  <li><strong>Linea orizzontale </strong> : <code>----</code>&nbsp;;</li>
+  <li><strong>Lista</strong>: all'inizio di ogni riga inserisci<code> *</code> 
+    o<code> #</code>. &Eacute; possibile alternare le liste (<code>*#*</code>) 
+    in modo da generare liste innestate. Lo stile di ogni livello deve essere 
+    rispettato &nbsp;;</li>
+  <li><strong>Testo preformattato</strong> : <em>uno_spazio</em> prima di ogni 
+    linea di testo&nbsp;;</li>
+  <li><strong>Blocco di quoting</strong> : <code>&gt;</code> or <code>;:</code> 
+    prima di ogni linea di testo.</li>
+</ul>
+
+<h2>Elementi</h2>
+<ul>
+  <li>Il correttore automatico della punteggiatura &egrave; attivo se la lingua prescelta è fr (francese). 
+  Se attiva, tutti gli spazi che precedono uno di questi elementi : ";","?",":" and "!" verranno rimpiazzati 
+  da un unico spazio&nbsp;;</li>
+  <li><strong>Corsivo</strong> : <code>''testo''</code>&nbsp;;</li>
+  <li><strong>Grassetto</strong> : <code>__testo__</code>&nbsp;;</li>
+  <li><strong>A capo</strong> : <code>%%%</code>&nbsp;;</li>
+  <li><strong>Sottolineato</strong> : <code>++testo++</code>&nbsp;;</li>
+  <li><strong>Barrato</strong> : <code>--testo--</code>&nbsp;;</li>
+  <li><strong>Link</strong> : <code>[indirizzo]</code>, <code>[nome|indirizzo]</code>, 
+    <code>[nome|indirizzo|lingua]</code> or <code>[nome|indirizzo|lingua|titolo]</code>. 
+    <br />
+    <em>Se vuoi inserire un link ad un segnalibro presente nella pagina, metti 
+    come indirizzo #nome-del-segnalibro</em>&nbsp;;</li>
+  <li><strong>Immagini</strong> : <code>((indirizzo|testo alternativo))</code>, 
+    <code>((indirizzo|testo alternativo|posizionamento))</code> or <code>((indirizzo|testo 
+    alternativo|posizionamento|descrizione))</code>. <br />
+    Valori per il campo posizionamento: L or G (sinistra), R or D (destra) or 
+    C (centro)&nbsp;;</li>
+  <li><strong>Segnalibro </strong>: <code>~nome-segnalibro~</code>&nbsp;;</li>
+  <li><strong>Acronimo</strong> : <code>??nome-acronimo??</code> or <code>??nome-acronimo|titolo??</code>&nbsp;;</li>
+  <li><strong>Citazione</strong> : <code>{{citazione}}</code>, <code>{{citazione|lingua}}</code> 
+    or <code>{{citazione|lingua|indirizzo}}</code>&nbsp;;</li>
+  <li><strong>Codice</strong> : <code>@@codice@@</code>&nbsp;;</li>
+  <li><strong>Nota a pi&egrave; di pagina</strong> : <code>$$nota$$</code>.</li>
+</ul>
+
+</body>
+</html>

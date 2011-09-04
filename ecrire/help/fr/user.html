@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - This file is part of DotClear.
+   - Copyright (c) 2004 Olivier Meunier and contributors. All rights
+   - reserved.
+   -
+   - DotClear is free software; you can redistribute it and/or modify
+   - it under the terms of the GNU General Public License as published by
+   - the Free Software Foundation; either version 2 of the License, or
+   - (at your option) any later version.
+   - 
+   - DotClear is distributed in the hope that it will be useful,
+   - but WITHOUT ANY WARRANTY; without even the implied warranty of
+   - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   - GNU General Public License for more details.
+   - 
+   - You should have received a copy of the GNU General Public License
+   - along with DotClear; if not, write to the Free Software
+   - Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+   -
+   - ***** END LICENSE BLOCK ***** -->
+<html>
+<head>
+  <title>Préférences et gestion des utilisateurs</title>
+</head>
+
+<body>
+  <h1>Préférences et gestion des utilisateurs</h1>
+  
+  <p>Pour modifier vos préférences, rendez vous sur l'onglet "préférences".
+  Pour créer ou modifier un utilisateur, rendez vous sur l'onglet "rédacteurs".
+  Vous devez être administrateur pour cette dernière action.</p>
+  
+  <h2>Champs</h2>
+  
+  <dl>
+  <dt id="user_prenom">Prénom</dt>
+  <dd>Le prénom de l'utilisateur est facultatif.</dd>
+  
+  <dt id="user_nom">Nom</dt>
+  <dd>Le nom de l'utilisateur est obligatoire.</dd>
+  
+  <dt id="user_pseudo">Pseudo</dt>
+  <dd>Le pseudo de l'utilisateur est facultatif.</dd>
+  </dl>
+  
+  <p>Note&nbsp;: <em>Si l'utilisateur ne donne pas de pseudo, son
+  nom et éventuellement son prénom seront utilisés pour indiquer qui est
+  l'auteur du billet. S'il fournit un pseudo, alors ce dernier sera utilisé.</em></p>
+  
+  <dl>
+  <dt id="user_email">Email</dt>
+  <dd>L'addresse email de l'utilisateur est facultative. Si vous souhaitez
+  activer la notification des commentaires de vos billets par email, vous
+  devez renseigner ce champ.</dd>
+  
+  <dt id="user_pwd">Mot de passe</dt>
+  <dd>Choisissez un mot de passe assez long et peu explicite. En cas de mise à
+  jour d'un utilisateur ou de vos préférences, laissez ce champ vide pour ne pas
+  changer de mot de passe.</dd>
+  
+  <dt id="user_lang">Langue<dt>
+  <dd>Si la langue existe dans les fichiers de traduction, elle sera utilisée
+  pour l'interface d'administration de cet utilisateur. Chaque billet créé sera
+  également "marqué" avec le code de cette langue automatiquement.</dd>
+  
+  <dt id="user_post_format">Format d'édition préféré</dt>
+  <dd>Le format choisi sera celui utilisé par défaut pour tout nouveau billet.
+  L'utilisateur a bien sûr la possibilité de changer ce format ponctuellement
+  pour un nouveau billet.</dd>
+  
+  <dt id="user_post_pub">Statut de publication par défaut</dt>
+  <dd>Cette option définit le statut en ligne ou hors ligne de chaque nouveau
+  billet.</dd>
+  
+  <dt id="user_pref_cat">Catégorie préférée</dt>
+  <dd>La catégorie choisie sera celle par défaut de chaque nouveau billet.</dd>
+  
+  <dt id="user_edit_size">Hauteur de la zone d'édition d'un billet</dt>
+  <dd>Hauteur en lignes du champs d'écriture d'un billet.</dd>
+  
+  <dt id="user_delta">Nombres d'heures entre l'heure de l'utilisateur et celle
+  du serveur</dt>
+  <dd>Cette option permet de définir un éventuel décalage horaire entre votre
+  serveur et votre lieu de publication. Les valeurs négatives sont possibles.
+  L'heure de votre serveur est indiquée afin de définir votre décalage.</dd>
+  </dl>
+  
+  <h2>Administration</h2>
+  <p>Ces champs ne sont disponibles que pour l'administrateur dans la zone de
+  modification d'un rédacteur.</p>
+  
+  <dl>
+  <dt id="user_id">Identifiant</dt>
+  <dd>L'identifiant est le login de l'utilisateur. Il doit contenir uniquement
+  des lettres et/ou des chiffres. Il est obligatoire.</dd>
+  
+  <dt id="user_level">Niveau de l'utilisateur</dt>
+  <dd>Le niveau correspond aux droits que vous donnez à l'utilisateur. Il existe
+  trois types de droit&nbsp;:
+    <ul>
+      <li><strong>Administrateur</strong>&nbsp;: tous les droits.</li>
+	 <li><strong>Rédacteur avancé</strong>&nbsp;: tous les droits sur ses
+	 billets, peut lire les autres billets, peut créer des catégories.</li>
+	 <li><strong>Rédacteur</strong>&nbsp;: tous les droits sur ses billets,
+	 ne peut pas lire les autres billets.</li>
+    </ul>
+  </dd>
+  </dl>
+  
+</body>
+</html>

@@ -1,0 +1,74 @@
+;Gsitemap
+Gsitemap
+;Generate a Google XML Sitemap for your blog.
+Créez un fichier Google XML Sitemap pour votre blog.
+;undefined
+non définie
+;always
+systématique
+;hourly
+horaire
+;daily
+journalière
+;weekly
+hebomadaire
+;monthly
+mensuelle
+;never
+jamais
+;New configuration saved.
+Nouvelle configuration enregistrée.
+;Unable to save configuration
+Impossible d'enregistrer la configuration
+;Submit failed - HTTP Response code :
+Echec de la soumission - Code de réponse HTTP :
+;Your sitemap has been resubmitted correctly
+Votre sitemap a été re-soumise correctement
+;Unavailable %s/ directory in share/. You may create it manually.
+Le dossier %s/ n'est pas disponible dans share/. Vous devez le créer manuellement.
+;Configuration
+Configuration
+;Plugin activation
+Activation du plugin
+;Enable Gsitemap
+Activer Gsitemap
+;Advanced configuration
+Configuration avancée
+;Elements to integrate
+Eléments à intégrer
+;Homepage
+Page d'accueil
+;Priority
+Priorité
+;Periodicity
+Fréquence
+;Main feeds
+Fils principaux
+;Posts
+Billets
+;Categories
+Catégories
+;Related pages
+Pages connexes
+;Save changes
+Enrgistrer les modifications
+;Ping Google
+Pinguer Google
+;Usage
+Utilisation
+;Simply check the box to activate the plugin.
+Cocher simplement la case d'activation du plugin.
+;URL to submit is :
+URL à soumettre :
+;Please, check Google Sitemaps FAQ for more details.
+Veuillez consulter la FAQ Google Sitemaps pour plus de détails.
+;More about Google Sitemaps
+En savoir plus sur Google Sitemaps
+;Create a Google account
+Créer un compte Google
+;Google Sitemaps XML specifications
+Spécifications XML Google Sitemaps
+;Google Sitemaps FAQ
+FAQ Google Sitemaps
+;Don't forget you have to manually submit your sitemap to Google for first time use.
+N'oubliez pas de soumettre manuellement votre sitemap auprès de Google pour la première utilisation.

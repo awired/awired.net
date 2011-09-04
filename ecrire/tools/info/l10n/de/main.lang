@@ -1,0 +1,62 @@
+;About DotClear
+Über DotClear
+
+;About DotClear and your system.
+Informationen über DotClear und Ihr System
+
+;Informations
+Informationen
+
+;General informations
+Basis-Informationen
+
+;You are using DotClear version %s
+Sie verwenden DotClear in der Version %s
+
+;DotClear tables in your database are
+Für DotClear sind diese Tabellen sind in der Datenbank angelegt:
+
+;Records
+Einträge
+
+;Size
+Größe
+
+;Files informations
+Datei-Informationen
+
+;Files or directories permissions. If a file or a folder from this list is not writable, it wont prevent DotClear to work properly. It will only prevent some tools to work.
+Rechte für Dateien und Verzeichnisse. Wenn eine Datei oder ein Ordner aus dieser Liste nicht beschreibbar ist, arbeitet DotClear trotzdem korrekt. Es hat lediglich Auswirkungen auf die Funktion bestimmter Tools.
+
+;File %s is writable.
+Datei %s  ist beschreibbar.
+
+Le fichier %s est accessible en écriture.
+Verzeichnis %s  ist beschreibbar.
+
+;File %s is not writable.
+Datei %s  ist nicht beschreibbar.
+
+;Directory %s is writable.
+Verzeichnis %s  ist beschreibbar.
+
+;Directory %s is not writable.
+Verzeichnis %s  ist nicht beschreibbar.
+
+;Important
+Wichtig
+
+;the file %s is not writable. While this does not prevent DotClear from running, you should consider changing this for performance reasons (HTTP cache).
+Die Datei %s ist nicht beschreibbar. Obwohl dies keine Auswirkungen auf die Funktion von DotClear hat, ist es besser, wenn Sie dies aus Performancegründen (HTTP Speicher) ändern.
+
+;Server informations
+Server-Informationen
+
+;Your PHP version is %s
+Ihre PHP Version ist %s
+
+;Your MySQL version is %s
+Ihre MySQL Version ist %s
+
+;Your Web server is %s
+Ihr Webserver ist %s

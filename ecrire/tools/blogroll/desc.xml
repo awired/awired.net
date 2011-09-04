@@ -1,0 +1,7 @@
+<?xml version="1.1" encoding="ISO-8859-1"?>
+<plugin name="blogroll" version="1.2" active="1">
+  <author>Lunar</author>
+  
+  <label>Links manager</label>
+  <desc>Web interface to configure your links (blogroll).</desc>
+</plugin>

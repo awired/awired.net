@@ -1,0 +1,521 @@
+/* <pre dir="ltr"> */
+
+
+div#editpage-specialchars a
+{
+    text-decoration: none;
+}
+div#editpage-specialchars a:hover
+{
+    text-decoration: underline;
+}
+
+/*  */
+.usermessage {
+    vertical-align: middle;
+}
+
+/*  */
+p.error
+{
+  font-weight:bold;
+}
+
+/*  */
+span#URLSource
+{
+    direction: ltr;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+table.diff
+{
+    padding: 0.5em;
+}
+td.diff-addedline
+{
+    background-color: #D8E4F6; 
+}
+td.diff-addedline span.diffchange
+{
+    background-color: #B0C0F0;
+    color: #001040;
+    font-weight: bold;
+}
+td.diff-deletedline
+{
+    background-color: #E4F6D8;
+}
+td.diff-deletedline span.diffchange
+{
+    background-color: #B0E897;
+    color: #104000;
+    font-weight: bold;
+}
+
+/*  */
+table.metadata
+{
+    float: left;
+}
+
+/*  */
+span#edit-for-sysops
+{
+    display: none;
+}
+
+/*  */
+div.sharedUploadNotice
+{
+    font-style: normal;
+}
+
+/*  */
+div#shared-image-desc
+{
+    direction: ltr;
+}
+
+/*  */
+input#wpUploadFile, input#wpDestFile, input#wpLicense
+{
+   float: right;
+}
+
+/* default skin for navigation boxes */ table.navbox {
+
+   background-color: #f9f9f9;
+   border: 1px solid #aaa;
+   clear: both;
+   font-size: 90%;
+   margin: 1em 0em 0em;
+   padding: 2px;
+   text-align: center;
+   width: 100%;
+}
+
+table.navbox th {
+
+   background-color: #ccf;
+   padding-left: 1em;
+   padding-right: 1em;
+}
+
+table.navbox tr:not(:first-child) th {
+
+   background-color: #ddf;
+}
+
+@media print {
+
+   .navbox {
+       display: none;
+   }
+}
+
+/* ?Site Notice */
+div#siteNotice
+{
+    padding-top: 5px;
+    text-align: center;
+}
+
+/*  */
+
+/* Support for Template:IPA, Template:Unicode and Template:Polytonic. The inherit declaration resets the font for all browsers except MSIE6.  The empty comment must remain. */
+.IPA
+{
+    font-family: Chrysanthi Unicode, Doulos SIL, Gentium, GentiumAlt, Code2000, TITUS Cyberbit Basic, DejaVu Sans, Bitstream Vera Sans, Bitstream Cyberbit, Arial Unicode MS, Lucida Sans Unicode, Hiragino Kaku Gothic Pro, Matrix Unicode;
+    font-family /**/:inherit;
+}
+
+/*  wikitable -prettytable  [[:en:MediaWiki:Common.css]] */
+table.wikitable, table.prettytable
+{
+    background-color: #F9F9F9;
+    border: 1px #aaaaaa solid;
+    margin: 0 1em 1em 1em;
+}
+table.wikitable th, table.wikitable td, table.prettytable th, table.prettytable td
+{
+    border: 1px #aaaaaa solid;
+    padding: 0.2em;
+}
+
+table.wikitable th, table.prettytable th
+{
+    background-color: #F2F2F2;
+    text-align: center;
+}
+table.wikitable caption, table.prettytable caption
+{
+    margin-left: inherit;
+    margin-right: inherit;
+}
+
+/*  */
+.infobox {
+   border: 1px solid #aaaaaa;
+   background-color: #f9f9f9;
+   color: black;
+   margin-bottom: 0.5em;
+   margin-right: 1em;
+   padding: 0.2em;
+   float: left;
+   clear: left;
+}
+.infobox td,
+.infobox th {
+   vertical-align: top;
+}
+.infobox caption {
+   font-size: larger;
+   margin-left: inherit;
+}
+.infobox.bordered {
+   border-collapse: collapse;
+}
+.infobox.bordered td,
+.infobox.bordered th {
+   border: 1px solid #aaaaaa;
+}
+.infobox.bordered .borderless td,
+.infobox.bordered .borderless th {
+   border: 0;
+}
+
+/*  */
+div.Boxmerge, div.NavFrame
+{
+    border-collapse: collapse;
+    border-color: #AAAAAA;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 95%;
+    margin: 0px;
+    padding: 2px;
+    text-align: center;
+}
+div.Boxmerge div.NavFrame
+{
+    border-style: none;
+    border-style: hidden;
+}
+div.NavFrame + div.NavFrame
+{
+    border-top-style: none;
+    border-top-style: hidden;
+}
+div.NavPic
+{
+    background-color: #FFFFFF;
+    float: left;
+    margin: 0px;
+    margin-top: 0.5em;
+    padding: 2px;
+}
+div.NavFrame div.NavHead
+{
+    background-color: #EFEFEF;
+    font-size: 100%;
+    font-weight: bold;
+    height: 1.6em;
+    position: relative;
+}
+div.NavFrame p
+{
+    font-size: 100%;
+}
+div.NavFrame div.NavContent
+{
+    font-size: 100%;
+}
+div.NavFrame div.NavContent p
+{
+    font-size: 100%;
+}
+div.NavEnd
+{
+    clear: both;
+    line-height: 1px;
+    margin: 0px;
+    padding: 0px;
+}
+a.NavToggle
+{
+    font-size: smaller;
+    font-weight: normal;
+    left: 3px;
+    position: absolute;
+    top: 0px;
+}
+
+/*  */
+
+/*  */
+div#content ul
+{
+    display: table;
+}
+body.ns-6 div#content ul#filetoc,
+body.ns-14 div#content ul
+{
+    display: block;
+}
+html > body div#content ol
+{
+    clear: left;
+}
+
+body
+{
+    letter-spacing: 0.001em;
+}
+
+/* ????? ????? ????????? ????? ?????? ?? ?? ??????? ?? ????, ???????? ???????? 6.0 */
+* html div#catlinks
+{
+    position: static;
+}
+
+/*  */
+@media print
+{
+    /*  */
+    .printfooter
+    {
+        display: none;
+    }
+}
+
+
+.audiolink a
+{
+    background: url("http://upload.wikimedia.org/wikipedia/commons/f/f7/Loudspeaker.png") center right no-repeat !important;
+    padding-left: 16px !important;
+    padding-right: 0 !important;
+}
+html > body .audiolink a
+{
+    background: none !important;
+    padding-left: 0 !important;
+}
+
+/* wikitable/prettytable class for skinning normal tables */
+
+table.wikitable,
+table.prettytable {
+  margin: 1em 0 1em 1em;
+  background: #f9f9f9;
+  border: 1px #aaaaaa solid;
+  border-collapse: collapse;
+}
+
+table.wikitable th, table.wikitable td,
+table.prettytable th, table.prettytable td {
+  border: 1px #aaaaaa solid;
+  padding: 0.2em;
+}
+
+table.wikitable th,
+table.prettytable th {
+  background: #f2f2f2;
+  text-align: center;
+}
+
+table.wikitable caption,
+table.prettytable caption {
+  margin-left: inherit;
+  margin-right: inherit;
+}
+
+/* hiddenStructure from Monobook - allows selective hiding of markup in templates */
+.hiddenStructure {
+   display: none;
+   speak: none;
+}
+
+
+/* ?????? ?????? ?????? */
+
+.messagebox {
+   border: 1px solid #aaaaaa;
+   background-color: #f9f9f9;
+   width: 80%;
+   margin: 0 auto 1em auto;
+   padding: .2em;
+   text-align: justify;
+}
+.messagebox.merge {
+   border: 1px solid #cf9fff;
+   background-color: #f5edf5;
+   text-align: center;
+}
+.messagebox.cleanup {
+   border: 1px solid #9f9fff;
+   background-color: #efefff;
+   text-align: center;
+}
+.messagebox.standard-talk {
+   border: 1px solid #c0c090;
+   background-color: #f8eaba;
+}
+.messagebox.small-talk {
+  width: 238px;
+  font-size: 85%;
+  float: left;
+  clear: both;
+  margin: 0 0 1em 1em;
+  line-height: 1.25em; 
+  background: #F8EABA;
+}
+
+/* Infobox template style */
+
+.infobox {
+   border: 1px solid #aaaaaa;
+   background-color: #f9f9f9;
+   color: black;
+   margin-bottom: 0.5em;
+   margin-left: 1em;
+   padding: 0.2em;
+   /*align: left; ??? ??????? ??? ?????? ????? ??? ??? ??????? */
+   float: left;
+   clear: left;
+}
+.infobox td,
+.infobox th {
+   vertical-align: top;
+}
+.infobox caption {
+   font-size: larger;
+   margin-left: inherit;
+}
+.infobox.bordered {
+   border-collapse: collapse;
+}
+.infobox.bordered td,
+.infobox.bordered th {
+   border: 1px solid #aaaaaa;
+}
+.infobox.bordered .borderless td,
+.infobox.bordered .borderless th {
+   border: 0;
+}
+
+.infobox.sisterproject {
+   width: 20em;
+   font-size: 90%;
+}
+ /************************/
+/*
+** Logo properties with modified height value to meet the actual logo hieght, 165px.*/
+ /************************/
+#p-logo {
+	height: 165px;
+}
+
+#p-logo a,
+#p-logo a:hover {
+	height: 165px;
+}
+
+/************************/
+  /* CommonsTicker styles */
+  /************************/
+ 
+  /* links */
+  .tickerDiffLink { } /* diff links in ticker */
+  .tickerMiscLink { } /* misc links in ticker */
+ 
+  /* remove list bullets */
+  .tickerList ul,    .tickerList ul li    { list-style: none; text-indent:-2em; margin-right:2em;   text-align:right; }
+  .tickerList ul ul, .tickerList ul ul li { list-style: none; text-indent:0;    margin-right:1.5em; text-align:right; }
+
+  /* per-type styles */
+  .tickerEntry_deleted     { }  /* entry for image deletion */
+  .tickerEntry_restored    { }  /* entry for restored image */
+  .tickerEntry_replaced    { }  /* entry for image replacement */
+  .tickerEntry_tagged      { }  /* entry for adding/removing problem tags */
+  .tickerEntry_redir       { }  /* entry for critical redirection (fot tag redirects) */
+  .tickerEntry_recat       { }  /* entry for critical re-categorization (for tag categories) */
+  .tickerEntry_notify      { }  /* entry for global notifications */
+  .tickerEntry_changed     { }  /* entry for generic change */
+
+  /* per-status styles */
+  .tickerStatus_done     { text-decoration:line-through; }  /* strike through when entry has been handeled */
+
+  /* per-action styles */
+  .tickerAction_deleted:before     { content:" ???? "; color: #FF0000; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_restored:before    { content:" ??????? "; color: #00BB00; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_deletedRev:before  { content:" -OLD "; color: #DDAAAA; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_replaced:before    { content:" ??????? "; color: #CC88FF; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_replacedOwn:before { content:" ???? "; color: #EEAAFF; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_addedBad:before    { content:" +??? "; color: #FF8800; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_removedBad:before  { content:" -??? "; color: #00BB00; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_addedGood:before   { content:" +OK  "; color: #00BB00; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_removedGood:before { content:" -OK  "; color: #FF8800; font-family:monospace; font-weight:bold; font-size:100%; }
+
+  /* ticker usage list */
+  .tickerUsage  { font-size:80%; }  
+
+  /* entry applies to a template used by multiple images */
+  .tickerTemplateEntry    { font-weight: bold; } 
+
+  /* entry applies to sub-entries, i.e. images that use a specific template */
+  .tickerSubEntry         { }                       
+
+  /* minor entry styles */ 
+  .tickerMinorEntry  { color:#666; }     /* minor entry */
+  .tickerMinorEntry a,
+  .tickerMinorEntry a:link,
+  .tickerMinorEntry a:visited { color:#669; }
+  #bodyContent .tickerMinorEntry a.extiw,
+  #bodyContent .tickerMinorEntry a.extiw:link,
+  #bodyContent .tickerMinorEntry a.extiw:visited { color:#669; }
+
+/* ?????? ????? ???? ????? ?? ???? ????? */
+#file img {background: url("http://upload.wikimedia.org/wikipedia/commons/5/5d/Checker-16x16.png") repeat;}
+
+/* ?????? ????????? ?? ??????? */
+ol.references {
+   font-size: 100%;
+}
+
+.references-small { font-size: 90%;}
+.references-2column {
+  font-size: 90%;
+  -moz-column-count:2;
+  column-count:2;
+}
+ol.references > li:target {
+ background-color: #DEF;
+}
+
+sup.reference:target { 
+  background-color: #DEF;
+}
+
+/* ???? ?????? ????? */
+
+.same-bg { background: none }
+
+
+/* ??? ????? ?? ????? ????? */
+div#p-tb li#t-upload { display:none; }
+
+/* ???? ?????? ???????. ???? ????? [[????:?????]] ? [[????:????? ?????]] ? ? ? */
+.dablink {
+  font-style:italic;
+  padding-right:2em;
+}
+
+.allpagesredirect {
+    font-style: italic;
+}
+
+
+/* </pre> */
+/* {{Interwiki-all|MediaWiki:Common.css}} */

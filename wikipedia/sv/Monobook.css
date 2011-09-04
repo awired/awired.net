@@ -1,0 +1,33 @@
+/* Redigeringar i denna fil gör anpassningar i CSS-skalet för temat monobook, som slår igenom på hela svenska Wikipedia */
+
+ /* Gör redigera-länken synligare */
+ #ca-edit a {
+         font-weight: bold !important;
+ }
+
+ /* Kopierar loginrutans färger från engelska wikipedia */
+ form#userlogin {
+  float: left;
+  padding: 1em 1em .7em 1em;
+  background-color: #ffffe6;
+  border: 2px solid #fc6;
+  color: #000;
+  margin-right: 2em;
+ }
+ form#userlogin table {
+  float: left;
+  background-color: #ffffe6;
+  color: #000;
+ }
+
+ /* Diffar */
+ td.diff-addedline span.diffchange {
+    background: #FFFFFF;
+    color: #EE0000;
+    font-weight: bold;
+ }
+ td.diff-deletedline span.diffchange {
+    background: #FFFFFF;
+    color: #EE0000;
+    font-weight: bold;
+ }

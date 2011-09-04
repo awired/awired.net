@@ -1,0 +1,333 @@
+/*
+  * MediaWiki:Monobook.css
+  * http://pt.wikipedia.org/wiki/MediaWiki:Cologneblue.css
+  * http://pt.wikipedia.org/wiki/MediaWiki:Monobook.css
+  * http://pt.wikipedia.org/wiki/MediaWiki:Myskin.css
+  * http://pt.wikipedia.org/wiki/MediaWiki:Nostalgia.css
+  * http://pt.wikipedia.org/wiki/MediaWiki:Standard.css
+  * http://pt.wikipedia.org/wiki/MediaWiki:Common.css
+  */
+
+ #siteNotice { padding-left: 4px; } /* MW:Sitenotice */
+ #fundraising { font-style: italic; } /* MW:Sitenotice (manual) */
+
+ #siteSub {
+    display: inline;
+    font-size: 90%;
+    font-weight: normal;
+ }
+ #bodyContent #siteSub a {
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+    background-image: none;
+    padding-right: 0;
+ }
+
+ /* lista de caracteres especiais funciona melhor sem sublinhado */
+ #editpage-specialchars a { text-decoration: none; }
+ #editpage-specialchars a:hover { text-decoration: underline; }
+
+ /* Icon no link "minha discussão" */
+ li#pt-mytalk {
+    background: url('/skins/monobook/discussionitem_icon.gif') top left no-repeat;
+    padding-left: 20px;
+ }
+ #pt-login {
+   font-weight: bold;
+   font-size: 110%;
+ }
+
+  /* Remover padding de plainlinks (mb main) */
+ #bodyContent .plainlinks a {
+   padding: 0 !important
+ }
+
+ /*
+== Cor de fundo das páginas ==
+<pre>
+ */
+/* Make all non-namespace pages have a light blue content area. This is done by
+        setting the background color for all #content areas to light blue and then
+        overriding it for any #content enclosed in a .ns-0 (main namespace). I then
+        do the same for the "tab" background colors. --Lupo */
+
+#content,
+#mytabs li.selected a,
+#p-cactions li.selected a,
+#mytabs li a,
+#p-cactions li a,
+#p-cactions li a:hover {
+  background-color: #F8FCFF; /* alternativa: #F3F3FF */
+}
+.ns-0 #content,
+.ns-0 #mytabs li.selected a,
+.ns-0 #p-cactions li.selected a,
+.ns-0 #mytabs li a,
+.ns-0 #p-cactions li a,
+.ns-0 #p-cactions li a:hover {
+  background-color: white;
+}
+.ns--1 table,
+.ns-2 table,
+.ns-3 table,
+.ns-4 table,
+.ns-6 table,
+.ns--1 form {
+  background: inherit;
+}
+ /*
+</pre>
+
+
+
+== Diffs ==
+<pre>
+ */
+/* Accessibility: make diff changes not just colour-based */ 
+.diffchange {
+    font-weight: bold;
+    background-color: inherit;
+}
+td.diff-addedline, td.diff-deletedline, td.diff-context {
+    font-size: 85%;
+    color: inherit;
+}
+ /*
+</pre>
+
+== Diff inserção de caracteres ==
+<pre>
+ */
+.mw-plusminus-pos {
+  color:darkgreen;
+}
+
+.mw-plusminus-neg {
+  color:darkred;
+}
+ /*
+</pre>
+
+== Geocoordenadas ==
+<pre>
+ */
+/*
+** Formato do Geocoordenadas
+** da WP:DE
+*/
+#coordinates {  
+  position: absolute;
+  z-index: 1;
+  border: none;
+  background: none; 
+  right: 12px; 
+  top: 1.5em;
+  width: 45.0em;
+  /* float: right; */
+  margin: 0.0em;
+  padding: 0.0em;
+  line-height: 1.5em;
+  text-align: right;
+  text-indent: 0;
+  font-size: 85%;
+  text-transform: none;
+  white-space: normal;
+}
+#coordinates a[href ^="http://"] {
+  background: url(http://upload.wikimedia.org/wikipedia/de/d/d4/Gnome-globe.png) center right no-repeat !important;
+  padding-right: 18px !important;
+}
+
+ /*
+</pre>
+== Ícone posicionado no canto superior ==
+<pre>
+ */
+ /* Para posicionar ícones no canto superior direito, utilizado pelas predefinições
+    "Artigo falado" e "Artigo Destacado" */
+ 
+ div.topicon {
+   position:absolute; 
+   z-index:100; 
+   top:10px;
+   display: block !important;
+ }
+
+ /* try adding here, this had no effect in [[MediaWiki:Common.css]] */
+ .plainlinksneverexpand a.external.text:after {
+  display: none !important
+ }
+
+ /*
+</pre>
+== Barra de navegação ==
+<pre>
+ */
+div.Boxmerge,
+div.NavFrame {
+        margin: 0px;
+        padding: 2px;
+        border: 1px solid #aaaaaa;
+        text-align: center;
+        border-collapse: collapse;
+        font-size: 95%;
+}
+div.Boxmerge div.NavFrame {
+        border-style: none;
+        border-style: hidden;
+}
+div.NavFrame + div.NavFrame {
+        border-top-style: none;
+        border-top-style: hidden;
+}
+div.NavPic {
+        background-color: #ffffff;
+        margin: 0px;
+        padding: 2px;
+        float: left;
+}
+div.NavFrame div.NavHead {
+        height: 1.6em;
+        font-weight: bold;
+        font-size: 100%;
+        background-color: #efefef;
+        position:relative;
+}
+div.NavFrame p {
+        font-size: 100%;
+}
+div.NavFrame div.NavContent {
+        font-size: 100%;
+}
+div.NavFrame div.NavContent p {
+        font-size: 100%;
+}
+div.NavEnd {
+        margin: 0px;
+        padding: 0px;
+        line-height: 1px;
+        clear: both;
+}
+a.NavToggle {
+        position:absolute;
+        top:0px;
+        right:3px;
+        font-weight:normal;
+        font-size:smaller;
+}
+
+
+/* Do not print navigation bar elements. They should not appear on paper */
+@media print{
+        .NavFrame {
+                display: none;
+        }
+        .BoxenVerschmelzen {
+                display: none;
+        }
+}
+ /*
+</pre>
+
+== Pequenos ajustes ==
+<pre>
+ */
+/*
+** Fundo dos elementos na página principal
+** (a utilizar esta class, claro)
+*/
+.MainPageBG {
+  background-color: transparent;
+}
+/* Mudanças recentes (RC), link de edição */
+#rc-elnk {
+  font-size: 94%;
+  background-color: #fcfcfc;
+  border: 1px dotted #006699;
+  padding: 0.1em 0.3em;
+  position: absolute;
+  float: right;
+  top: 0.4em;
+  right: 0.4em;
+  left: auto;
+  text-transform: none;
+}
+html>body #rc-elnk {
+  border: thin dotted #006699;
+}
+#rc-elnk .rc-esc {
+  display: none;
+}
+
+/*
+ * Em especial para a [[Predefinição:Ref]]
+ */
+.plainlinksneverexpand {
+  background: none !important;
+  padding: 0 !important;
+}
+
+.plainlinksneverexpand .urlexpansion {
+  display: none !important;
+}
+
+/* Make sure that ext links displayed within "plainlinksneverexpand" don't get
+   the arrow...
+*/
+#bodyContent .plainlinksneverexpand a {
+   background: none !important;
+   padding: 0 !important
+}
+
+/* futuras mensagens inter-projecto */
+div.interbox {
+        clear: both;
+        margin: 0px;
+        border: 1px solid #c0c0c0;
+}
+div.interbox + div.interbox {
+        border-top-style: hidden;
+}
+
+/* Wikipedia:Cartografia dos Wikipedistas */
+div.PontoMapa
+{
+ position:absolute;
+ width:1px;
+ height:1px;
+ background:#000000;
+ border: 1px solid #FFFFFF;    
+}
+
+/* Imagens de fundo para o Projeto Cidades do Brasil */
+#SCFlag { background-image: url(http://upload.wikimedia.org/wikipedia/pt/1/11/Bandsc.gif); }
+
+/* Página principal - PP-13 */
+#EnWpMpSearch2 { background: url(http://upload.wikimedia.org/wikipedia/en/3/3a/MP-magnifying-glass2.png) no-repeat top right; }
+
+#EnWpMpBook2 {
+ background-image: url(http://upload.wikimedia.org/wikipedia/en/8/8e/MP-open-book2.png);
+}
+/*
+</pre>
+
+== media: print ==
+<pre>
+ */
+@media print {
+  /* Do not print edit link in templates using Template:Ed
+     Do not print certain classes that shouldn't appear on paper */
+  .editlink, .noprint, .metadata, .dablink { display: none }
+  
+  #bodyContent a[href ^="http://"] {
+      background: none;
+      padding-right: 0;
+  }
+}
+
+/*
+
+ /*
+</pre>
+ */

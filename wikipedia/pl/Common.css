@@ -1,0 +1,337 @@
+/* Styl CSS importowany do wszystkich skórek. Zawiera wspólne klasy CSS.
+
+Zobacz te?: [[MediaWiki:Monobook.css]] */
+
+/*<pre><nowiki>*/
+@media print {
+	/* Nie drukuj linków do edycji, komunikatów (ek, stub) */
+	.editlink, .noprint, .metadata, .dablink { display: none }
+	#content { background: #FFF; } /* bia?e t?o na wydruku */
+	/* Poka? na wydruku przy szablonie {{Cytuj stron?}} adres URL zgodnie z norm? cytowania */
+	.cytuj_strone_url{visibility: visible;}
+}
+
+@media screen {
+	/* Ukryj na ekranie przy szablonie {{Cytuj stron?}} adres URL dla wygody czytaj?cego */
+	.cytuj_strone_url:before{content: "<!-- ";}
+	.cytuj_strone_url:after{content: " -->";}
+}
+
+/* style dla [[Szablon:Og?oszenia lokalne]] */
+.news_lokalne {
+	text-align:center;
+	font-size:100%;
+	background-color: aliceblue; color: #911;
+	margin: 0 auto 0; padding: 0 4pt;
+	border: 1px solid #633
+}
+.news_lokalne hr {
+	border: 1px solid #c66;
+	border-width: 1px 0px 0px;
+}
+
+/* Poprawka umieszczenia obrazków pod sob? dla skórek innych ni? Monobook.css */
+div.tright {
+	clear: right;
+}
+div.tleft {
+	clear: left;
+}
+
+/* universalna ramka zamiast szablonu border */
+#bodyContent .ramka {
+	display:table-cell;
+	border-collapse:collapse;
+	border:1px solid #BBB;
+}
+
+/* ----
+   Klasy do spisu tre?ci pomocy i ew. pokrewnych.
+---- */
+/* powrót do spisu tre?ci itp. */
+#bodyContent .helplink_back a {
+	background: url("http://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Torchlight_back.png/15px-Torchlight_back.png") center left no-repeat;
+	padding-left: 19px;
+	padding-right: 0px;
+}
+/* podstrona tematyczna */
+#bodyContent .helplink_subpage a, #bodyContent .legenda .helplink_subpage {
+	background: url("http://upload.wikimedia.org/wikipedia/commons/d/d7/A_help_folder.gif") center left no-repeat;
+	padding-left: 14px;
+	padding-right: 0px;
+}
+/* strona pomocy */
+#bodyContent .helplink_helppage a, #bodyContent .legenda .helplink_helppage {
+	background: url("http://upload.wikimedia.org/wikipedia/commons/3/3c/A_help_text.gif") center left no-repeat;
+	padding-left: 14px;
+	padding-right: 0px;
+}
+/* kategoria */
+#bodyContent .helplink_catpage a, #bodyContent .legenda .helplink_catpage {
+	background: url("http://upload.wikimedia.org/wikipedia/commons/4/40/A_help_category.gif") center left no-repeat;
+	padding-left: 14px;
+	padding-right: 0px;
+}
+/* strona specjalna */
+#bodyContent .helplink_specpage a, #bodyContent .legenda .helplink_specpage {
+	background: url("http://upload.wikimedia.org/wikipedia/commons/b/b6/A_help_special.gif") center left no-repeat;
+	padding-left: 14px;
+	padding-right: 0px;
+}
+/* strona portalu */
+#bodyContent .helplink_orgpage a, #bodyContent .legenda .helplink_orgpage {
+	background: url("http://upload.wikimedia.org/wikipedia/commons/8/88/A_help_portal.gif") center left no-repeat;
+	padding-left: 14px;
+	padding-right: 0px;
+}
+
+
+/* klasa audiolink dla szablonu Audio */
+#bodyContent .audiolink a {
+	background: url("http://upload.wikimedia.org/wikipedia/commons/f/f7/Loudspeaker.png") center left no-repeat;
+	padding-left: 15px;
+}
+
+/* klasa topalign, ?eby umo?liwi? wyrównanie do góry wszystkich pól tableki */
+table.topalign td, table.topalign th {
+	vertical-align: top;
+}
+/* analogicznie bottomalign i centeralign */
+table.bottomalign td, table.bottomalign th {
+	vertical-align: bottom;
+}
+/* analogicznie bottomalign i middlealign */
+table.middlealign td, table.middlealign th {
+	vertical-align: middle;
+}
+
+/* klasa wikitable/prettytable dla ?adniejszego wygl?du tabelek */
+
+table.wikitable,
+table.prettytable {
+	margin: 1em 1em 1em 0;
+	background: #f9f9f9;
+	border: 1px #aaa solid;
+	border-collapse: collapse;
+}
+table.wikitable tbody,
+table.prettytable tbody {
+	background: #fff;
+}
+
+table.wikitable th, table.wikitable td,
+table.prettytable th, table.prettytable td {
+	border: 1px #aaa solid;
+	padding: 0.2em;
+}
+
+table.wikitable th,
+table.prettytable th {
+	background: #f2f2f2;
+	text-align: center;
+}
+
+table.wikitable caption,
+table.prettytable caption {
+	margin-left: inherit;
+	margin-right: inherit;
+}
+
+/* Style dla infoboksów */
+
+.infobox {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	color: black;
+	margin-bottom: 0.5em;
+	margin-left: 1em;
+	padding: 0.2em;
+	float: right;
+	clear: right;
+}
+.infobox td,
+.infobox th {
+	vertical-align: top;
+}
+.infobox caption {
+	font-size: larger;
+	margin-left: inherit;
+}
+.infobox.bordered {
+	border-collapse: collapse;
+}
+.infobox.bordered td,
+.infobox.bordered th {
+	border: 1px solid #aaa;
+}
+.infobox.bordered .borderless td,
+.infobox.bordered .borderless th {
+	border: 0;
+}
+
+.infobox.sisterproject {
+	width: 20em;
+	font-size: 90%;
+}
+
+/* styles for bordered infobox with merged rows */
+.infobox.bordered .mergedtoprow td,
+.infobox.bordered .mergedtoprow th {
+	border: 0;
+	border-top: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+}
+
+.infobox.bordered .mergedrow td,
+.infobox.bordered .mergedrow th {
+	border: 0;
+	border-right: 1px solid #aaa;
+}
+
+/* Style boksów z Merge i Split */
+
+.messagebox {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	width: 85%;
+	margin: 0 auto 1em auto;
+	padding: .2em;
+	text-align: justify;
+}
+.messagebox.merge {
+	border: 1px solid #cf9fff;
+	background-color: #f5edf5;
+	text-align: center;
+}
+
+/* Stylesheet-Ergänzung zu Standard-[[Wikipedia:Navigationsleisten|Navigationsleisten]] */
+
+div.BoxenVerschmelzen,
+div.NavFrame {
+	margin: 0px;
+	padding: 2px;
+	border: 1px solid #aaa;
+	text-align: center;
+	border-collapse: collapse;
+	font-size: 95%;
+	clear:both;
+}
+div.BoxenVerschmelzen div.NavFrame {
+	border-style: none;
+	border-style: hidden;
+}
+div.NavFrame + div.NavFrame {
+	border-top-style: none;
+	border-top-style: hidden;
+}
+div.NavPic {
+	background-color: #FFF;
+	margin: 0px;
+	padding: 2px;
+	float: left;
+}
+/* Cel zamierzony do [[Szablon:Uniwersalny szablon nawigacyjny]] */
+div.NavFrame div.NavPic {
+	display:table-cell;
+	border-collapse:collapse;
+	border: solid 1px #BBB;
+}
+div.NavFrame div.NavHead {
+	height: 1.6em;
+	font-weight: bold;
+	font-size: 100%;
+	background-color: #efefef;
+}
+div.NavFrame p {
+	font-size: 100%;
+}
+div.NavFrame div.NavContent {
+	font-size: 100%;
+}
+div.NavFrame div.NavContent p {
+	font-size: 100%;
+}
+div.NavEnd {
+	margin: 0px;
+	padding: 0px;
+	line-height: 1px;
+	clear: both;
+}
+.NavToggle {font-size: x-small;float:right;}
+
+/* Navigationsleisten nicht mit ausdrucken */
+
+@media print{
+	.NavFrame {
+		display: none;
+	}
+	.BoxenVerschmelzen {
+		display: none;
+	}
+}
+
+.nounderlines a {text-decoration: none}
+
+
+/************************/
+/* CommonsTicker styles */
+/************************/
+ 
+/* links */
+.tickerDiffLink { } /* diff links in ticker */
+.tickerMiscLink { } /* misc links in ticker */
+ 
+/* remove list bullets */
+.tickerList ul,    .tickerList ul li    { list-style: none; text-indent:-2em; margin-left:2em;   text-align:left; }
+.tickerList ul ul, .tickerList ul ul li { list-style: none; text-indent:0;    margin-left:1.5em; text-align:left; }
+
+/* per-type styles */
+.tickerEntry_deleted     { }  /* entry for image deletion */
+.tickerEntry_restored    { }  /* entry for restored image */
+.tickerEntry_replaced    { }  /* entry for image replacement */
+.tickerEntry_tagged      { }  /* entry for adding/removing problem tags */
+.tickerEntry_redir       { }  /* entry for critical redirection (fot tag redirects) */
+.tickerEntry_recat       { }  /* entry for critical re-categorization (for tag categories) */
+.tickerEntry_notify      { }  /* entry for global notifications */
+.tickerEntry_changed     { }  /* entry for generic change */
+
+/* per-status styles */
+.tickerStatus_done     { text-decoration:line-through; }  /* strike through when entry has been handeled */
+
+/* per-action styles */
+.tickerAction_deleted:before     { content:" USUNI?TO "; color: #f00; font-family:monospace; font-weight:bold; font-size:100%; }  
+.tickerAction_restored:before    { content:" PRZYWRÓCONO "; color: #0B0; font-family:monospace; font-weight:bold; font-size:100%; }  
+.tickerAction_deletedRev:before  { content:" -STARE "; color: #DDAAAA; font-family:monospace; font-weight:bold; font-size:100%; }  
+.tickerAction_replaced:before    { content:" ZAST?PIONO "; color: #c8f; font-family:monospace; font-weight:bold; font-size:100%; }  
+.tickerAction_replacedOwn:before { content:" NOWA WERSJA "; color: #eaf; font-family:monospace; font-weight:bold; font-size:100%; }  
+.tickerAction_addedBad:before    { content:" +VfD "; color: #F80; font-family:monospace; font-weight:bold; font-size:100%; }  
+.tickerAction_removedBad:before  { content:" -VfD "; color: #0B0; font-family:monospace; font-weight:bold; font-size:100%; }  
+.tickerAction_addedGood:before   { content:" +OK  "; color: #0B0; font-family:monospace; font-weight:bold; font-size:100%; }  
+.tickerAction_removedGood:before { content:" -OK  "; color: #F80; font-family:monospace; font-weight:bold; font-size:100%; }
+
+/* ticker usage list */
+.tickerUsage  { font-size:80%; }  
+
+/* entry applies to a template used by multiple images */
+.tickerTemplateEntry    { font-weight: bold; } 
+
+/* entry applies to sub-entries, i.e. images that use a specific template */
+.tickerSubEntry         { }
+
+/* minor entry styles */ 
+.tickerMinorEntry  { color:#666; }     /* minor entry */
+.tickerMinorEntry a,
+.tickerMinorEntry a:link,
+.tickerMinorEntry a:visited { color:#669; }
+#bodyContent .tickerMinorEntry a.extiw,
+#bodyContent .tickerMinorEntry a.extiw:link,
+#bodyContent .tickerMinorEntry a.extiw:visited { color:#669; }
+
+/* Przypisy */
+ol.references {font-size:85%}
+
+/* Dla wska?nika ilo?ci zmienionych bajtów */ 
+strong.mw-plusminus-neg{color:#c00}
+span.mw-plusminus-neg{color:#900}
+span.mw-plusminus-pos{color:#060}
+/* </nowiki></pre> */

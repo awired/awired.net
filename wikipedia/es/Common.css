@@ -1,0 +1,454 @@
+/* Common CSS for all skins */
+/*<pre><nowiki>*/
+
+/* Estilos para el CommonsTicker ([[Wikiproyecto:CommonsTicker]])
+   According to the CSS specs, @import rules must precede any other CSS rules in a stylesheet,
+   so this creates the need to place it in its own stylesheet for these purposes. */
+/*<pre><nowiki>*/
+
+ /************************/
+ /* CommonsTicker styles */
+ /************************/
+
+ /* Estilos para el CommonsTicker. Es cargado por MediaWiki:Common.css
+ Esta página DEBE ESTAR PROTEGIDA */
+
+  /* links */
+  .tickerDiffLink { } /* diff links in ticker */
+  .tickerMiscLink { } /* misc links in ticker */
+  /* remove list bullets */
+  .tickerList ul,    .tickerList ul li    { list-style: none; text-indent:-2em; margin-left:2em;   text-align:left; }
+  .tickerList ul ul, .tickerList ul ul li { list-style: none; text-indent:0;    margin-left:1.5em; text-align:left; }
+
+  /* per-type styles */
+  .tickerEntry_deleted     { }  /* entry for image deletion */
+  .tickerEntry_restored    { }  /* entry for restored image */
+  .tickerEntry_replaced    { }  /* entry for image replacement */
+  .tickerEntry_tagged      { }  /* entry for adding/removing problem tags */
+  .tickerEntry_redir       { }  /* entry for critical redirection (fot tag redirects) */
+  .tickerEntry_recat       { }  /* entry for critical re-categorization (for tag categories) */
+  .tickerEntry_notify      { }  /* entry for global notifications */
+  .tickerEntry_changed     { }  /* entry for generic change */
+
+  /* per-status styles */
+  .tickerStatus_done     { text-decoration:line-through; }  /* strike through when entry has been handeled */
+
+  /* per-action styles */
+  .tickerAction_deleted:before     { content:" Eliminada "; color: #FF0000; font-family:monospace; font-weight:bold; font-size:80%; }  
+  .tickerAction_restored:before    { content:" Recuperada "; color: #00BB00; font-family:monospace; font-weight:bold; font-size:80%; }  
+  .tickerAction_deletedRev:before  { content:" -Anterior "; color: #DDAAAA; font-family:monospace; font-weight:bold; font-size:80%; }  
+  .tickerAction_replaced:before    { content:" Reemplazada "; color: #CC88FF; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_replacedOwn:before { content:" UPDT "; color: #EEAAFF; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_addedBad:before    { content:" +VfD "; color: #FF8800; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_removedBad:before  { content:" -VfD "; color: #00BB00; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_addedGood:before   { content:" +OK  "; color: #00BB00; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_removedGood:before { content:" -OK  "; color: #FF8800; font-family:monospace; font-weight:bold; font-size:100%; }
+
+ /* ticker usage list */
+  .tickerUsage  { font-size:80%; }  
+
+  /* entry applies to a template used by multiple images */
+  .tickerTemplateEntry    { font-weight: bold; } 
+
+  /* entry applies to sub-entries, i.e. images that use a specific template */
+  .tickerSubEntry         { }           
+
+ /* minor entry styles */ 
+  .tickerMinorEntry  { color:#666; }     /* minor entry */
+  .tickerMinorEntry a,
+  .tickerMinorEntry a:link,
+  .tickerMinorEntry a:visited { color:#669; }
+  #bodyContent .tickerMinorEntry a.extiw,
+  #bodyContent .tickerMinorEntry a.extiw:link,
+  #bodyContent .tickerMinorEntry a.extiw:visited { color:#669; }
+
+  .tachado { text-decoration:line-through; } /* Una forma fácil de escribirlo */
+
+/*</nowiki></pre>*/
+
+/*InterProject */
+
+.interProject {
+   display:none; 
+   clear: both; 
+   border-top: 2px dotted #AAAAAA; 
+   margin-top: 2em;
+}
+
+/* Evitar la aparición del subrayado al pasar sobre la imagen cuande se usa {{tl|clic}} */ 
+.clic a:active, .clic a:hover {text-decoration:none}
+
+
+/* Style for "notices" */
+.notice {
+    text-align: justify;
+    margin: 1em;
+    padding: 0.2em;
+}
+
+#disambig {
+    border-top: 3px double #cccccc; 
+    border-bottom: 3px double #cccccc;
+}
+
+#spoiler {
+    border-top: 2px solid #ddd;
+    border-bottom:2px solid #ddd;
+}
+
+/* Standard talk template style */
+
+.Talk-Notice  {
+    border: 1px solid #C0C090;
+    background-color: #F8EABA;
+    margin-bottom: 3px;
+    width: 85%;
+    border-spacing: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Make template background appear correctly on all browsers */
+.Talk-Notice td {
+    background: inherit;
+}
+
+/* Choose whether to have AD/BC dates or CE/BCE dates*/
+
+/* First, the default : display both : See templates ADCE and BCEBC for how these are used*/
+.Use_Default_Date_Convention { display: inline; }
+.Use_AD_and_BC { display: none; }
+.Use_BCE_and_CE { display: none; }
+
+/* If you want to display AD and BC add the following to User:You/monobook.css page */
+/*
+.Use_Default_Date_Convention { display: none; }
+.Use_AD_and_BC { display:inline; }
+.Use_BCE_and_CE { display:none; }
+*/
+
+/*If you want to display CE and BCE add the following to User:You/monobook.css page */
+/*
+.Use_Default_Date_Convention { display: none; }
+.Use_AD_and_BC { display:none; }
+.Use_BCE_and_CE {display:inline; }
+*/
+
+/*Add formatting to make sure that "external references" from [[Template:Ref]] do
+  not get URL expansion, not even when printed. The mechanism up to MediaWiki 1.4 was
+  that the HTML code contained a SPAN following the anchor A; this SPAN had the class
+  "urlexpansion", which was not displayed on screen, but was shown when the medium was
+  "print". The rules below ensure (a) that there is no extra padding to the right of
+  the anchor (displayed as "[<number>]"), (b) that there is no "external link arrow" for
+  the link, and (c) that this SPAN of class "urlexpansion" is never shown.
+  ~~~~
+*/
+
+.plainlinksneverexpand {
+  background: none ! important;
+  padding: 0 ! important;
+}
+
+.plainlinksneverexpand .urlexpansion {
+  display : none ! important;
+}
+
+/* Make sure that ext links displayed within "plainlinksneverexpand" don't get
+   the arrow...
+*/
+.plainlinksneverexpand a {
+   background: none !important;
+   padding: 0 !important
+}
+
+/* styles for geography infoboxes, e.g. countries, national subdivisions, cities, etc. */
+
+.infobox.geography {
+   border: 1px solid #ccd2d9;
+   text-align: left;
+   border-collapse: collapse;
+   line-height: 1.2em; 
+   font-size: 90%;
+}
+
+.infobox.geography  td,
+.infobox.geography  th {
+   border-top: solid 1px #ccd2d9;
+   padding: 0.4em 0.2em 0.4em 0.8em;
+}
+.infobox.geography .mergedtoprow td,
+.infobox.geography .mergedtoprow th {
+   border-top: solid 1px #ccd2d9;
+   padding: 0.4em 0.2em 0.2em 0.8em;
+}
+
+.infobox.geography .mergedrow td,
+.infobox.geography .mergedrow th {
+      border: 0;
+      padding: 0 0.2em 0.2em 0.8em;
+}
+
+.infobox.geography .mergedbottomrow td,
+.infobox.geography .mergedbottomrow th {
+   border-top: 0;
+   border-bottom: solid 1px #ccd2d9;
+   padding: 0 0.2em 0.4em 0.8em;
+}
+
+.infobox.geography .maptable td,
+.infobox.geography .maptable th {
+      border: 0;
+      padding: 0 0 0 0;
+}
+
+/* With MediaWiki 1.5, the mechanism has changed: instead of a SPAN of class "urlexpansion"
+  following the anchor A, the anchor itself now has class "external autonumber" and the
+  expansion is inserted when printing (see the common printing style sheet at
+  http://en.wikipedia.org/skins-1.5/common/commonPrint.css) using the ":after" pseudo-
+  element of CSS. We have to switch this off for links due to Template:Ref!
+  
+*/
+.plainlinksneverexpand a.external.text:after {
+ display: none !important;
+}
+.plainlinksneverexpand a.external.autonumber:after {
+ display: none !important;
+}
+
+/* Merge template style */
+
+.messagebox {
+   border: 1px solid #aaaaaa;
+   background-color: #f9f9f9;
+   width: 85%;
+   margin: 0 auto 1em auto;
+   padding: .2em;
+   text-align: justify;
+   font-size: 90%;
+}
+.messagebox.merge {
+   border: 1px solid #cf9fff;
+   background-color: #f5edf5;
+   text-align: center;
+}
+.messagebox.cleanup {
+   border: 1px solid #9f9fff;
+   background-color: #efefff;
+   text-align: center;
+}
+.messagebox.standard-talk {
+   border: 1px solid #c0c090;
+   background-color: #f8eaba;
+   text-align: center;
+}
+
+.messagebox.warning {
+   border: 1px solid #fcc;
+   background-color: #fee;
+   text-align: center;
+   font-size: 100%;
+}
+
+/* Infobox template style */
+
+.infobox {
+   border: 1px solid #aaaaaa;
+   background-color: #f9f9f9;
+   color: black;
+   margin-bottom: 0.5em;
+   margin-left: 1em;
+   padding: 0.2em;
+   float: right;
+   clear: right;
+}
+.infobox caption {
+   font-size: larger;
+   margin-left: inherit;
+}
+.infobox.bordered {
+   border-collapse: collapse;
+}
+.infobox.bordered td,
+.infobox.bordered th {
+   border: 1px solid #aaaaaa;
+}
+.infobox.bordered .borderless td,
+.infobox.bordered .borderless th {
+   border: 0;
+}
+
+.infobox.sisterproject {
+   width: 20em;
+   font-size: 90%;
+}
+
+/* Importo formato para versos de WikiSource
+pre.verse {
+  background-color: #ffffff;
+  font-family:sans-serif;
+  line-height: 150%;
+  border: none;
+  padding-left: 2em;
+  margin: 0;
+  white-space: pre;
+}
+
+.IconoPlantillaMantenimiento {
+  float:left;
+  margin-left: 1em; 
+  margin-right: 1em; 
+}
+
+/* Support for Template:IPA, Template:Unicode and Template:Polytonic. The inherit declaration
+   resets the font for all browsers except MSIE6.  The empty comment must remain. */
+.IPA {
+        font-family: Chrysanthi Unicode, Doulos SIL, Gentium, GentiumAlt, Code2000,
+                     TITUS Cyberbit Basic, DejaVu Sans, Bitstream Vera Sans,
+                     Bitstream Cyberbit, Arial Unicode MS, Lucida Sans Unicode,
+                     Hiragino Kaku Gothic Pro, Matrix Unicode;
+        font-family /**/:inherit;
+}
+.Unicode {
+        font-family: TITUS Cyberbit Basic, Code2000, Doulos SIL, Chrysanthi Unicode,
+                     Bitstream Cyberbit, Bitstream CyberBase, Bitstream Vera, Thryomanes,
+                     Gentium, GentiumAlt, Visual Geez Unicode, Lucida Grande,
+                     Arial Unicode MS, Microsoft Sans Serif, Lucida Sans Unicode;
+        font-family /**/:inherit;
+}
+.polytonic {
+        font-family: Athena, Gentium, Palatino Linotype, Arial Unicode MS,
+                     Lucida Sans Unicode, Lucida Grande, Code2000; 
+        font-family /**/:inherit;
+}
+
+/** Estilos para tablas.
+    ** EXPERIMENTAL **
+    la idea es, si se quiere que la primera columna de la tabla esté alineada
+    a la derecha, la segunda centrada  y la tercera a la izquierda, usar
+    {| class="col1der col2cen col3izq"
+    en vez de repetir "style='text-align:right'", etc, en '''cada''' celda
+**/
+table.col1der TD:first-child { text-align:right; }
+table.col1izq TD:first-child { text-align:left; }
+table.col1cen TD:first-child { text-align:center; }
+
+table.col2der TD:first-child + TD { text-align:right; }
+table.col2izq TD:first-child + TD { text-align:left; }
+table.col2cen TD:first-child + TD { text-align:center; }
+
+table.col3der TD:first-child + TD + TD { text-align:right; }
+table.col3izq TD:first-child + TD + TD { text-align:left; }
+table.col3cen TD:first-child + TD + TD { text-align:center; }
+
+table.col4der TD:first-child + TD + TD + TD { text-align:right; }
+table.col4izq TD:first-child + TD + TD + TD { text-align:left; }
+table.col4cen TD:first-child + TD + TD + TD { text-align:center; }
+
+table.col5der TD:first-child + TD + TD + TD + TD { text-align:right; }
+table.col5izq TD:first-child + TD + TD + TD + TD { text-align:left; }
+table.col5cen TD:first-child + TD + TD + TD + TD { text-align:center; }
+
+/* hiddenStructure importado de w:en para permitir esconder automáticamente
+   los parámetros vacíos en tablas */
+.hiddenStructure {
+   display: none;
+   speak: none;
+}
+
+/* Ayudita para [[Especial:Allpages]]: los redirects aparecen en cursiva */
+.allpagesredirect {font-style: italic;}
+
+/* Put a checker background at the image description page only visible
+   if the image has transparent background */
+
+#file img {
+  background: url(http://upload.wikimedia.org/wikipedia/commons/5/5d/Checker-16x16.png)
+              repeat;
+}
+
+form#upload,.UploadFormShowed {display: none;}
+
+/* Estilo para controlar el tamaño del texto citado.
+   Quien quiera cambiar el suyo no tiene más que editar su propia monobook.css */
+
+.citado {
+   font-size: 90%;
+   padding: 0.1em;
+}
+
+
+/* Disponibilidad para tareas de mantenimiento/Tablas por día/semana */
+
+table.user-availability { 
+   text-align:center;
+   border:1px solid #333366; 
+}
+table.user-availability th { 
+   font-size:110% 
+}
+table.user-availability .toprow td+td { 
+   width:30px;
+   height:10px;
+   background-color:#eeeeee;
+   border:1px solid #aaaaaa 
+}
+table.user-availability .off { 
+   font-size:80%;
+   border:1px solid #aaaaaa;
+   background-color:#ffffff; 
+}
+table.user-availability .onn {
+   font-size:80%;
+   border:1px solid #aaaaaa;
+   background-color:#ccffcc; 
+}
+table.user-availability .wrk { 
+   font-size:80%;
+   border:1px solid #aaaaaa;
+   background-color:#ccccff; 
+}
+table.user-availability .cll { 
+   font-size:80%;
+   border:1px solid #aaaaaa;
+   background-color:#ffffdd; 
+}
+table.user-availability .key { 
+   font-size:90%;
+   border-top:1px dashed black;
+   text-align:right 
+}
+table.user-availability .key span { 
+   padding:2px
+}
+
+/* Change the external link icon to an Adobe icon for all PDF files */
+/* (in browsers that support these CSS selectors, like Mozilla and Opera) */
+#bodyContent a[href$=".pdf"].external, 
+#bodyContent a[href*=".pdf?"].external, 
+#bodyContent a[href*=".pdf#"].external,
+#bodyContent a[href$=".PDF"].external, 
+#bodyContent a[href*=".PDF?"].external, 
+#bodyContent a[href*=".PDF#"].external {
+    background: url(http://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Icons-mini-file_acrobat.gif/15px-Icons-mini-file_acrobat.gif) center right no-repeat;
+    padding-right: 16px;
+}
+
+/* Change the external link icon to an Adobe icon anywhere the PDFlink class */
+/* is used (notably Template:PDFlink). This works in IE, unlike the above. */
+span.PDFlink a {
+    background: url(http://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Icons-mini-file_acrobat.gif/15px-Icons-mini-file_acrobat.gif) center right no-repeat !important;
+    padding-right: 17px !important;
+}
+
+/* make the list of references look smaller */
+ol.references {
+   font-size: 100%;
+}
+
+.references-small { font-size: 90%;}
+
+.references-2column {
+  font-size: 90%;
+}
+
+/*</nowiki></pre>*/

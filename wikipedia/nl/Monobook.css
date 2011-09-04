@@ -1,0 +1,178 @@
+/*
+<pre>
+*/
+
+/* ACHTERGRONDKLEUREN VOOR VERSCHILLENDE NAAMRUIMTES */
+/* Default achtergrondkleur */
+#content { background : #F8FCFF; }  /* hemelsblauw */
+#p-cactions li { background : #F8FCFF; }
+#p-cactions li a { background : #F8FCFF; }
+
+/* Achtergrondkleur van speciale pagina's */
+.ns--1 * #content { background : #F8FCFF; }
+.ns--1 * #p-cactions li { background : #F8FCFF; }
+.ns--1 * #p-cactions li a { background : #F8FCFF; }
+.ns--1 div.thumb { border-color: #F8FCFF; }
+
+/* Achtergrondkleur van de artikelen */
+.ns-0 * #content { background : white; }
+.ns-0 * #p-cactions li { background : white; }
+.ns-0 * #p-cactions li a { background : white; }
+
+/* Achtergrondkleur bij de overlegpagina's van de artikelen */
+.ns-1 * #content { background : #FFFFEE; }
+.ns-1 * #p-cactions li { background : #FFFFEE; }
+.ns-1 * #p-cactions li a { background : #FFFFEE; }
+.ns-1 div.thumb { border-color: #FFFFEE; }
+
+/* Achtergrondkleur van de gebruikerspagina's */
+.ns-2 * #content { background : white; }
+.ns-2 * #p-cactions li { background : white; }
+.ns-2 * #p-cactions li a { background : white; }
+
+/* Achtergrondkleur van de overlegpagina's van gebruikers */
+.ns-3 * #content { background : #FFFFEE; }
+.ns-3 * #p-cactions li { background : #FFFFEE; }
+.ns-3 * #p-cactions li a { background : #FFFFEE; }
+.ns-3 div.thumb { border-color: #FFFFEE; }
+
+/* Achtergrondkleur van de pagina's in de Wikipedia naamruimte  */
+.ns-4 * #content { background : #FFFFEE; }
+.ns-4 * #p-cactions li { background : #FFFFEE; }
+.ns-4 * #p-cactions li a { background : #FFFFEE; }
+.ns-4 div.thumb { border-color: #FFFFEE; }
+
+/* Achtergrondkleur van de overlegpagina's in de Wikipedia naamruimte  */
+.ns-5 * #content { background : #FFFFEE; }
+.ns-5 * #p-cactions li { background : #FFFFEE; }
+.ns-5 * #p-cactions li a { background : #FFFFEE; }
+.ns-5 div.thumb { border-color: #FFFFEE; }
+
+/* Achtergrondkleur van de pagina's met afbeeldingen  */
+.ns-6 * #content { background : white; }
+.ns-6 * #p-cactions li { background : white; }
+.ns-6 * #p-cactions li a { background : white; }
+
+/* Achtergrondkleur van de overlegpagina's bij de afbeeldingen  */
+.ns-7 * #content { background : #FFFFEE; }
+.ns-7 * #p-cactions li { background : #FFFFEE; }
+.ns-7 * #p-cactions li a { background : #FFFFEE; }
+.ns-7 div.thumb { border-color: #FFFFEE; }
+
+/* Achtergrondkleur van de pagina's in de Media naamruimte   */
+.ns-8 * #content { background : #EEEEFF; }
+.ns-8 * #p-cactions li { background : #EEEEFF; }
+.ns-8 * #p-cactions li a { background : #EEEEFF; }
+.ns-8 div.thumb { border-color: #EEEEFF; }
+
+/* Achtergrondkleur van de overlegpagina's in de Media naamruimte  */
+.ns-9 * #content { background : #FFFFEE; }
+.ns-9 * #p-cactions li { background : #FFFFEE; }
+.ns-9 * #p-cactions li a { background : #FFFFEE; }
+.ns-9 div.thumb { border-color: #FFFFEE; }
+
+/* Achtergrondkleur van Sjablonen's */
+.ns-10 * #content { background : #F8FCFF; }
+.ns-10 * #p-cactions li { background : #F8FCFF; }
+.ns-10 * #p-cactions li a { background : #F8FCFF; }
+.ns-10 div.thumb { border-color: #F8FCFF; }
+
+/* Achtergrondkleur van de overlegpagina's in de Sjabloon naamruimte  */
+.ns-11 * #content { background : #FFFFEE; }
+.ns-11 * #p-cactions li { background : #FFFFEE; }
+.ns-11 * #p-cactions li a { background : #FFFFEE; }
+.ns-11 div.thumb { border-color: #FFFFEE; }
+
+/* Achtergrondkleur van de pagina's in de Help naamruimte  */
+.ns-12 * #content { background : #FFEEEE; }
+.ns-12 * #p-cactions li { background : #FFEEEE; }
+.ns-12 * #p-cactions li a { background : #FFEEEE; }
+.ns-12 div.thumb { border-color: #FFEEEE; }
+
+/* Achtergrondkleur van de overlegpagina's in de Help naamruimte */
+.ns-13 * #content { background : #FFEEEE; }
+.ns-13 * #p-cactions li { background : #FFEEEE; }
+.ns-13 * #p-cactions li a { background : #FFEEEE; }
+.ns-13 div.thumb { border-color: #FFEEEE; }
+
+/* Achtergrondkleur van de categorieën */
+.ns-14 * #content { background : white; }
+.ns-14 * #p-cactions li { background : white; }
+.ns-14 * #p-cactions li a { background : white; }
+
+/* Achtergrondkleur van de overlegpagina's bij de Categorieën */
+.ns-15 * #content { background : #FFFFEE; }
+.ns-15 * #p-cactions li { background : #FFFFEE; }
+.ns-15 * #p-cactions li a { background : #FFFFEE; }
+.ns-15 div.thumb { border-color: #FFFFEE; }
+
+/* Achtergrondkleur van de portalen */
+.ns-100 * #content { background : white; }
+.ns-100 * #p-cactions li { background : white; }
+.ns-100 * #p-cactions li a { background : white; }
+
+/* Achtergrondkleur van de overlegpagina's bij de portalen */
+.ns-101 * #content { background : #FFFFEE; }
+.ns-101 * #p-cactions li { background : #FFFFEE; }
+.ns-101 * #p-cactions li a { background : #FFFFEE; }
+.ns-101 div.thumb { border-color: #FFFFEE; }
+
+/* Lijst van naamruimtes:
+   de oneven nummers zijn de overlegpagina's bij xxx 
+ 0:  artikel
+ 2:  gebruiker
+ 4:  wikipedia
+ 6:  afbeelding
+ 8:  mediawiki
+ 10: sjabloon
+ 12: help
+ 14: categorie
+ 100: portaal
+*/
+
+
+
+/* hiermee staat in het zoek-onderdeel de knop 'Zoeken' niet meer onder de knop 'Artikel' */
+/* die extra ruimte links en rechts was bedoeld voor de originele tekst 'OK' */
+/* waardoor voorkomen werd dat de knop te klein werd */
+#searchGoButton {
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: bold;
+}
+
+/* uploadform dezelfde layout als rest van de pagina */
+form#upload {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+}
+form#upload table {
+	background-color: #f9f9f9;
+}
+
+/* speciale karakters onder bewerkingsscherm niet onderstrepen */
+#specialchars a { 
+        text-decoration: none; 
+}
+
+/* Voor Sjabloon:Coördinaten */
+#coordinates {  
+   position: absolute;
+   z-index: 1;
+   right: 12px;
+   top: 0;
+   background: #fff;
+   padding-left: .5em;
+   float: right;
+   text-align: right;
+   font-size: 85%;
+}
+
+/* Bewerklink bij een sectie een kleinere letter */
+span.editsection {
+   font-size: x-small; 
+}
+
+/* </pre> */

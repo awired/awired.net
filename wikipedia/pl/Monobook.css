@@ -1,0 +1,194 @@
+/* Uwaga! Klasy CSS wspólne dla wszystkich skórek znajduj? si? w [[MediaWiki:Common.css]] */
+
+/* <pre> */
+/* ?adny sitenotice (kopia z enwiki) */
+
+#siteNotice {margin-top:5px;padding-left: 4px;text-align: center;}
+
+/* pocz?tek skopiowanego z Wikis?ownika */
+
+a {color: #2939B5;}
+a:visited  {color: #00008B;}
+a.external {color: teal;}
+a.stub {color: #2B6653;}
+
+#content {color:black;} 
+#content {background:white;} 
+#p-cactions li {background:white;} 
+#p-cactions li a {background:white;}
+
+/* ukrywa ostatnie zmiany w pierwszym bloku (navigation) */
+#p-navigation #n-recentchanges {display:none}
+
+.ns-0 * #content {color:black;background:white; } 
+.ns-0 * table, .ns-0 * #p-cactions li, .ns-0 * #p-cactions li a  {background:white;}
+.ns-0 * div.thumb {border-color: white;}
+
+.ns-1 * #content {color:black;background:#FFFFEE;} 
+.ns-1 * table, .ns-1 * #p-cactions li, .ns-1 * #p-cactions li a  {background:#FFFFEE;}
+.ns-1 * div.thumb {border-color: #FFFFEE;}
+
+.ns-2 * #content {color:black;background:#EFFFFF;} 
+.ns-2 * table, .ns-2 * #p-cactions li, .ns-2 * #p-cactions li a {background:#EFFFFF;}
+.ns-2 * div.thumb {border-color: #EFFFFF;}
+
+.ns-3 * #content {color:black;background:#FFFFEE; } 
+.ns-3 * table, .ns-3 * #p-cactions li, .ns-3 * #p-cactions li a {background:#FFFFEE;}
+.ns-3 * div.thumb {border-color: #FFFFEE;}
+
+.ns-4 * #content {color:black;background:#EFFFFF;} 
+.ns-4 * table, .ns-4 * #p-cactions li, .ns-4 * #p-cactions li a {background-color:#EFFFFF;}
+.ns-4 * div.thumb {border-color: #EFFFFF;}
+
+.ns-5 * #content {color:black; background:#FFFFEE;} 
+.ns-5 * table, .ns-5 * #p-cactions li, .ns-5 * #p-cactions li a {background-color:#FFFFEE;}
+.ns-5 * div.thumb {border-color: #FFFFEE;}
+
+.ns-6 * #content {color:black;background:#F0F0F0;} 
+.ns-6 * table, .ns-6 * #p-cactions li, .ns-6 * #p-cactions li a {background-color:#F0F0F0;}
+.ns-6 * div.thumb {border-color: #F0F0F0;}
+
+.ns-7 * #content {color:black;background:#FFFFEE;}
+.ns-7 * table, .ns-7 * #p-cactions li, .ns-7 * #p-cactions li a {background-color:#FFFFEE;}
+.ns-7 * div.thumb {border-color: #FFFFEE;}
+
+.ns-8 * #content {color:black;background:#F0F0F0;} 
+.ns-8 * table, .ns-8 * #p-cactions li, .ns-8 * #p-cactions li a {background-color:#F0F0F0;}
+.ns-8 * div.thumb {border-color: #F0F0F0;}
+
+.ns-9 * #content {color:black;background:#FFFFEE;} 
+.ns-9 * table, .ns-9 * #p-cactions li, .ns-9 * #p-cactions li a {background-color:#FFFFEE;}
+.ns-9 * div.thumb {border-color: #FFFFEE;}
+
+.ns-10 * #content {color:black;background:#F0F0F0;} 
+.ns-10 * table , .ns-10 * #p-cactions li, .ns-10 * #p-cactions li a{background-color:#F0F0F0;}
+.ns-10 * div.thumb {border-color: #F0F0F0;}
+
+.ns-11 * #content {color:black;background:#FFFFEE;} 
+.ns-11 * table, .ns-11 * #p-cactions li, .ns-11 * #p-cactions li a {background-color:#FFFFEE;}
+.ns-11 * div.thumb {border-color: #FFFFEE;}
+
+.ns-12 * #content {color:black;background:#EFFFFF;} 
+.ns-12 * table, .ns-12 * #p-cactions li, .ns-12 * #p-cactions li a {background-color:#EFFFFF;}
+.ns-12 * div.thumb {border-color: #EFFFFF;}
+
+.ns-13 * #content {color:black;background:#FFFFEE;} 
+.ns-13 * table, .ns-13 * #p-cactions li, .ns-13 * #p-cactions li a {background-color:#FFFFEE;}
+.ns-13 * div.thumb {border-color: #FFFFEE;}
+
+.ns-15 * #content {color:black;background:#FFFFEE;} 
+.ns-15 * table, .ns-15 * #p-cactions li, .ns-15 * #p-cactions li a {background-color:#FFFFEE;}
+.ns-15 * div.thumb {border-color: #FFFFEE;}
+
+.ns-101 * #content {color:black;background:#FFFFEE; } 
+.ns-101 * table, .ns-101 * #p-cactions li, .ns-101 * #p-cactions li a {background-color:#FFFFEE;}
+.ns-101 * div.thumb {border-color: #FFFFEE;}
+
+.ns-103 * #content {color:black; background:#FFFFEE;} 
+.ns-103 * table, .ns-103 * #p-cactions li, .ns-103 * #p-cactions li a {background-color:#FFFFEE;}
+.ns-103 * div.thumb {border-color: #FFFFEE;}
+
+
+#ca-edit a {font-weight: bold !important;}
+
+td.diff-otitle {background-color: inherit;}
+td.diff-ntitle {background-color: inherit;}
+.diffchange {font-weight: bold; background-color: inherit;}
+td.diff-addedline, td.diff-deletedline, td.diff-context {font-size: 85%; color: inherit;}
+
+/* koniec skopiowanego z Wikis?ownika */
+
+.blue {background-color: #f3f3ff; border: 1px solid #aaaaaa; padding: 6pt; margin: 12pt 8%; width: 84%}
+.red {background-color: #fee; border: 1px solid #aaaaaa; padding: 6pt; margin: 12pt 8%; width: 84%}
+.green {background-color: #cfc; border: 1px solid #aaaaaa; padding: 6pt; margin: 12pt 8%; width: 84%}
+.yellow {background-color: #ffd; border: 1px solid #aaaaaa; padding: 6pt; margin: 12pt 8%; width: 84%}
+
+/* Logowanie */
+
+li#pt-login a {font-weight: bold}
+
+form#userlogin {
+  float: left;
+  padding: 1em 1em .7em 1em;
+  background-color: #ffffe6;
+  border: 2px solid #fc6;
+  color: #000;
+  margin-right: 2em;
+}
+form#userlogin table {
+  float: left;
+  background-color: #ffffe6;
+  color: #000;
+}
+
+/* 
+  Formatowanie dla szablonów dla wspó?rz?dnych geograficznych 
+
+  top powinien by? taki, tylko gdy ustawiony jest sitentice, normalnie jest ustawiony w szablonie na 10px.
+*/
+#coordinates {
+ position:absolute;
+ z-index:1;
+ top:1.8em; right:30px;
+ float:right;
+ margin:0.0em; padding:0.0em;
+ line-height:1.5em;
+ text-align:right;
+ text-indent:0;
+ font-size:85%;
+ text-transform:none;
+ white-space:nowrap;
+ border:none;
+ background:none;
+}
+
+#n-bad-image, .ns-6 #n-bug_in_article, #n-changes-in-category {display:none}
+.ns-6 #n-bad-image, .ns-14 #n-changes-in-category {display:block}
+
+/* Pod?wietlanie nie wype?nionego opisu zmian - zobacz [[Mediawiki:Monobook.js]] */
+input.warning {border: 2px solid red;}
+.warning label {color:red; font-weight:bold;}
+
+/* przyciski dodawania opisów */ 
+.userButtonsStyle {
+ background: #cfc;
+ border: 1px solid #0c0;
+ padding: 0px 3px;
+ margin: 0px;
+ cursor: pointer;
+ font-size: 80%;
+}
+.userButtonsStyle:hover {
+ border: 1px solid #090;
+}
+
+/* powy?sze tylko dla zgodno?ci wstecznej */
+#userSummaryButtonsA a {
+ background: #cfc;
+ border: 1px dotted #090;
+ padding: 0px 2px;
+ margin: 2px;
+ cursor: pointer;
+ font-size: 80%;
+ line-height: 17px;
+ color: black;
+}
+
+#userSummaryButtonsA a:hover {
+ background: #bfb;
+ border: 1px solid #9c9;
+ text-decoration:none;
+}
+
+/* zmiany w sidebarze (nie dotyczy problemu sidebara) */
+#p-navigation h5, #p-zmiany h5 { display: none; }
+
+/* search keyboard settings */
+.search_keyboard a {
+	padding: 0px 3px;
+	border: 1px outset #ddd;
+}
+.search_keyboard a:hover {
+	border: 1px inset #ddd;
+}
+/* </pre> */

@@ -1,0 +1,441 @@
+/* 
+<pre dir="ltr">
+*/
+
+/* edit this file to customize the monobook skin for the entire site */
+
+/* ????? ????? ????? ????????? ?? ??????? ?????? ??? ???? */
+
+h3 { font-size: 110%; }
+h4 { font-size: 100%; }
+h5 { font-size: 90%; }
+
+/* ????? ???????? */
+
+form#userlogin {
+  float: right;
+  background-color: #ffffe6;
+  border: 2px solid #fc6;
+  color: #000;
+  margin-left: 2em;
+  width: 427px;
+  padding: 1em;
+  padding-left: .7em;
+}
+
+form#userlogin table {
+  float: right;
+  background-color: #ffffe6;
+  color: #000;
+  width: 427px;
+}
+
+#editpage-specialchars a { text-decoration: none; }
+#editpage-specialchars a:hover { text-decoration: underline; }
+
+p.error {
+  font-weight: bold;
+}
+
+span#URLSource {
+  font-size: 1.2em;
+  font-weight: bold;
+  direction: ltr;
+}
+
+body {
+  font-size: 75%;
+  letter-spacing: 0.001em;
+  background: url(http://upload.wikimedia.org/wikipedia/ar/2/26/Arabisc1.png) 0px 0px repeat ;
+     }
+
+#edit-for-sysops {
+  display: none;
+}
+
+@media print {
+body { background: none; }
+    #content{
+      text-align:right;
+      direction: rtl;
+    }
+   .printfooter {display: none;}
+}
+
+.ns-0 * #content ul{
+   display: table;
+}
+
+fieldset {
+  padding-right: 25px;
+}
+
+/* ?? ???? ??????? ?? ??????? */
+
+#catlinks {
+   width:100%;
+   }
+
+/* ?????? ???? ??? */
+div.BoxenVerschmelzen, div.NavFrame {
+     margin:0px;
+     padding:2px;
+     border:1px solid #AAAAAA;
+     text-align:center;
+     border-collapse:collapse;
+     font-size:95%;
+}
+
+div.BoxenVerschmelzen div.NavFrame {
+     border-style:none;
+     border-style:hidden;
+}
+
+div.NavFrame + div.NavFrame {
+     border-top-style:none;
+     border-top-style:hidden;
+}
+
+div.NavPic {
+     background-color:#FFFFFF;
+     margin:0px;
+     padding:2px;
+     float:left;
+}
+
+div.NavFrame div.NavHead {
+     height:1.6em;
+     font-weight:bold;
+     font-size:100%;
+     background-color:#EFEFEF;
+}
+
+div.NavFrame p {
+     font-size:100%;
+}
+
+div.NavFrame div.NavContent {
+     font-size:100%;
+}
+
+div.NavFrame div.NavContent p {
+     font-size:100%;
+}
+
+div.NavEnd {
+     margin:0px;
+     padding:0px;
+     line-height:1px;
+     clear:both;
+}
+
+
+/* ????? ????? ??????? ???????? ?? ????? ???????? ??????? ?????? */
+li.FA {
+  list-style-image: url("http://upload.wikimedia.org/wikipedia/en/d/d4/Monobook-bullet-star.png");
+}
+
+li.GA {
+  list-style-image: url("http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Symbol_support_vote.svg/13px-Symbol_support_vote.svg.png");
+}
+
+/* Standard Navigationsleisten */
+
+div.BoxenVerschmelzen,
+div.NavFrame {
+        margin: 0px;
+        padding: 2px;
+        border: 1px solid #aaaaaa;
+        text-align: center;
+        border-collapse: collapse;
+        font-size: 95%;
+}
+div.BoxenVerschmelzen div.NavFrame {
+        border-style: none;
+        border-style: hidden;
+}
+div.NavFrame + div.NavFrame {
+        border-top-style: none;
+        border-top-style: hidden;
+}
+div.NavPic {
+        background-color: #ffffff;
+        margin: 0px;
+        padding: 2px;
+        float: left;
+}
+div.NavFrame div.NavHead {
+        height: 1.6em;
+        font-weight: bold;
+        font-size: 100%;
+        background-color: #efefef;
+}
+div.NavFrame p {
+        font-size: 100%;
+}
+div.NavFrame div.NavContent {
+        font-size: 100%;
+}
+div.NavFrame div.NavContent p {
+        font-size: 100%;
+}
+div.NavEnd {
+        margin: 0px;
+        padding: 0px;
+        line-height: 1px;
+        clear: both;
+}
+
+.NavToggle {
+
+   font-size: x-small;
+   float:right;
+
+}
+
+
+
+/* Änderungen in Fett markieren */
+ 
+ span.diffchange {
+         font-weight: bold;
+ }
+ 
+ /* Links nicht unterstreichen */
+ 
+ a {
+        text-decoration: none;
+ }
+ 
+ /* Großbuchstaben in den Navigationsbereichen */
+ 
+ .portlet h5,
+ .portlet h6,
+ #p-personal ul,
+ #p-cactions li a {
+ 	text-transform: none;
+ }
+ 
+ /* Fetter Bearbeiten-Link */
+ 
+ #ca-edit a {
+ 	font-weight: bold !important;
+ }
+ 
+ /* Vermeide hässliche weiße Ränder bei Float-Objekten auf nicht-weißen Hintergründen. */
+ 
+ div.thumb {
+ 	border: none;
+ }
+ div.tright {
+ 	border: none;
+ 	margin: 0.5em 0 0.8em 1.4em;
+ }
+ div.tleft {
+ 	border: none;
+ 	margin: 0.5em 1.4em 0.8em 0;
+ }
+ 
+ /* fromWikipedia */
+ 
+ #fromWikipedia {
+ 	font-size: x-small;
+ }
+ 
+
+ 
+ /* block quotations */
+ #content blockquote {
+     font-size: 93.75%; /* equivalent of 15px in 16px default */
+     margin: 1em 1.6em; /* same indent as an unordered list */
+ }
+ #content blockquote p {
+     line-height:inherit;
+ }
+ 
+ /* ????? ??? ??????? ??????? */
+ 
+ #catlinks {
+ 	border: 0px;
+ 	border-top: 2px dotted #aaaaaa;
+        width: 98%;
+ }
+ 
+ /*  Kategorienseite mit transparentem Hintergrund */
+ 
+ #mw-subcategories table { 
+        background-color: transparent; 
+ }
+ 
+ #mw-pages         table { 
+        background-color: transparent; 
+ }
+ 
+ /* Tabellenüberschriften (mit |+) größer und fett */
+ 
+ caption {
+ 	font-size: 105%;
+ 	font-weight: bold;
+ }
+ 
+ ol.references {
+ 	font-size:90%;
+ }
+ 
+ /* Abschnitt-Bearbeiten-Links */
+ .editsection {
+ 	font-size:90%;
+ }
+
+
+ /* Display "From Wikipedia, the free encyclopedia" */
+ #siteSub {
+     display: inline;
+     font-size: 92%;
+     font-weight: normal;
+ }
+ 
+ #bodyContent #siteSub a {
+     color: #000;
+     text-decoration: none;
+     background-color: transparent;
+     background-image: none;
+     padding-right: 0;
+ }
+ 
+ /* Bold 'edit this page' link to encourage newcomers */
+ #ca-edit a { font-weight: bold !important; }
+ 
+ /* Display "User $1, you are already logged in!"
+    ([[MediaWiki:Alreadyloggedin]]) in red and bold */
+ div.alreadyloggedin { color: red; font-weight: bold; }
+ 
+ @media print {
+     /* Do not print edit link in templates using Template:Ed
+        Do not print certain classes that shouldn't appear on paper */
+     .editlink, .noprint, .metadata, .dablink { display: none }
+     #content { background: #FFFFFF; } /* white background on print */
+ }
+ 
+
+
+/* les nombre impairs représentent les espaces de discussion
+ '0': '?????', '1' : '???? ?????'
+ '2': '??????', '3' : ' ???? ??????'
+ '4': '????????? ', '4' : ' ???? ????????? '
+ '6': '????', '5' : ' ???? ???? '
+ '8': 'MediaWiki', '9' : 'Discussion MediaWiki'
+ '10': 'Modèle', '10' : 'Discuter Modèle'
+ '12': 'Aide', '13' : 'Discuter Aide'
+ '14': 'Catégorie', '15' : 'Discuter Catégorie'
+ '100': 'Portail', '101': 'Discussion Portail'
+ '102': 'Projet', '103' : 'Discussion Projet'
+ '104': 'Référence', '105': 'Discussion Référence'
+
+
+SOMMAIRE
+
+I aspect général (les choses concernant l'affichage de toute l'encyclopédie)
+I.1 Couleur de fond des différents namespace
+I.2 gestion de la coloration indentatique
+I.3 autre
+
+II Divers (ce qui concerne un projet, un portail ou un bandeau particulier)
+
+*/
+
+/************************************************************/
+/*                  ASPECT GENERAL                          */
+/************************************************************/
+
+/*-----------------------------------------*/
+/*            COULEUR DE FOND              */
+/*-----------------------------------------*/
+
+/* par défaut : la couleur des pages de discussion 
+   (ce qui évite donc d'avoir à redéfinir la couleur de la moitié des namespaces)  */
+#content, 
+#p-cactions li, 
+#p-cactions li a {
+   background: #F8FCFF;
+}
+
+/* Special: (bleu ciel) */
+.ns--1 #content, 
+.ns--1 #p-cactions li, 
+.ns--1 #p-cactions li a {
+   background: #F8FCFF;
+}
+/* (main) */
+.ns-0 * #content, 
+.ns-0 * #p-cactions li, 
+.ns-0 * #p-cactions li a { 
+   background : white;
+}
+
+/* Utilisateur: */
+.ns-2 * #content, 
+.ns-2 * #p-cactions li, 
+.ns-2 * #p-cactions li a {
+   background : #F8FCFF;
+}
+
+/* ?????????:  */
+.ns-4 * #content, 
+.ns-4 * #p-cactions li, 
+.ns-4 * #p-cactions li a {
+   background: #F3F3FF;
+}
+
+/* Image: */
+.ns-6 * #content, 
+.ns-6 * #p-cactions li, 
+.ns-6 * #p-cactions li a {
+   background: white;
+}
+
+/* MediaWiki: */
+.ns-8 * #content, 
+.ns-8 * #p-cactions li, 
+.ns-8 * #p-cactions li a {
+   background: #EEEEFF;
+}
+
+/* ????: */
+.ns-10 * #content, 
+.ns-10 * #p-cactions li, 
+.ns-10 * #p-cactions li a { 
+   background: #F8FCFF;
+}
+
+/* ??????: */
+.ns-12 * #content, 
+.ns-12 * #p-cactions li, 
+.ns-12 * #p-cactions li a {
+   background: #F8FCFF;
+}
+
+/* ?????: */
+.ns-14 * #content, 
+.ns-14 * #p-cactions li, 
+.ns-14 * #p-cactions li a {
+   background: #F3F3FF;
+}
+
+/* ?????: */
+.ns-100 * #content, 
+.ns-100 * #p-cactions li, 
+.ns-100 * #p-cactions li a {
+   background: #F8FCFF;
+}
+
+.mw-plusminus-pos {
+  color: #006400;
+}
+
+.mw-plusminus-neg {
+  color: #8b0000;
+}
+
+
+/* </pre> */

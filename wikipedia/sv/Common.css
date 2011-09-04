@@ -1,0 +1,259 @@
+/*<pre><nowiki>*/
+
+table.wikitable {
+ margin: 0.5em;
+ background: #f9f9f9;
+ border: 1px #aaaaaa solid;
+ border-collapse: collapse;
+}
+
+table.wikitable th, table.wikitable td {
+ border: 1px #aaaaaa solid;
+ padding: 0.2em;
+}
+
+table.wikitable th {
+ background: #f2f2f2;
+ text-align: center;
+}
+
+table.wikitable caption {
+ margin-left: inherit;
+ margin-right: inherit;
+}
+
+.hiddenStructure {
+ display: none;
+ speak: none;
+}
+
+/* Infobox-mallar */
+
+.infobox {
+   border: 1px solid #aaaaaa;
+   background-color: #f9f9f9;
+   color: black;
+   margin-bottom: 0.5em;
+   margin-left: 1em;
+   padding: 0.2em;
+   float: right;
+   clear: right;
+}
+.infobox td,
+.infobox th {
+   vertical-align: top;
+   padding-left: 3px;
+   padding-right: 3px;
+}
+.infobox caption {
+   font-size: larger;
+}
+.infobox.bordered {
+   border-collapse: collapse;
+}
+.infobox.bordered td,
+.infobox.bordered th {
+   border: 1px solid #aaaaaa;
+}
+.infobox.bordered .borderless td,
+.infobox.bordered .borderless th {
+   border: 0;
+}
+
+/* Öka läsbarheten när referenser används */
+.reference a { line-height: 100%; font-size: 90%; }
+
+/* Kursiva redirecter i allpages */
+.allpagesredirect { font-style: italic; }
+
+/* Stilmallar för Wikipedia:CommonsTicker börjar här */
+
+  /************************/
+  /* CommonsTicker styles */
+  /************************/
+ 
+  /* links */
+  .tickerDiffLink { } /* diff links in ticker */
+  .tickerMiscLink { } /* misc links in ticker */
+ 
+  /* remove list bullets */
+  .tickerList ul,    .tickerList ul li    { list-style: none; text-indent:-2em; margin-left:2em;   text-align:left; }
+  .tickerList ul ul, .tickerList ul ul li { list-style: none; text-indent:0;    margin-left:1.5em; text-align:left; }
+
+  /* per-type styles */
+  .tickerEntry_deleted     { }  /* entry for image deletion */
+  .tickerEntry_replaced    { }  /* entry for image replacement */
+  .tickerEntry_tagged      { }  /* entry for adding/removing problem tags */
+  .tickerEntry_redir       { }  /* entry for critical redirection (fot tag redirects) */
+  .tickerEntry_recat       { }  /* entry for critical re-categorization (for tag categories) */
+  .tickerEntry_notify      { }  /* entry for global notifications */
+  .tickerEntry_changed     { }  /* entry for generic change */
+
+  /* per-action styles */
+  .tickerAction_deleted:before     { content:" GONE "; color: #FF0000; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_deletedRev:before  { content:" -OLD "; color: #DDAAAA; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_replaced:before    { content:" REPL "; color: #CC88FF; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_replacedOwn:before { content:" UPDT "; color: #EEAAFF; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_addedBad:before    { content:" +VfD "; color: #FF8800; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_removedBad:before  { content:" -VfD "; color: #00BB00; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_addedGood:before   { content:" +OK  "; color: #00BB00; font-family:monospace; font-weight:bold; font-size:100%; }  
+  .tickerAction_removedGood:before { content:" -OK  "; color: #FF8800; font-family:monospace; font-weight:bold; font-size:100%; }
+
+  /* ticker usage list */
+  .tickerUsage  { font-size:80%; }  
+
+  /* entry applies to a template used by multiple images */
+  .tickerTemplateEntry    { font-weight: bold; } 
+
+  /* entry applies to sub-entries, i.e. images that use a specific template */
+  .tickerSubEntry         { }                       
+
+  /* minor entry styles */ 
+  .tickerMinorEntry  { color:#666; }     /* minor entry */
+  .tickerMinorEntry a,
+  .tickerMinorEntry a:link,
+  .tickerMinorEntry a:visited { color:#669; }
+  #bodyContent .tickerMinorEntry a.extiw,
+  #bodyContent .tickerMinorEntry a.extiw:link,
+  #bodyContent .tickerMinorEntry a.extiw:visited { color:#669; }
+
+
+/* Stilmallar för Wikipedia:CommonsTicker slutar här */
+
+/* stilmallar för avgränsade infoboxar med sammansatta rader */
+.infobox.bordered .mergedtoprow td,
+.infobox.bordered .mergedtoprow th {
+   border: 0;
+   border-top: 1px solid #aaaaaa;
+   border-right: 1px solid #aaaaaa;
+}
+
+.infobox.bordered .mergedrow td,
+.infobox.bordered .mergedrow th {
+   border: 0;
+   border-right: 1px solid #aaaaaa;
+}
+
+
+/* Mallar för meddelanderutor */
+
+.messagebox {
+   border: 1px solid #aaaaaa;
+   background-color: #f9f9f9;
+   width: 80%;
+   margin: 0 auto 1em auto;
+   padding: .2em;
+}
+.messagebox.merge {
+   border: 1px solid #c0b8cc;
+   background-color: #f0e5ff;
+   text-align: center;
+}
+.messagebox.cleanup {
+   border: 1px solid #9f9fff;
+   background-color: #efefff;
+   text-align: center;
+}
+.messagebox.standard-talk {
+   border: 1px solid #c0c090;
+   background-color: #f8eaba;
+}
+
+
+/* stilar för geografiska infoboxar, t.ex. länder, nationella indelningar, städer osv. */
+
+.infobox.geography {
+   border: 1px solid #ccd2d9;
+   text-align: left;
+   border-collapse: collapse;
+   line-height: 1.2em; 
+   font-size: 90%;
+}
+
+.infobox.geography  td,
+.infobox.geography  th {
+   border-top: solid 1px #ccd2d9;
+   padding: 0.4em 0.2em 0.4em 0.8em;
+}
+.infobox.geography .mergedtoprow td,
+.infobox.geography .mergedtoprow th {
+   border-top: solid 1px #ccd2d9;
+   padding: 0.4em 0.2em 0.2em 0.8em;
+}
+
+.infobox.geography .mergedrow td,
+.infobox.geography .mergedrow th {
+      border: 0;
+      padding: 0 0.2em 0.2em 0.8em;
+}
+
+.infobox.geography .mergedbottomrow td,
+.infobox.geography .mergedbottomrow th {
+   border-top: 0;
+   border-bottom: solid 1px #ccd2d9;
+   padding: 0 0.2em 0.4em 0.8em;
+}
+
+.infobox.geography .maptable td,
+.infobox.geography .maptable th {
+      border: 0;
+      padding: 0 0 0 0;
+}
+
+/* Standard navigationslista, d.v.s. boxgömmargrejen från .de */
+
+div.Boxmerge,
+div.NavFrame {
+       margin: 0px;
+       padding: 2px;
+       border: 1px solid #aaaaaa;
+       text-align: center;
+       border-collapse: collapse;
+       font-size: 95%;
+}
+div.Boxmerge div.NavFrame {
+       border-style: none;
+       border-style: hidden;
+}
+div.NavFrame + div.NavFrame {
+       border-top-style: none;
+       border-top-style: hidden;
+}
+div.NavPic {
+       background-color: #ffffff;
+       margin: 0px;
+       padding: 2px;
+       float: left;
+}
+div.NavFrame div.NavHead {
+       height: 1.6em;
+       font-weight: bold;
+       font-size: 100%;
+       background-color: #efefef;
+       position:relative;
+}
+div.NavFrame p {
+       font-size: 100%;
+}
+div.NavFrame div.NavContent {
+       font-size: 100%;
+}
+div.NavFrame div.NavContent p {
+       font-size: 100%;
+}
+div.NavEnd {
+       margin: 0px;
+       padding: 0px;
+       line-height: 1px;
+       clear: both;
+}
+a.NavToggle {
+       position:absolute;
+       top:0px;
+       right:3px;
+       font-weight:normal;
+       font-size:smaller;
+}
+
+
+/*</nowiki></pre>*/

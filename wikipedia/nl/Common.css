@@ -1,0 +1,300 @@
+/*
+== Plainlinksneverexpand ==
+Onderstaande is uit [[:en:MediaWiki:Common.css]] gekopieëerd.
+
+Dit wordt o.a. gebruikt in [[Sjabloon:ref]].
+
+''Add formatting to make sure that "external references" from [[Template:Ref]] do not get URL expansion, not even when printed. The mechanism up to MediaWiki 1.4 was that the HTML code contained a SPAN following the anchor A; this SPAN had the class "urlexpansion", which was not displayed on screen, but was shown when the medium was "print". The rules below ensure (a) that there is no extra padding to the right of the anchor (displayed as "[<number>]"), (b) that there is no "external link arrow" for the link, and (c) that this SPAN of class "urlexpansion" is never shown.''
+
+<pre><nowiki>*/
+.plainlinksneverexpand {
+  background: none ! important;
+  padding: 0 !important;
+}
+
+.plainlinksneverexpand .urlexpansion {
+  display : none ! important;
+}
+
+/* Make sure that ext links displayed within "plainlinksneverexpand" don't get
+   the arrow...
+*/
+.plainlinksneverexpand a {
+   background: none !important;
+   padding: 0 !important;
+}
+
+/* With MediaWiki 1.5, the mechanism has changed: instead of a SPAN of class "urlexpansion"
+   following the anchor A, the anchor itself now has class "external autonumber" and the
+   expansion is inserted when printing (see the common printing style sheet at
+   http://en.wikipedia.org/skins-1.5/common/commonPrint.css) using the ":after" pseudo-
+   element of CSS. We have to switch this off for links due to Template:Ref!
+*/
+.plainlinksneverexpand a.external.autonumber:after {
+  display: none !important;
+}
+
+/* Remove padding from external links displayed without icon */
+#bodyContent .plainlinks a {
+   padding: 0 !important;
+}
+
+/*</pre>
+
+== Tabelfuncties ==
+=== Prettytable en wikitable===
+Maakt een tabel met grijze achtergrond en lijnen, met een donkergrijze kop. 
+
+<pre>*/
+.prettytable, .prettytable table, .wikitable, .wikitable table
+{
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+    font-size: 95%;
+    margin: 1em 0;
+    background: #f9f9f9;
+}
+
+.prettytable table, .wikitable table
+{
+    margin: 0;
+}
+
+.prettytable td, table.prettytable th, .wikitable td, table.wikitable th
+{
+    border: 1px solid #aaa;
+    padding: 4px;
+}
+
+.prettytable th, .wikitable th
+{
+    background-color: #ddd;
+}
+
+/*</pre>
+
+=== Infobox===
+Maakt een tabel met grijze achtergrond en lijnen, met een donkergrijze kop. Deze tabel is rechts uitgelijnd.
+
+(Deze infobox-style is gekopieerd van en-wikipedia, waar deze veel gebruikt wordt.
+
+<pre>*/
+.infobox {
+   border: 1px solid #aaaaaa;
+   background-color: #f9f9f9;
+   color: black;
+   margin-bottom: 0.5em;
+   margin-left: 1em;
+   padding: 0.2em;
+   float: right;
+   clear: right;
+}
+.infobox td,
+.infobox th {
+   vertical-align: top;
+}
+.infobox caption {
+   font-size: larger;
+   margin-left: inherit;
+}
+.infobox.bordered {
+   border-collapse: collapse;
+}
+.infobox.bordered td,
+.infobox.bordered th {
+   border: 1px solid #aaaaaa;
+}
+.infobox.bordered .borderless td,
+.infobox.bordered .borderless th {
+   border: 0;
+}
+
+.infobox.sisterproject {
+   width: 20em;
+   font-size: 90%;
+}
+
+/* styles for bordered infobox with merged rows */
+.infobox.bordered .mergedtoprow td,
+.infobox.bordered .mergedtoprow th {
+   border: 0;
+   border-top: 1px solid #aaaaaa;
+   border-right: 1px solid #aaaaaa;
+}
+
+.infobox.bordered .mergedrow td,
+.infobox.bordered .mergedrow th {
+   border: 0;
+   border-right: 1px solid #aaaaaa;
+}
+/*</pre>
+
+=== Overige functies ===
+Kopcellen links uitlijnen.
+
+<pre>*/
+.thleft th, th.thleft
+{
+    text-align: left;
+}
+/*</pre>
+
+Ter vervanging van <code>valign=top</code>. (gebruik <code><nowiki>{| class="vatop"</nowiki></code>)
+
+<pre>*/
+.vatop tr, tr.vatop
+{
+    vertical-align: top;
+}
+
+/*</pre>
+
+== In- en uitklapfunctie ==
+Wordt o.a. gebruikt in [[Sjabloon:Toggletext]] en [[Sjabloon:Navigatiezonder2]].
+
+<pre>*/
+div.UitklapFrame {
+    clear: both;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+    background-color:#f9f9f9;
+    font-size: 95%;
+}
+div.UitklapFrameNoClear {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+    background-color:#f9f9f9;
+    font-size: 95%;
+}
+div.UitklapFrame div.UitklapHead {
+    padding: 0 .5em;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ddd;
+}
+div.UitklapFrame div.UitklapContent {
+    padding: 5px;
+}
+div.UitklapEind {
+    clear: both;
+}
+div.UitklapEindNoClear {
+}
+a.UitklapToggle {
+    font-size: x-small;
+    float:right;
+    padding: 0 .5em;
+}
+
+/* </pre>
+
+== Kleine aanpassingen ==
+<pre> */
+/* Redirects cursief en groen in Speciaal:Allpages en Speciaal:Prefixindex */
+.allpagesredirect a {
+    font-style: italic;
+    color: green;
+}
+
+.allpagesredirect a:visited {
+    color: #008000;
+}
+
+/* hiddenstructure wordt gebruikt in o.a. Sjabloon:Infobox_luchthaven maar werd alleen maar in de monobook skin gedefinieerd. Gekopieerd uit http://nl.wikipedia.org/skins-1.5/monobook/main.css */
+.hiddenStructure {
+	display: none;
+	speak: none;
+}
+
+/* box op je volglijst met links naar andere volglijsten standaard niet afbebeeld */
+/* om het te tonen verander je het in "display:block" in je eigen css */
+#volglijstkader {
+    display: none;
+} 
+
+/* standaard categorieboom in Categorie:Alles verbergen */
+body.page-Categorie_Alles #mw-subcategories,
+body.page-Categorie_Alles #mw-pages
+  { display:none !important; }
+
+
+/* afbeeldingen naastelkaar uitgelijnd */
+div.afbnaastelkaar div.floatleft, 
+div.afbnaastelkaar table.floatleft, 
+div.afbnaastelkaar div.tleft 
+{ clear:none; }
+
+/* Optie "Markeer je eigen bewerkingen als gecontroleerd" verbergen */
+input#autopatrol { display: none; }
+
+/* verschil in recente wijzigingen in rood en groen */
+.mw-plusminus-pos {
+   color:green;
+}
+.mw-plusminus-neg {
+   color:darkred;
+}
+
+/* binnen deze class krijgt de TOC geen border en achtergrondkleur */
+.toczonderstijl table#toc, .toczonderstijl table.toc {
+   border: none;
+   background-color: transparent;
+   padding: 0;
+}
+
+/* </pre>
+
+==CommonsTicker==
+<pre> */
+
+/************************/
+/* CommonsTicker styles */
+/************************/
+
+/* Link */
+.tickerDiffLink { } /* diff links in ticker */
+.tickerMiscLink { } /* misc links in ticker */
+
+.tickerUsage  { font-size:80%; }  /* ticker usage list */
+
+/* per-type styles */
+.tickerEntry_deleted     { }                       /* entry for image deletion */
+.tickerEntry_restored    { }                       /* entry for restored image */
+.tickerEntry_replaced    { }                       /* entry for image replacement */
+.tickerEntry_tagged      { }                       /* entry for adding/removing problem tags */
+.tickerEntry_redir       { }                       /* entry for critical redirection (fot tag redirects) */
+.tickerEntry_recat       { }                       /* entry for critical re-categorization (for tag categories) */
+.tickerEntry_notify      { }                       /* entry for global notifications */
+.tickerEntry_changed     { }                       /* entry for generic change */
+
+/* per-status styles */
+.tickerStatus_done     { text-decoration:line-through; }  /* strike through when entry has been handeled */
+
+/* per-action styles */
+.tickerAction_deleted     { background:#F88; }     /* action marker for image deletion */
+.tickerAction_restored    { background:#8F8; }     /* action marker for restored image */
+.tickerAction_replaced    { background:#FED; }     /* action marker for image replacement */
+.tickerAction_deletedRev  { background:#FDD; }     /* action marker for revision deletion */
+.tickerAction_replacedOwn { background:none; }     /* action marker for image replacement by uploader */
+.tickerAction_addedBad    { background:#FDD; }     /* action marker for adding problem markers */
+.tickerAction_removedBad  { background:#DFD; }     /* action marker for removing problem markers */
+.tickerAction_addedGood   { background:#DFD; }     /* action marker for adding license markgers  (for tag categories) */
+.tickerAction_removedGood { background:#FDD; }     /* action marker for removing license markers (for tag categories) */
+
+/* minor entry styles */ 
+.tickerMinorEntry  { color:#666; }     /* minor entry */
+.tickerMinorEntry a,
+.tickerMinorEntry a:link,
+.tickerMinorEntry a:visited { color:#669; }
+#bodyContent .tickerMinorEntry a.extiw,
+#bodyContent .tickerMinorEntry a.extiw:link,
+#bodyContent .tickerMinorEntry a.extiw:visited { color:#669; }
+
+.tickerTemplateEntry    { font-weight: bold; }    /* entry applies to a template used by multiple images */
+.tickerSubEntry         { }                       /* sub-entry for multi-image entry */
+
+/*</nowiki></pre>*/

@@ -1,0 +1,108 @@
+/* <pre> */
+
+/**********************************************
+ * Colorier le nombre de caractères modifiés dans la liste des RC
+ **********************************************/
+
+ .mw-plusminus-pos {
+     color: #00aa00; /* vert */
+ }
+ .mw-plusminus-neg {
+     color: #aa0000; /* rouge */
+ }
+ .mw-plusminus-null {
+     color: #888888; /* gris */
+ }
+
+/**********************************************
+ * Faire apparaître les redirections en italique sur [[Special:Allpages]] 
+ **********************************************/
+
+ .allpagesredirect {
+     font-style: italic;
+ }
+
+/**********************************************
+ * Harmonisation des Infoboxes
+ **********************************************/
+
+.infobox {
+   background-color: #eeeeee; /* couleur correspondant aux titres / colonne de gauche, th */
+   color: black;
+   float: right;
+   clear: right;
+   font-size: 90%;
+   border-collapse: collapse;
+   margin: 0 0 0.5em 1em;
+}
+
+.infobox caption {
+   background-color: #c0c0c0;
+   border: 1px solid #aaaaaa;
+   padding: 0.2em;
+   margin-left: 0.55em;
+   font-weight: bolder;
+   text-align: center;
+   font-size: 14pt;
+   color: white;
+}
+
+.infobox th,
+.infobox td {
+   vertical-align: middle;
+   border: 1px solid #aaaaaa;
+   padding: 0.2em 0.2em 0.2em 0.5em;
+}
+
+.infobox td {
+   text-align: center;
+   background: #f9f9f9;
+}
+
+.infobox th {
+   font-weight: normal;
+   text-align: left;
+}
+
+.infobox .infoboximage { /* emplacement pour les photos et une description */
+   background: #ffffff;
+   padding:0;
+   color: black;
+   text-align: center;
+}
+
+.infobox .infoboxsoustitre { /* soustitre */
+   padding:0;
+   color: black;
+   font-weight: bold;
+   font-size: 115%;
+   line-height: 2;
+   text-align: center;
+}
+
+/**********************************************
+ * reference : éviter d'obtenir un interlignage de taille variable
+ **********************************************/
+
+.reference, .exposant { 
+   vertical-align: text-top;
+   position: relative;
+   top: -0.3em;
+   padding-left:1px;
+}
+
+/**********************************************
+ * Divers (à commenter!)
+ **********************************************/
+
+ /* Metadata */
+ table.metadata {
+     border: 1px solid #aaaaaa;
+     display: none;
+     speak: none;
+ }
+ .metadata-label {
+     color: #aaaaaa;
+ }
+
+/* </pre> */

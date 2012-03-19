@@ -1,0 +1,117 @@
+BODY {
+	width: 100%;
+	background-color: white;
+	margin: 0;
+	font-family: arial;
+	font: 11px arial,sans-serif;
+	font-weight: bold;
+	color: #666;
+}
+IMG {
+	border: 0;
+}
+A:HOVER {
+  	text-decoration: underline;
+  	color: #666;
+}
+A, A:VISITED, A.global {
+  	text-decoration: none;
+  	color: #666;
+}
+LI {
+	list-style:none;
+	list-style-type:none;
+}
+UL {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+/* HEADER */
+.header {
+	margin: auto;
+	padding: 30px 0 10px;
+	width: 950px;
+}
+
+/* CONTENT */
+.main {
+	margin: auto;
+	width: 950px;
+	padding-left: 30px;
+}
+.projects {
+	font-size: 11px;
+}
+.projects li {
+	width: 160px;
+	float: left;
+	margin: 10px 35px;
+}
+.projimg {
+  	width: 150px;
+	height: 100px;
+	margin: auto;
+	background: #CCC;
+	border: 5px solid white;
+	position: relative;
+	border-image: initial;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.796875) 0px 0px 8px;
+	box-shadow: rgba(0, 0, 0, 0.796875) 0px 0px 8px;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=315, Strength=3)
+	progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=135, Strength=3);
+}
+
+.projdesc {
+	font-weight: normal;
+	text-align: justify;
+}
+.projname {
+	height: 16px;
+	padding-left: 20px;
+	line-height: 16px;
+}
+.showproject {
+	text-align: right;
+	padding-bottom:  30px;
+	padding-right: 30px;
+}
+.showproject A {
+	padding: 0 10px;
+}
+
+/* FOOTER */
+.footer {
+	background: url('images/footer-back.png') repeat-x;
+	height: 160px;
+	text-align: right;
+	vertical-align: bottom;
+	position: relative;
+	clear: both;
+	color: #888 !important;
+	font-weight: normal;
+}
+.footer A {
+	color: #888 !important;	
+}
+.footer LI {
+	float: right;
+	padding-right: 5px;
+	line-height: 18px;
+}
+.footer-content {
+	position: absolute;
+	bottom: 53px;
+	margin: auto;
+	width: 950px;
+	left: 0;
+	right: 0;
+}
+#madchat {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 16px;
+	height: 16px;
+}

@@ -1,0 +1,28 @@
+#breadcrumbs {
+	position: absolute;
+	top: 100px;
+	height: 53px;
+	background: transparent url('../images/awired.png') 0px -42px repeat-x;
+	left: 0px;
+	right: 0px;
+	margin-right: 6px;
+}
+
+A {
+	color: #c78828;
+}
+
+#actions UL LI A {
+	color: #e4be80;
+}
+
+#breadcrumbs #menu LI A:HOVER {
+	border-bottom: 4px solid #82591a;
+}
+
+#mainTop {
+	float:right;
+	height: 80px;
+	width: 100px;
+	background: transparent url('../images/hiveback.png') 0px 20px no-repeat;
+}

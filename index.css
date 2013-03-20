@@ -38,7 +38,28 @@ UL {
 	margin: auto;
 	padding: 30px 0 10px;
 	width: 950px;
+	position: relative;
 }
+
+.header UL {
+	position: absolute;
+	right: 170px;
+	bottom: 10px;
+}
+
+.header LI IMG {
+/*	width: 32px;
+	height: 32px;*/
+/* 	box-shadow: black 1px 1px rgba(0, 0, 0, 0.5); */
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.header LI {
+    float: right;
+    padding-right: 8px;
+    line-height: 18px;
+}
+
 
 /* CONTENT */
 .main {

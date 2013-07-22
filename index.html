@@ -1,331 +1,61 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
 <head>
-	<meta charset='utf-8'>
-	<title>Awired.net</title>
-	<link rel="shortcut icon" href="favicon.ico" />
-	<link rel="stylesheet" href="index.css">
-	
-	<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
-	
-	<script>
-
-$(document).ready(function() {
-
-	$('a.panel').click(function () {
-
-		$('a.panel').removeClass('selected');
-		$(this).addClass('selected');
-		
-		current = $(this);
-		
-		$('#wrapper').scrollTo($(this).attr('href'), 800);		
-		
-		return false;
-	});
-
-	$(window).resize(function () {
-//		resizePanel();
-	});
-	
-});
-
-function resizePanel() {
-
-	width = $(window).width();
-	height = $(window).height();
-
-	mask_width = width * $('.item').length;
-		
-	$('#debug').html(width  + ' ' + height + ' ' + mask_width);
-		
-	$('#wrapper, .item').css({width: width, height: height});
-	$('#mask').css({width: mask_width, height: height});
-	$('#wrapper').scrollTo($('a.selected').attr('href'), 0);
-		
-}
-
-</script>
-	
-	<style type="text/css">
-	  	div.visuwall {
- 			background: url('images/project/visuwall.png');  		
-  		}
-  		p.visuwall {
-  			background: url('images/project/visuwall-icon.png') no-repeat;
-  		}
-  		p.jstest {
-  			background: url('images/project/jstest-icon.png') no-repeat;
-  		}  		
-  		div.jstest {
-  			background: url('images/project/jstest.png') no-repeat;
-  		}  		
-  		p.jscoverage {
-  			background: url('images/project/jscoverage-icon.png') no-repeat;
-  		}  		
-  		div.jscoverage {
-  			background: url('images/project/jscoverage.png') no-repeat;
-  		}  		
-  		p.clients {
-  			background: url('images/project/clients-icon.png') no-repeat;
-  		}  		
-  		div.clients {
-  			background: url('images/project/clients.png') no-repeat;
-  		}
-  		p.ajsl {
-  			padding: 0;
-  		}
-  		div.ajsl {
-  			background: url('images/project/ajsl.png') no-repeat;
-  		}  		
-  		p.bootstrap {
-  			padding: 0;
-  		}
-  		div.bootstrap {
-  			background: url('images/project/bootstrap.png') no-repeat;
-  		}  		
-  		p.aclm {
-  			padding: 0;
-  		}
-  		div.aclm {
-  			background: url('images/project/aclm.png') no-repeat;
-  		}  
-		p.housecream {
-  			background: url('images/project/housecream-icon.png') no-repeat;
-  		}
-  		div.housecream {
-  			background: url('images/project/housecream.jpg') no-repeat;
-  		}  
-		p.restmcu {
-  			background: url('images/project/restmcu-icon.png') no-repeat;
-  		}
-  		div.restmcu {
-  			background: url('images/project/restmcu.png') no-repeat;
-  		}
-		p.initramfs {
-  			padding: 0;
-  		}
-  		div.initramfs {
-  			background: url('images/project/initramfs.png') no-repeat;
-  		}  
-		p.arootpack {
-  			padding: 0;
-  		}
-  		div.arootpack {
-  			background: url('images/project/arootpack.png') no-repeat;
-  		}  
-		p.gate-iptables {
-  			padding: 0;
-  		}
-  		div.gate-iptables {
-  			background: url('images/project/gate-iptables.png') no-repeat;
-  		}  
-		p.client-bean-validation {
-  			padding: 0;
-  		}
-  		div.client-bean-validation {
-  			background: url('images/project/client-bean-validation.jpg') no-repeat;
-  		}  
-  		
-  		
-  	</style>
-	
-	
+  <title>Awired.net</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="index,follow" />
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
 	<style>
-	#wrapper {
-		overflow:hidden;
-		top:0;left:0;
-		margin-top: 50px;
-	}
-	#mask {
-		width:500%;
-		height:100%;
-	}
-	.item {
-		width:20%;
-		height:100%;
-		float:left;
+	<!--
+	HTML, BODY {
+		background: black;
+		height: 100%;
+		margin: 0px;
+		font-family:Tahoma,Arial;
+		font-size:11px;
+		line-height:1.4em;
+		color: #A2A2A1;
 	}
 	
-	.content {
-		width:950px;
-		margin:0 auto;
+	IMG {
+		border: 0px;
 	}
-	#projectTitle {
-		position: absolute;
-		font-size: 70px;
-		width: 950px;
-		left: 15px;
-		right: 0;
-		margin: auto;
-		
- 		color: transparent; 
-		text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
-		-webkit-animation: blackblur 2s 0.55s 1 alternate;
+	
+	#copyright {
+		bottom:15px;
+		color:#333333;
+		height:15px;
+		position:absolute;
+		right:75px;
+		text-align:right;
+		width:100%;
 	}
-</style>
+
+	A {
+		color: #333333;
+		text-decoration: none;
+	}	
+
+	A:visited {
+		color: #333333;
+		text-decoration: none;
+	}
+	-->
+	</style>
 </head>
 <body>
-    <div class="header">
-    	<a href="http://awired.net">
-            <img alt="Awired" src="images/logo/awired.net-full-b.png">
-    	</a>
-    	<div style="padding-left: 80px; color: #BBB;">Open source development by passionate developers</div>
-    	<div style="float:right">
-    	   <ul>
-                <li><a href="https://github.com/awired"><img alt="awired github" src="images/github_16.png"/></a></li>
-                <li><a href="http://sonar.awired.net"><img alt="awired sonar" src="images/sonar.png"/></a></li>
-                <li><a href="http://ci.awired.net"><img alt="awired jenkins" src="images/jenkins.png"/></a></li>    	
-           </ul>
-    	</div>
-    </div>
-	<div id="wrapper">
-<!-- 		<div id="projectTitle">Projects</div> -->
-		<div id="mask">
-			<div id="mainProjects" class="item">
-				<div class="content">
-			    	<div class="showproject">
-			    		Main Projects
-			    		<a href="#minorProjects" class="panel">Minor Projects</a>
-			    	</div>
-					<ul class="projects">
-			    		<li>
-			    			<a class="global" href="http://visuwall.awired.net">
-				    			<div class="projimg visuwall"></div></a>
-			    			<p class="projname visuwall"><a href="https://github.awired.net">Visuwall</a></p>
-			    			<p class="projdesc">A visual status of your projects development in a wall</p>
-			    		</li>
-			    		<li>
-			    			<a class="global" href="https://github.com/awired/clients">
-				    			<div class="projimg clients"></div></a>
-			    			<p class="projname clients"><a href="https://github.com/awired/clients">Clients</a></p>
-			    			<p class="projdesc">Java clients for software like Hudson, Jenkins, TeamCity, ...</p>
-			    		</li>
-			    		<li>
-			    			<a class="global" href="https://github.com/awired/jstest-maven-plugin">
-				    			<div class="projimg jstest"></div></a>
-			    			<p class="projname jstest"><a href="https://github.com/awired/jstest-maven-plugin">JsTest Maven Plugin</a></p>
-			    			<p class="projdesc">Advanced Maven plugin to test your javascript</p>
-			    		</li>
-			    		<li>
-			    			<a class="global" href="https://github.com/awired/bootstrap">
-				    			<div class="projimg bootstrap"></div></a>
-			    			<p class="projname bootstrap"><a href="https://github.com/awired/bootstrap">Bootstrap</a></p>
-			    			<p class="projdesc">Java lib to create single jar/war file to boot your application</p>
-			    		</li>
-			    		<li>
-			    			<a class="global" href="https://github.com/awired/jscoverage">
-				    			<div class="projimg jscoverage"></div></a>
-			    			<p class="projname jscoverage"><a href="https://github.com/awired/jscoverage">Js Coverage</a></p>
-			    			<p class="projdesc">Java library to instrument and get coverage of javascript</p>
-			    		</li>
-			    		<li>
-			    			<a class="global" href="https://github.com/housecream/restmcu">
-				    			<div class="projimg restmcu"></div></a>
-			    			<p class="projname restmcu"><a href="https://github.com/housecream/restmcu">Restmcu</a></p>
-			    			<p class="projdesc">Http Restfull access to micro-controllers resources</p>
-			    		</li>
-			    		<li>
-			    			<a class="global" href="https://github.com/awired/client-bean-validation">
-				    			<div class="projimg client-bean-validation"></div></a>
-			    			<p class="projname client-bean-validation"><a href="https://github.com/awired/client-bean-validation">Client Bean Validation</a></p>
-			    			<p class="projdesc">Validation for client sides using JSR-303 annotations</p>
-			    		</li>
-			    		<li>
-			    			<a class="global" href="http://housecream.org">
-				    			<div class="projimg housecream"></div></a>
-			    			<p class="projname housecream"><a href="http://housecream.org">Housecream</a></p>
-			    			<p class="projdesc">Domotic project to bring technology to your house</p>
-			    		</li>			    		
-			    	</ul>
-		    	</div>
-			</div>
-			<div id="minorProjects" class="item">
-				<div class="content">
-			    	<div class="showproject">
-			    		<a href="#mainProjects" class="panel">Main Projects</a>
-			    		Minor Projects
-			    	</div>
-					<ul class="projects">
-			    		<li>
-			    			<a class="global" href="https://github.com/awired/ajsl">
-				    			<div class="projimg ajsl"></div></a>
-			    			<p class="projname ajsl"><a href="https://github.com/awired/ajsl">Ajsl</a></p>
-			    			<p class="projdesc">Awired java common lib</p>
-			    		</li>
-			    		<li>
-			    			<a class="global" href="https://github.com/awired/aclm">
-				    			<div class="projimg aclm"></div></a>
-			    			<p class="projname aclm"><a href="https://github.com/awired/aclm">Aclm</a></p>
-			    			<p class="projdesc">Full typed java library to parse cli arguments</p>
-			    		</li>
-			    		<li>
-			    			<a class="global" href="https://github.com/awired/arootpack/tree/master/iptables">
-				    			<div class="projimg gate-iptables"></div></a>
-			    			<p class="projname gate-iptables"><a href="https://github.com/awired/arootpack/tree/master/iptables">Gate Iptables</a></p>
-			    			<p class="projdesc">Iptables scripts for 3 legs firewall</p>
-			    		</li>
-			    		<li>
-			    			<a class="global" href="https://github.com/awired/arootpack/tree/master/ainitramfs">
-				    			<div class="projimg initramfs"></div></a>
-			    			<p class="projname initramfs"><a href="https://github.com/awired/arootpack/tree/master/ainitramfs">AinitRamFs</a></p>
-			    			<p class="projdesc">Advanced initramfs for full encrypted filesystems with remote access (screen, sshd, cryptsetup)</p>
-			    		</li>
-			    		<li>
-			    			<a class="global" href="https://github.com/awired/arootpack">
-				    			<div class="projimg arootpack"></div></a>
-			    			<p class="projname arootpack"><a href="https://github.com/awired/arootpack">ARootPack</a></p>
-			    			<p class="projdesc">General scripts to manage linux servers</p>
-			    		</li>
-			    	</ul>
-				</div>
-			</div>		
+<div style="display: table; height: 100%; #position: relative; overflow: hidden; width : 100%;">
+	<div style=" #position: absolute; #top: 50%;display: table-cell; vertical-align: middle;">
+                <div style=" #position: relative; #top: -50%; width: 400px; margin: auto">
+                        <img alt="Awired.net" src="awired.net-full-w.png">
+						<div style="padding-left: 80px; color: #444;font: 11px arial; font-weight: bold">Open source development by passionate developers</div>
+                </div>
+		<div style="margin:auto; position: absolute; left:0px; right: 0px; text-align: center; width: 300px; padding-top: 5%">
+			<pre></pre>
 		</div>
 	</div>
-    <div class="footer">
-    	<div class="footer-content">
-    		<ul>
-    			<li><a href="http://awired.net">Awired.net</a> © 2012</li>
-    			<li><a href="mailto:admin@awired.net?subject=I want to contribute">Contribute</a> | </li>
-<!--     			<li><a href="http://twitter.com/awired_net">Follow us</a> | </li>
-    			<li style="padding-top: 2px"><img src="images/icon-twitter.png"/></li> -->
-    			<li><a href="mailto:contact@awired.net">Contact</a> | </li>
-    		</ul>
-    	</div>
-    	<div id="madchat"><a href="http://madchat.awired.net"><img src="images/madchat.png"/></a></div>
-	</div>	
-	<div id="banner"><a href="http://github.com/awired">Fork me on GitHub</a></div>
+	<div class="copyright" style="position: absolute; bottom: 10px; left: 10px; color: #222222">
+	</div>
+</div>
 </body>
-<style>
-#habla_window_div {
-    font: 11px arial, sans-serif;
-}
-
-#habla_window_div #habla_topbar_div {
-    background: #333333 !important;
-    padding: 5px !important;
-}
-
-</style>
-<!-- begin olark code -->
-<script data-cfasync="false" type='text/javascript'>/*{literal}<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
-f[z]=function(){
-(a.s=a.s||[]).push(arguments)};var a=f[z]._={
-},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
-f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
-0:+new Date};a.P=function(u){
-a.p[u]=new Date-a.p[0]};function s(){
-a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
-hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
-return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
-b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
-b.contentWindow[g].open()}catch(w){
-c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
-var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
-b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
-loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
-/* custom configuration goes here (www.olark.com/documentation) */
-olark.identify('8015-234-10-4332');/*]]>{/literal}*/</script><noscript><a href="https://www.olark.com/site/8015-234-10-4332/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
-<!-- end olark code -->
 </html>
